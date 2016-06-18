@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -16,8 +17,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current radio station:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ1-BE-5Hw">
+                                <rect key="frame" x="20" y="20" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Xh2-6e-1gz"/>
+                                    <constraint firstAttribute="width" constant="163" id="muB-Sx-Ymj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-I3-cV3">
+                                <rect key="frame" x="191" y="20" width="389" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1ZW-5y-lXM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozl-tQ-jyn">
+                                <rect key="frame" x="20" y="49" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="ACA-f5-MxU"/>
+                                    <constraint firstAttribute="height" constant="30" id="YGL-EJ-oGU"/>
+                                </constraints>
+                                <state key="normal" title="Select another"/>
+                                <connections>
+                                    <action selector="radioSelectionButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6k-p4-7dS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ozl-tQ-jyn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Isx-Co-bLQ"/>
+                            <constraint firstItem="AGo-I3-cV3" firstAttribute="leading" secondItem="yJ1-BE-5Hw" secondAttribute="trailing" constant="8" id="Qv6-4f-rSp"/>
+                            <constraint firstItem="yJ1-BE-5Hw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aJe-2V-mGm"/>
+                            <constraint firstItem="AGo-I3-cV3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dKQ-9o-XjK"/>
+                            <constraint firstItem="Ozl-tQ-jyn" firstAttribute="top" secondItem="yJ1-BE-5Hw" secondAttribute="bottom" constant="8" id="hjj-fb-njd"/>
+                            <constraint firstItem="AGo-I3-cV3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="phe-rz-SVD"/>
+                            <constraint firstItem="yJ1-BE-5Hw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vlG-HS-wN3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="radioSelectionButton" destination="Ozl-tQ-jyn" id="Hpd-L3-XRE"/>
+                        <outlet property="radioSelectionLabel" destination="yJ1-BE-5Hw" id="Sty-E0-YEg"/>
+                        <outlet property="radioSelectionValueLabel" destination="AGo-I3-cV3" id="KsZ-2G-2EW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

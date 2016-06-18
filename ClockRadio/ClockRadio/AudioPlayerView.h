@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <StreamingKit/STKAudioPlayer.h>
 
+@class AudioPlayerView;
+
 @interface AudioPlayerView : UIView <STKAudioPlayerDelegate>
 
 @property (nonatomic, readonly, strong) STKAudioPlayer* audioPlayer;

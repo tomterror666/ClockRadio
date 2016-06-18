@@ -7,6 +7,7 @@
 //
 
 #import "AudioPlayerView.h"
+#import "Configuration.h"
 
 @interface AudioPlayerView ()
 @property (nonatomic, strong) UIButton *playButton;
@@ -33,6 +34,7 @@
 	[self.playButton setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
 	[self.playButton setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
 	[self.playButton setTitleColor:[UIColor whiteColor] forState:UIControlStateDisabled];
+	self.playButton.enabled = [Configuration currentConfiguration].currentRadioStationSelected;
 	[self addSubview:self.playButton];
 }
 
@@ -46,7 +48,16 @@
 #pragma mark -
 
 - (void)playButtonTouched:(id)sender {
+	NSLog(@"play button touched!");
 	
+//	NSURL *url = [NSURL URLWithString:@""];
+	NSURL *url = [Configuration currentConfiguration].currentSelectedRadioStationURL;
+	if (url == nil) {
+		url = [NSURL URLWithString:[Configuration currentConfiguration].currentSelectedRadioStationURLString];
+	}
+	
+	STKDataSource* dataSource = [STKAudioPlayer dataSourceFromURL:url];
+	[self.audioPlayer queueDataSource:dataSource withQueueItemId:@0];
 }
 
 #pragma mark -

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		011699B040E230CB5924AAA5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9352A837BB31D0F9F81FEE /* libPods.a */; };
+		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
+		9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */; };
+		9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */; };
 		E8D978D81D12E58100B9D459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978D71D12E58100B9D459 /* main.m */; };
 		E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DA1D12E58100B9D459 /* AppDelegate.m */; };
 		E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DD1D12E58100B9D459 /* MainViewController.m */; };
@@ -39,6 +42,11 @@
 /* Begin PBXFileReference section */
 		29C0AD4BDC7FC239224D4262 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7CEC53F3145706D2936A64CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9E650B8C1D15B800002AD3F1 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		9E650B8D1D15B800002AD3F1 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		9E650B941D15BE8E002AD3F1 /* RadioStationSelectonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioStationSelectonViewController.h; sourceTree = "<group>"; };
+		9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioStationSelectonViewController.m; sourceTree = "<group>"; };
+		9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioStationSelectonViewController.xib; sourceTree = "<group>"; };
 		E8D978D31D12E58100B9D459 /* ClockRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D978D71D12E58100B9D459 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8D978D91D12E58100B9D459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +103,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E650B8B1D15B7CE002AD3F1 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9E650B8C1D15B800002AD3F1 /* Configuration.h */,
+				9E650B8D1D15B800002AD3F1 /* Configuration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		9E650B8F1D15BD2F002AD3F1 /* StationSelection */ = {
+			isa = PBXGroup;
+			children = (
+				9E650B941D15BE8E002AD3F1 /* RadioStationSelectonViewController.h */,
+				9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */,
+				9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */,
+			);
+			path = StationSelection;
+			sourceTree = "<group>";
+		};
+		9E650B901D15BDA8002AD3F1 /* AlarmSelection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AlarmSelection;
+			sourceTree = "<group>";
+		};
 		D3185C6BFBE3C054BF0754AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +162,9 @@
 		E8D978D51D12E58100B9D459 /* ClockRadio */ = {
 			isa = PBXGroup;
 			children = (
+				9E650B901D15BDA8002AD3F1 /* AlarmSelection */,
+				9E650B8B1D15B7CE002AD3F1 /* Configuration */,
+				9E650B8F1D15BD2F002AD3F1 /* StationSelection */,
 				E8D978D91D12E58100B9D459 /* AppDelegate.h */,
 				E8D978DA1D12E58100B9D459 /* AppDelegate.m */,
 				E8D978DC1D12E58100B9D459 /* MainViewController.h */,
@@ -275,6 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */,
 				E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */,
 				E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */,
 				E8D978E11D12E58100B9D459 /* Main.storyboard in Resources */,
@@ -350,9 +388,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
+				9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
