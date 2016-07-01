@@ -47,7 +47,7 @@
 						NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:responseObject
 																					 options:NSJSONReadingAllowFragments
 																					   error:&error];
-						NSLog(responseObject);
+						NSLog(@"%@", responseObject);
 					}];
 }
 

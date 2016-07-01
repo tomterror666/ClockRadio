@@ -9,7 +9,7 @@
 #import "ApiClient.h"
 #import "AFNetworking.h"
 
-static NSString *shoutCastAPIKey = @"shoutcastapikey";
+static NSString *shoutCastAPIKey = @"ia9p4XYXmOPEtXzL";
 
 @interface ApiClient ()
 
@@ -27,7 +27,7 @@ static NSString *shoutCastAPIKey = @"shoutcastapikey";
 		self.manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:self.basePath]
 												sessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
 		self.manager.requestSerializer = [AFJSONRequestSerializer serializerWithWritingOptions:NSJSONWritingPrettyPrinted];
-		self.manager.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
+		self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
 	}
 	return self;
 }
