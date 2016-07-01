@@ -7,6 +7,7 @@
 //
 
 #import "RadioStationSelectonViewController.h"
+#import "StationProvider.h"
 
 static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radioselection.tableviewcellkey";
 
@@ -14,17 +15,47 @@ static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radiose
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UIButton *cancelButton;
+@property (nonatomic, strong) StationProvider *stationProvider;
 
 @end
 
 @implementation RadioStationSelectonViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self != nil) {
+		self.stationProvider = [StationProvider sharedProvider];
+	}
+	return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	[self refreshView];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark -
+#pragma mark data handling and refreshing
+#pragma mark -
+
+- (void)refreshView {
+	[self updateUI];
+	__weak typeof(self) weakSelf = self;
+	[self.stationProvider loadStationsWithCompletion:^(id stationsJson, NSError *error) {
+		[weakSelf updateUI];
+	}];
+}
+
+- (void)updateUI {
+	[self.tableView reloadData];
 }
 
 #pragma mark -
@@ -46,7 +77,7 @@ static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radiose
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 1;
+	return [self.stationProvider numberOfRadioStations];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

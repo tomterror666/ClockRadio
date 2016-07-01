@@ -11,6 +11,9 @@
 		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
 		9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */; };
 		9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */; };
+		9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D817C1D23ECCD0040BDB5 /* Station.m */; };
+		9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D817F1D23ECFB0040BDB5 /* StationProvider.m */; };
+		9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D81831D23F5C20040BDB5 /* ApiClient.m */; };
 		E8D978D81D12E58100B9D459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978D71D12E58100B9D459 /* main.m */; };
 		E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DA1D12E58100B9D459 /* AppDelegate.m */; };
 		E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DD1D12E58100B9D459 /* MainViewController.m */; };
@@ -47,6 +50,12 @@
 		9E650B941D15BE8E002AD3F1 /* RadioStationSelectonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioStationSelectonViewController.h; sourceTree = "<group>"; };
 		9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioStationSelectonViewController.m; sourceTree = "<group>"; };
 		9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioStationSelectonViewController.xib; sourceTree = "<group>"; };
+		9E7D817B1D23ECCD0040BDB5 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		9E7D817C1D23ECCD0040BDB5 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		9E7D817E1D23ECFB0040BDB5 /* StationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationProvider.h; sourceTree = "<group>"; };
+		9E7D817F1D23ECFB0040BDB5 /* StationProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationProvider.m; sourceTree = "<group>"; };
+		9E7D81821D23F5C20040BDB5 /* ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiClient.h; sourceTree = "<group>"; };
+		9E7D81831D23F5C20040BDB5 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiClient.m; sourceTree = "<group>"; };
 		E8D978D31D12E58100B9D459 /* ClockRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D978D71D12E58100B9D459 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8D978D91D12E58100B9D459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +138,40 @@
 			path = AlarmSelection;
 			sourceTree = "<group>";
 		};
+		9E7D81791D23EC4D0040BDB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E7D817B1D23ECCD0040BDB5 /* Station.h */,
+				9E7D817C1D23ECCD0040BDB5 /* Station.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E7D817A1D23EC570040BDB5 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				9E7D817E1D23ECFB0040BDB5 /* StationProvider.h */,
+				9E7D817F1D23ECFB0040BDB5 /* StationProvider.m */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		9E7D81811D23F5600040BDB5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9E7D81821D23F5C20040BDB5 /* ApiClient.h */,
+				9E7D81831D23F5C20040BDB5 /* ApiClient.m */,
+				E8D978D91D12E58100B9D459 /* AppDelegate.h */,
+				E8D978DA1D12E58100B9D459 /* AppDelegate.m */,
+				E8D978DC1D12E58100B9D459 /* MainViewController.h */,
+				E8D978DD1D12E58100B9D459 /* MainViewController.m */,
+				E8D9790A1D12F24000B9D459 /* AudioPlayerView.h */,
+				E8D9790B1D12F24000B9D459 /* AudioPlayerView.m */,
+				E8D978DF1D12E58100B9D459 /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		D3185C6BFBE3C054BF0754AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,14 +207,10 @@
 			children = (
 				9E650B901D15BDA8002AD3F1 /* AlarmSelection */,
 				9E650B8B1D15B7CE002AD3F1 /* Configuration */,
+				9E7D81811D23F5600040BDB5 /* Main */,
+				9E7D81791D23EC4D0040BDB5 /* Model */,
+				9E7D817A1D23EC570040BDB5 /* Provider */,
 				9E650B8F1D15BD2F002AD3F1 /* StationSelection */,
-				E8D978D91D12E58100B9D459 /* AppDelegate.h */,
-				E8D978DA1D12E58100B9D459 /* AppDelegate.m */,
-				E8D978DC1D12E58100B9D459 /* MainViewController.h */,
-				E8D978DD1D12E58100B9D459 /* MainViewController.m */,
-				E8D9790A1D12F24000B9D459 /* AudioPlayerView.h */,
-				E8D9790B1D12F24000B9D459 /* AudioPlayerView.m */,
-				E8D978DF1D12E58100B9D459 /* Main.storyboard */,
 				E8D978E21D12E58100B9D459 /* Assets.xcassets */,
 				E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */,
 				E8D978E71D12E58100B9D459 /* Info.plist */,
@@ -388,11 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */,
 				9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */,
+				9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
 				9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */,
+				9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
