@@ -10,9 +10,13 @@
 
 @interface Station : NSObject
 
-@property (nonatomic, strong) NSString *stationName;
-@property (nonatomic, strong) NSString *stationDescription;
-@property (nonatomic, strong) NSURL *stationURL;
-@property (nonatomic, strong) NSURL *stationImageURL;
+@property (nonatomic, copy, readonly) NSString *stationName;
+@property (nonatomic, copy, readonly) NSString *stationId;
+@property (nonatomic, assign, readonly) NSUInteger stationBitRate;
+@property (nonatomic, copy, readonly) NSString *stationGenre;
+@property (nonatomic, assign, readonly) NSUInteger stationsCurrentListners;
+@property (nonatomic, copy, readonly) NSString *stationMediaType;
+
+- (id)initWithDict:(NSDictionary *)dict;
 
 @end

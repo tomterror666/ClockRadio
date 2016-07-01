@@ -8,6 +8,7 @@
 
 #import "RadioStationSelectonViewController.h"
 #import "StationProvider.h"
+#import "Station.h"
 
 static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radioselection.tableviewcellkey";
 
@@ -93,7 +94,8 @@ static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radiose
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-	cell.textLabel.text = @"Radio Wazee";
+	Station *station = [self.stationProvider radioStationAtIndexPath:indexPath];
+	cell.textLabel.text = station.stationName;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

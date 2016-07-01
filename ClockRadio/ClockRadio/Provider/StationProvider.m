@@ -9,10 +9,15 @@
 #import "StationProvider.h"
 #import "ApiClient.h"
 #import "Station.h"
+#import "XMLReader.h"
 
 @interface StationProvider ()
 
 @property (nonatomic, strong) ApiClient *apiClient;
+@property (nonatomic, copy) NSString *tuneInBase;
+@property (nonatomic, copy) NSString *tuneInBaseM3U;
+@property (nonatomic, copy) NSString *tuneInBaseXSPF;
+@property (nonatomic, strong) NSMutableArray *stations;
 
 @end
 
@@ -40,23 +45,54 @@
 #pragma mark -
 
 - (void)loadStationsWithCompletion:(LoadingStationsCompletion)completion {
+	__weak typeof(self) weakSelf = self;
+	self.stations = [NSMutableArray new];
 	[self.apiClient getDataForPath:@"Top500"
 					withParameters:nil
 					withCompletion:^(id responseObject, NSError *error) {
-						NSError *erro = nil;
-						NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:responseObject
-																					 options:NSJSONReadingAllowFragments
-																					   error:&error];
-						NSLog(@"%@", responseObject);
+						if (error != nil) {
+							if (completion != NULL) {
+								completion(nil, error);
+							}
+						} else {
+							NSError *parseError = nil;
+							NSDictionary *dict = [XMLReader dictionaryForXMLData:responseObject
+																		 options:XMLReaderOptionsProcessNamespaces
+																		   error:&parseError];
+							weakSelf.tuneInBase = [dict valueForKeyPath:@"stationlist.tunein.base"];
+							weakSelf.tuneInBaseM3U = [dict valueForKeyPath:@"stationlist.tunein.base-m3u"];
+							weakSelf.tuneInBaseXSPF = [dict valueForKeyPath:@"stationlist.tunein.base-xspf"];
+							NSArray *stationList = [dict valueForKeyPath:@"stationlist.station"];
+							for (NSDictionary *stationDict in stationList) {
+								Station *station = [[Station alloc] initWithDict:stationDict];
+								[weakSelf.stations addObject:station];
+							}
+							if (completion != NULL) {
+								completion(self.stations, nil);
+							}
+						}
 					}];
 }
 
 - (NSInteger)numberOfRadioStations {
-	return 1;
+	return [self.stations count];
 }
 
 - (Station *)radioStationAtIndexPath:(NSIndexPath *)indexPath {
-	return nil;
+	return [self.stations objectAtIndex:indexPath.row];
+}
+
+
+- (NSString *)tuneinBase {
+	return self.tuneInBase;
+}
+
+- (NSString *)tuneinBaseM3U {
+	return self.tuneInBaseM3U;
+}
+
+- (NSString *)tuneinBaseXSPF {
+	return self.tuneInBaseXSPF;
 }
 
 @end

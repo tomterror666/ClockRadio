@@ -5,5 +5,6 @@ project './ClockRadio/ClockRadio.xcodeproj'
 target 'ClockRadio' do
 	pod 'StreamingKit', '0.1.29'
 	pod 'AFNetworking'
+	pod 'XMLReader-Arc', '1.1'
 end
 
