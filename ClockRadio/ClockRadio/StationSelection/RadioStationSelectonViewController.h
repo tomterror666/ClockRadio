@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class RadioStationSelectonViewController;
+@class Station;
 
 @protocol RadioStationSelectionDelegate <NSObject>
 
-- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURLString:(NSString *)radioStationURLString;
-- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURL:(NSURL *)radioStationURL;
+//- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURLString:(NSString *)radioStationURLString;
+//- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURL:(NSURL *)radioStationURL;
+- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStation:(Station *)station;
 
 - (void)radioStationSelectionVCDidCancelSelecting:(RadioStationSelectonViewController *)controller;
 

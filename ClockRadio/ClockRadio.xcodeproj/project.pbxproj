@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		011699B040E230CB5924AAA5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9352A837BB31D0F9F81FEE /* libPods.a */; };
+		9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */; };
+		9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */; };
 		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
 		9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */; };
 		9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */; };
@@ -48,6 +50,10 @@
 		303B5E1404CFB7F58B839EBC /* Pods-ClockRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadio.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadio/Pods-ClockRadio.release.xcconfig"; sourceTree = "<group>"; };
 		3BE803EB57AD5A7DCE791C1D /* libPods-ClockRadio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEC53F3145706D2936A64CC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9E5E7CBE1D27CDF60001ACD4 /* TuneinProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneinProvider.h; sourceTree = "<group>"; };
+		9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneinProvider.m; sourceTree = "<group>"; };
+		9E5E7CC11D27CF1B0001ACD4 /* StationTuneinDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTuneinDetails.h; sourceTree = "<group>"; };
+		9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTuneinDetails.m; sourceTree = "<group>"; };
 		9E650B8C1D15B800002AD3F1 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		9E650B8D1D15B800002AD3F1 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		9E650B941D15BE8E002AD3F1 /* RadioStationSelectonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioStationSelectonViewController.h; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 			children = (
 				9E7D817B1D23ECCD0040BDB5 /* Station.h */,
 				9E7D817C1D23ECCD0040BDB5 /* Station.m */,
+				9E5E7CC11D27CF1B0001ACD4 /* StationTuneinDetails.h */,
+				9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +167,8 @@
 			children = (
 				9E7D817E1D23ECFB0040BDB5 /* StationProvider.h */,
 				9E7D817F1D23ECFB0040BDB5 /* StationProvider.m */,
+				9E5E7CBE1D27CDF60001ACD4 /* TuneinProvider.h */,
+				9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -443,7 +453,9 @@
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
 				9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */,
 				9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */,
+				9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
+				9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

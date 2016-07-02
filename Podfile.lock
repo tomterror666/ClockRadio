@@ -14,19 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - OGIniFiler (0.1.0)
   - StreamingKit (0.1.29)
   - XMLReader-Arc (1.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - OGIniFiler
   - StreamingKit (= 0.1.29)
   - XMLReader-Arc (= 1.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  OGIniFiler: 55e97526bf064368ecf11466b3ce2360fd793d56
   StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
   XMLReader-Arc: 7832c527346fc26511fd6c05ebcee18008c34d6d
 
-PODFILE CHECKSUM: 99048de508ec6afd82c108a4af1a532b24838429
+PODFILE CHECKSUM: a28da7c2851c06cd3ae489a8a6ce5c32461d3b2e
 
 COCOAPODS: 1.0.1

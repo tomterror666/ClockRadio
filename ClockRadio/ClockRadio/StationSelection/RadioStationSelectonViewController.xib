@@ -30,7 +30,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jOp-hr-di2">
-                    <rect key="frame" x="8" y="8" width="584" height="546"/>
+                    <rect key="frame" x="8" y="28" width="584" height="526"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="MLW-iW-8KG"/>
@@ -42,7 +42,7 @@
             <constraints>
                 <constraint firstItem="jOp-hr-di2" firstAttribute="trailing" secondItem="xHP-RG-uV4" secondAttribute="trailing" id="Dct-rx-qOO"/>
                 <constraint firstItem="jOp-hr-di2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Zkv-ef-SQm"/>
-                <constraint firstItem="jOp-hr-di2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="b1l-z3-m6A"/>
+                <constraint firstItem="jOp-hr-di2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="20" id="b1l-z3-m6A"/>
                 <constraint firstAttribute="bottom" secondItem="xHP-RG-uV4" secondAttribute="bottom" constant="8" id="cqs-PG-vwa"/>
                 <constraint firstAttribute="trailing" secondItem="xHP-RG-uV4" secondAttribute="trailing" constant="8" id="sLn-Eq-bnh"/>
                 <constraint firstItem="xHP-RG-uV4" firstAttribute="top" secondItem="jOp-hr-di2" secondAttribute="bottom" constant="8" symbolic="YES" id="zip-hL-NUT"/>

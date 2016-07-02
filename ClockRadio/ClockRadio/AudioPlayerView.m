@@ -50,7 +50,6 @@
 - (void)playButtonTouched:(id)sender {
 	NSLog(@"play button touched!");
 	
-//	NSURL *url = [NSURL URLWithString:@""];
 	NSURL *url = [Configuration currentConfiguration].currentSelectedRadioStationURL;
 	if (url == nil) {
 		url = [NSURL URLWithString:[Configuration currentConfiguration].currentSelectedRadioStationURLString];

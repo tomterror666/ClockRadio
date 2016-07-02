@@ -35,7 +35,7 @@
 - (id)init {
 	self = [super init];
 	if (self != nil) {
-		self.apiClient = [ApiClient new];
+		self.apiClient = [[ApiClient alloc] initWithBasePath:@"http://api.shoutcast.com/legacy/"];
 	}
 	return self;
 }
@@ -93,6 +93,18 @@
 
 - (NSString *)tuneinBaseXSPF {
 	return self.tuneInBaseXSPF;
+}
+
+- (void)getStationTuneinDataWithStationId:(NSString *)stationId {
+	
+}
+
+- (void)getStationTuneinM3UDataWithStationId:(NSString *)stationId {
+	
+}
+
+- (void)getStationTuneinXSPFDataWithStationId:(NSString *)stationId {
+	
 }
 
 @end

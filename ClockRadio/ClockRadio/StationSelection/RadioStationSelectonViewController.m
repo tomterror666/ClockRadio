@@ -84,7 +84,7 @@ static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radiose
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:radioStationSelectionTableViewCellKey];
 	if (cell == nil) {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:radioStationSelectionTableViewCellKey];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:radioStationSelectionTableViewCellKey];
 	}
 	return cell;
 }
@@ -96,11 +96,16 @@ static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radiose
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	Station *station = [self.stationProvider radioStationAtIndexPath:indexPath];
 	cell.textLabel.text = station.stationName;
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"Genre: %@ - Listeners: %ld", station.stationGenre, (long)station.stationsCurrentListners];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	if ([self.delegate respondsToSelector:@selector(radioStationSelectionVC:didFinishWithRadioStationURLString:)]) {
-		[self.delegate radioStationSelectionVC:self didFinishWithRadioStationURLString:@"http://69.163.40.193:8000"];
+//	if ([self.delegate respondsToSelector:@selector(radioStationSelectionVC:didFinishWithRadioStationURLString:)]) {
+//		[self.delegate radioStationSelectionVC:self didFinishWithRadioStationURLString:@"http://69.163.40.193:8000"];
+//	}
+	if ([self.delegate respondsToSelector:@selector(radioStationSelectionVC:didFinishWithRadioStation:)]) {
+		Station *selectedStation = [self.stationProvider radioStationAtIndexPath:indexPath];
+		[self.delegate radioStationSelectionVC:self didFinishWithRadioStation:selectedStation];
 	}
 }
 

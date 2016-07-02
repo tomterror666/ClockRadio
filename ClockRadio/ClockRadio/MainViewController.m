@@ -10,6 +10,10 @@
 #import "AudioPlayerView.h"
 #import "RadioStationSelectonViewController.h"
 #import "Configuration.h"
+#import "TuneinProvider.h"
+#import "StationProvider.h"
+#import "Station.h"
+#import "StationTuneinDetails.h"
 
 @interface MainViewController () <RadioStationSelectionDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionLabel;
@@ -17,9 +21,20 @@
 @property (nonatomic, weak) IBOutlet UIButton *radioSelectionButton;
 @property (nonatomic, strong) STKAudioPlayer *audioPlayer;
 @property (nonatomic, strong) AudioPlayerView *audioPlayerView;
+@property (nonatomic, strong) TuneinProvider *tuneinProvider;
+@property (nonatomic, strong) StationProvider *stationProvider;
 @end
 
 @implementation MainViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	self = [super initWithCoder:aDecoder];
+	if (self != nil) {
+		self.tuneinProvider = [TuneinProvider sharedProvider];
+		self.stationProvider = [StationProvider sharedProvider];
+	}
+	return self;
+}
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -41,6 +56,9 @@
 }
 
 - (void)addPlayerView {
+	if (self.audioPlayer != nil) {
+		[self.audioPlayer stop];
+	}
 	self.audioPlayer = [[STKAudioPlayer alloc] initWithOptions:(STKAudioPlayerOptions){ .flushQueueOnSeek = YES, .enableVolumeMixer = NO, .equalizerBandFrequencies = {50, 100, 200, 400, 800, 1600, 2600, 16000} }];
 	self.audioPlayer.meteringEnabled = YES;
 	self.audioPlayer.volume = 1;
@@ -74,16 +92,28 @@
 	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURLString:(NSString *)radioStationURLString {
-	[Configuration currentConfiguration].currentSelectedRadioStationURLString = radioStationURLString;
-	[self dismissViewControllerAnimated:YES completion:NULL];
-	[self refreshView];
-}
+//- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURLString:(NSString *)radioStationURLString {
+//	[Configuration currentConfiguration].currentSelectedRadioStationURLString = radioStationURLString;
+//	[self dismissViewControllerAnimated:YES completion:NULL];
+//	[self refreshView];
+//}
+//
+//- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURL:(NSURL *)radioStationURL {
+//	[Configuration currentConfiguration].currentSelectedRadioStationURL = radioStationURL;
+//	[self dismissViewControllerAnimated:YES completion:NULL];
+//	[self refreshView];
+//}
 
-- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURL:(NSURL *)radioStationURL {
-	[Configuration currentConfiguration].currentSelectedRadioStationURL = radioStationURL;
-	[self dismissViewControllerAnimated:YES completion:NULL];
-	[self refreshView];
+- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStation:(Station *)station {
+	__weak typeof(self) weakSelf = self;
+	[self dismissViewControllerAnimated:YES completion:^{
+		[weakSelf.tuneinProvider loadTuneinDataWithStationId:station.stationId
+											   forTuneinBase:self.stationProvider.tuneinBase
+											  withCompletion:^(id tuneinData, NSError *error) {
+												  [Configuration currentConfiguration].currentSelectedRadioStationURLString = weakSelf.tuneinProvider.tuneinDetails.fileURLStrings[0];
+												  [weakSelf refreshView];
+											  }];
+	}];
 }
 
 @end

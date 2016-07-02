@@ -9,7 +9,7 @@
 #import "ApiClient.h"
 #import "AFNetworking.h"
 
-static NSString *shoutCastAPIKey = @"ia9p4XYXmOPEtXzL";
+static NSString *shoutCastAPIKey = @"3HJTEDumwHA9D1GU";
 
 @interface ApiClient ()
 
@@ -20,10 +20,10 @@ static NSString *shoutCastAPIKey = @"ia9p4XYXmOPEtXzL";
 
 @implementation ApiClient
 
-- (id)init {
+- (id)initWithBasePath:(NSString *)basePath {
 	self = [super init];
 	if (self != nil) {
-		self.basePath = @"http://api.shoutcast.com/legacy/";
+		self.basePath = basePath;
 		self.manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:self.basePath]
 												sessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
 		self.manager.requestSerializer = [AFJSONRequestSerializer serializerWithWritingOptions:NSJSONWritingPrettyPrinted];
@@ -56,11 +56,11 @@ static NSString *shoutCastAPIKey = @"ia9p4XYXmOPEtXzL";
 - (NSString *)buildRequestPathWithPath:(NSString *)path {
 	NSString *resultPath = nil;
 	if ([path rangeOfString:@"?"].location != NSNotFound) {
-		resultPath = [path stringByAppendingFormat:@"&f=json&k=%@", shoutCastAPIKey];
+		resultPath = [path stringByAppendingFormat:@"&k=%@", shoutCastAPIKey];
 	} else if ([path hasPrefix:@"/"]) {
-		resultPath = [[path substringToIndex:[path length] - 1] stringByAppendingFormat:@"?f=json&k=%@", shoutCastAPIKey];
+		resultPath = [[path substringToIndex:[path length] - 1] stringByAppendingFormat:@"?k=%@", shoutCastAPIKey];
 	} else {
-		resultPath = [path stringByAppendingFormat:@"?f=json&k=%@", shoutCastAPIKey];
+		resultPath = [path stringByAppendingFormat:@"?k=%@", shoutCastAPIKey];
 	}
 	return resultPath;
 }

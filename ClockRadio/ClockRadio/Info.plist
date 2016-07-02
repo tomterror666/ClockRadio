@@ -39,6 +39,17 @@
 				<key>NSIncludesSubdomains</key>
 				<true/>
 			</dict>
+			<key>yp.shoutcast.com</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSExceptionMinimumTLSVersion</key>
+				<string>TLSv1.2</string>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
 		</dict>
 	</dict>
 	<key>UILaunchStoryboardName</key>

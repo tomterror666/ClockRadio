@@ -12,6 +12,8 @@ typedef void(^RequestCompletion)(id responseObject, NSError *error);
 
 @interface ApiClient : NSObject
 
+- (id)initWithBasePath:(NSString *)basePath;
+
 - (void)getDataForPath:(NSString *)path withParameters:(NSDictionary *)params withCompletion:(RequestCompletion)completion;
 
 @end

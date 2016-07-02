@@ -1,0 +1,1 @@
+../../../OGIniFiler/Pod/Classes/OGIniFileSerialization.h
