@@ -13,6 +13,8 @@
 @property (nonatomic, strong) NSURL *currentSelectedRadioStationURL;
 @property (nonatomic, strong) NSString *currentSelectedRadioStationURLString;
 @property (nonatomic, assign, readonly) BOOL currentRadioStationSelected;
+@property (nonatomic, strong) NSDate *currentAlarmDate;
+@property (nonatomic, assign, readonly) BOOL currentAlarmDateSelected;
 
 + (Configuration *)currentConfiguration;
 

@@ -9,16 +9,20 @@
 #import "MainViewController.h"
 #import "AudioPlayerView.h"
 #import "RadioStationSelectonViewController.h"
+#import "AlarmSelectionViewController.h"
 #import "Configuration.h"
 #import "TuneinProvider.h"
 #import "StationProvider.h"
 #import "Station.h"
 #import "StationTuneinDetails.h"
 
-@interface MainViewController () <RadioStationSelectionDelegate>
+@interface MainViewController () <RadioStationSelectionDelegate, AlarmSelectionDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionLabel;
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionValueLabel;
 @property (nonatomic, weak) IBOutlet UIButton *radioSelectionButton;
+@property (nonatomic, weak) IBOutlet UILabel *alarmSelectionLabel;
+@property (nonatomic, weak) IBOutlet UILabel *alarmSelectionValueLabel;
+@property (nonatomic, weak) IBOutlet UIButton *alarmSelectionButton;
 @property (nonatomic, strong) STKAudioPlayer *audioPlayer;
 @property (nonatomic, strong) AudioPlayerView *audioPlayerView;
 @property (nonatomic, strong) TuneinProvider *tuneinProvider;
@@ -53,6 +57,7 @@
 - (void)refreshView {
 	[self addPlayerView];
 	self.radioSelectionValueLabel.text = [Configuration currentConfiguration].currentSelectedRadioStationURLString;
+	self.alarmSelectionValueLabel.text = [[Configuration currentConfiguration].currentAlarmDate descriptionWithLocale:[NSLocale currentLocale]];
 }
 
 - (void)addPlayerView {
@@ -80,6 +85,12 @@
 
 - (IBAction)radioSelectionButtonTouched:(id)sender {
 	RadioStationSelectonViewController *controller = [[RadioStationSelectonViewController alloc] initWithNibName:@"RadioStationSelectonViewController" bundle:nil];
+	controller.delegate = self;
+	[self presentViewController:controller animated:YES completion:NULL];
+}
+
+- (IBAction)alarmSelectionButtonTouched:(id)sender {
+	AlarmSelectionViewController *controller = [[AlarmSelectionViewController alloc] initWithNibName:@"AlarmSelectionViewController" bundle:nil];
 	controller.delegate = self;
 	[self presentViewController:controller animated:YES completion:NULL];
 }
@@ -114,6 +125,22 @@
 												  [weakSelf refreshView];
 											  }];
 	}];
+}
+
+#pragma mark -
+#pragma mark AlarmSelectionDelegate
+#pragma mark -
+
+- (void)alarmSelectionVC:(AlarmSelectionViewController *)controller didFinishWithAlarmDate:(NSDate *)date {
+	__weak typeof(self) weakSelf = self;
+	[self dismissViewControllerAnimated:YES completion:^{
+		[Configuration currentConfiguration].currentAlarmDate = date;
+		[weakSelf refreshView];
+	}];
+}
+
+- (void)alarmSelectonVCDidCancel:(AlarmSelectionViewController *)controller {
+	[self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end

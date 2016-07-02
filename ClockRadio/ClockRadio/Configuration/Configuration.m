@@ -10,6 +10,7 @@
 
 static NSString *currentSelectedRadioStationURLStringKey = @"com.tomterror.currentConfig.selectedRadioURLString";
 static NSString *currentSelectedRadioStationURLKey = @"com.tomterror.currentConfig.selectedRadioURL";
+static NSString *currentSelectedAlarmDateKey = @"com.tomterror.currentConfig.selectedAlarmDate";
 
 @interface Configuration ()
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
@@ -66,6 +67,18 @@ static NSString *currentSelectedRadioStationURLKey = @"com.tomterror.currentConf
 
 - (BOOL)currentRadioStationSelected {
 	return ([self.currentSelectedRadioStationURLString length] > 0) || ([[self.currentSelectedRadioStationURL absoluteString] length] > 0);
+}
+
+- (NSDate *)currentAlarmDate {
+	return [self.userDefaults objectForKey:currentSelectedAlarmDateKey];
+}
+
+- (void)setCurrentAlarmDate:(NSDate *)currentAlarmDate {
+	[self.userDefaults setObject:currentAlarmDate forKey:currentSelectedAlarmDateKey];
+}
+
+- (BOOL)currentAlarmDateSelected {
+	return self.currentAlarmDate != nil;
 }
 
 @end

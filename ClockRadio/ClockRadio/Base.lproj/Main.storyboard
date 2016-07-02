@@ -48,19 +48,58 @@
                                     <action selector="radioSelectionButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H6k-p4-7dS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Alarm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLj-Dg-tDD">
+                                <rect key="frame" x="20" y="87" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="ihJ-1q-Lbr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFW-OJ-Vvk">
+                                <rect key="frame" x="191" y="87" width="389" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="i1K-b1-YhU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTH-Of-cAy">
+                                <rect key="frame" x="20" y="116" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="EWc-Ie-cNL"/>
+                                    <constraint firstAttribute="height" constant="30" id="haQ-Sc-JAV"/>
+                                </constraints>
+                                <state key="normal" title="Select another"/>
+                                <connections>
+                                    <action selector="alarmSelectionButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oti-7w-Dh0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PLj-Dg-tDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="54v-UO-jyL"/>
                             <constraint firstItem="Ozl-tQ-jyn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Isx-Co-bLQ"/>
+                            <constraint firstItem="MFW-OJ-Vvk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="M7G-KE-XDG"/>
+                            <constraint firstItem="PLj-Dg-tDD" firstAttribute="top" secondItem="Ozl-tQ-jyn" secondAttribute="bottom" constant="8" id="PmX-jU-GdL"/>
+                            <constraint firstItem="MFW-OJ-Vvk" firstAttribute="top" secondItem="AGo-I3-cV3" secondAttribute="bottom" constant="46" id="QLY-cq-z70"/>
                             <constraint firstItem="AGo-I3-cV3" firstAttribute="leading" secondItem="yJ1-BE-5Hw" secondAttribute="trailing" constant="8" id="Qv6-4f-rSp"/>
                             <constraint firstItem="yJ1-BE-5Hw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aJe-2V-mGm"/>
                             <constraint firstItem="AGo-I3-cV3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dKQ-9o-XjK"/>
                             <constraint firstItem="Ozl-tQ-jyn" firstAttribute="top" secondItem="yJ1-BE-5Hw" secondAttribute="bottom" constant="8" id="hjj-fb-njd"/>
+                            <constraint firstItem="MFW-OJ-Vvk" firstAttribute="leading" secondItem="PLj-Dg-tDD" secondAttribute="trailing" constant="8" id="p5d-Ud-C39"/>
                             <constraint firstItem="AGo-I3-cV3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="phe-rz-SVD"/>
+                            <constraint firstItem="fTH-Of-cAy" firstAttribute="top" secondItem="PLj-Dg-tDD" secondAttribute="bottom" constant="8" id="pyS-N4-seV"/>
+                            <constraint firstItem="fTH-Of-cAy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t3f-qB-jA7"/>
                             <constraint firstItem="yJ1-BE-5Hw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vlG-HS-wN3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alarmSelectionButton" destination="fTH-Of-cAy" id="Lgz-ld-Ihp"/>
+                        <outlet property="alarmSelectionLabel" destination="PLj-Dg-tDD" id="yzm-BL-w9d"/>
+                        <outlet property="alarmSelectionValueLabel" destination="MFW-OJ-Vvk" id="1dt-ID-oNZ"/>
                         <outlet property="radioSelectionButton" destination="Ozl-tQ-jyn" id="Hpd-L3-XRE"/>
                         <outlet property="radioSelectionLabel" destination="yJ1-BE-5Hw" id="Sty-E0-YEg"/>
                         <outlet property="radioSelectionValueLabel" destination="AGo-I3-cV3" id="KsZ-2G-2EW"/>
