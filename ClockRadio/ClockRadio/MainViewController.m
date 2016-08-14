@@ -6,6 +6,7 @@
 //  Copyright © 2016 Andre Hess. All rights reserved.
 //
 
+#import <EventKit/EventKit.h>
 #import "MainViewController.h"
 #import "AudioPlayerView.h"
 #import "RadioStationSelectonViewController.h"
@@ -15,6 +16,8 @@
 #import "StationProvider.h"
 #import "Station.h"
 #import "StationTuneinDetails.h"
+
+#define LocalNotificationInfoDateKey @"LocalNotificationInfoDateKey"
 
 @interface MainViewController () <RadioStationSelectionDelegate, AlarmSelectionDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionLabel;
@@ -58,13 +61,23 @@
 	[self addPlayerView];
 	self.radioSelectionValueLabel.text = [Configuration currentConfiguration].currentSelectedRadioStationURLString;
 	self.alarmSelectionValueLabel.text = [[Configuration currentConfiguration].currentAlarmDate descriptionWithLocale:[NSLocale currentLocale]];
+	if ([Configuration currentConfiguration].shouldPlayImmediately) {
+		[Configuration currentConfiguration].playImmediately = NO;
+		NSURL *url = [Configuration currentConfiguration].currentSelectedRadioStationURL;
+		if (url == nil) {
+			url = [NSURL URLWithString:[Configuration currentConfiguration].currentSelectedRadioStationURLString];
+		}
+		
+		STKDataSource* dataSource = [STKAudioPlayer dataSourceFromURL:url];
+		[self.audioPlayer queueDataSource:dataSource withQueueItemId:@0];
+	}
 }
 
 - (void)addPlayerView {
 	if (self.audioPlayer != nil) {
 		[self.audioPlayer stop];
 	}
-	self.audioPlayer = [[STKAudioPlayer alloc] initWithOptions:(STKAudioPlayerOptions){ .flushQueueOnSeek = YES, .enableVolumeMixer = NO, .equalizerBandFrequencies = {50, 100, 200, 400, 800, 1600, 2600, 16000} }];
+	self.audioPlayer = [[STKAudioPlayer alloc] initWithOptions:(STKAudioPlayerOptions){ .flushQueueOnSeek = YES, .enableVolumeMixer = YES, .equalizerBandFrequencies = {50, 100, 200, 400, 800, 1600, 2600, 16000} }];
 	self.audioPlayer.meteringEnabled = YES;
 	self.audioPlayer.volume = 1;
 	
@@ -131,16 +144,45 @@
 #pragma mark AlarmSelectionDelegate
 #pragma mark -
 
+- (void)alarmSelectonVCDidCancel:(AlarmSelectionViewController *)controller {
+	[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 - (void)alarmSelectionVC:(AlarmSelectionViewController *)controller didFinishWithAlarmDate:(NSDate *)date {
 	__weak typeof(self) weakSelf = self;
 	[self dismissViewControllerAnimated:YES completion:^{
 		[Configuration currentConfiguration].currentAlarmDate = date;
 		[weakSelf refreshView];
+		[weakSelf createLocalNotificationForDate:date];
 	}];
 }
 
-- (void)alarmSelectonVCDidCancel:(AlarmSelectionViewController *)controller {
-	[self dismissViewControllerAnimated:YES completion:NULL];
+- (void)registerForLocalNotifications {
+	UIUserNotificationType types = (UIUserNotificationType) (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert);
+	UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
+	[[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+}
+
+- (void)createLocalNotificationForDate:(NSDate *)date {
+	//if ([[UIApplication sharedApplication] currentUserNotificationSettings] == nil) {
+		[self registerForLocalNotifications];
+	//}
+	
+	UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+	if (localNotif == nil) {
+		return;
+	}
+	
+	localNotif.fireDate = date;
+	localNotif.timeZone = [NSTimeZone defaultTimeZone];
+	localNotif.alertBody = @"Aufwachen!";
+	localNotif.alertAction = @"Jetzt!";
+	localNotif.alertTitle = @"Wirklich!";
+	localNotif.soundName = UILocalNotificationDefaultSoundName;
+	localNotif.applicationIconBadgeNumber = 1;
+	localNotif.userInfo = @{LocalNotificationInfoDateKey: date};
+	
+ 	[[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
 }
 
 @end

@@ -15,6 +15,7 @@
 @property (nonatomic, assign, readonly) BOOL currentRadioStationSelected;
 @property (nonatomic, strong) NSDate *currentAlarmDate;
 @property (nonatomic, assign, readonly) BOOL currentAlarmDateSelected;
+@property (nonatomic, assign, getter=shouldPlayImmediately) BOOL playImmediately;
 
 + (Configuration *)currentConfiguration;
 

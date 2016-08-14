@@ -83,6 +83,7 @@
 - (void)updateUI {
 	self.playButton.enabled = [Configuration currentConfiguration].currentRadioStationSelected && (self.audioPlayer.state != STKAudioPlayerStatePlaying);
 	self.stopButton.enabled = [Configuration currentConfiguration].currentRadioStationSelected && (self.audioPlayer.state == STKAudioPlayerStatePlaying);
+	[self.muteButton setTitle:self.audioPlayer.muted ? @"Unmute" : @"Mute" forState:UIControlStateNormal];
 }
 
 #pragma mark -
@@ -137,9 +138,14 @@
 }
 
 - (void)muteButtonTouched:(id)sender {
-	NSLog(@"stop button touched!");
-	self.audioPlayer.volume = 0;
-	[self.audioPlayer mute];
+	NSLog(@"mute button touched!");
+	//self.audioPlayer.volume = 0;
+	if (self.audioPlayer.muted) {
+		[self.audioPlayer unmute];
+	} else {
+		[self.audioPlayer mute];
+	}
+	[self updateUI];
 }
 
 - (void)volumeSliderDidChanged:(id)sender {

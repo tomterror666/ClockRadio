@@ -11,6 +11,7 @@
 static NSString *currentSelectedRadioStationURLStringKey = @"com.tomterror.currentConfig.selectedRadioURLString";
 static NSString *currentSelectedRadioStationURLKey = @"com.tomterror.currentConfig.selectedRadioURL";
 static NSString *currentSelectedAlarmDateKey = @"com.tomterror.currentConfig.selectedAlarmDate";
+static NSString *playImmediatelyKey = @"com.tomterror.currentConfig.playImmediately";
 
 @interface Configuration ()
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
@@ -79,6 +80,14 @@ static NSString *currentSelectedAlarmDateKey = @"com.tomterror.currentConfig.sel
 
 - (BOOL)currentAlarmDateSelected {
 	return self.currentAlarmDate != nil;
+}
+
+- (void)setPlayImmediately:(BOOL)playImmediately {
+	[self.userDefaults setBool:playImmediatelyKey forKey:playImmediatelyKey];
+}
+
+- (BOOL)shouldPlayImmediately {
+	return [self.userDefaults boolForKey:playImmediatelyKey];
 }
 
 @end
