@@ -178,7 +178,8 @@
 	localNotif.alertBody = @"Aufwachen!";
 	localNotif.alertAction = @"Jetzt!";
 	localNotif.alertTitle = @"Wirklich!";
-	localNotif.soundName = UILocalNotificationDefaultSoundName;
+	//localNotif.soundName = UILocalNotificationDefaultSoundName;
+	localNotif.soundName = @"Gipfel";
 	localNotif.applicationIconBadgeNumber = 1;
 	localNotif.userInfo = @{LocalNotificationInfoDateKey: date};
 	

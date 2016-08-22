@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */; };
+		9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */; };
+		9E5200A11D6B7C94007A7A57 /* SoundSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */; };
+		9E5200A51D6B8650007A7A57 /* SoundSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5200A31D6B8650007A7A57 /* SoundSelectionCell.m */; };
+		9E5200A61D6B8650007A7A57 /* SoundSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */; };
 		9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */; };
 		9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */; };
 		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
@@ -53,6 +58,14 @@
 /* Begin PBXFileReference section */
 		583E586C1114A54F1D1DCA7B /* Pods-ClockRadioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E5200991D6B7020007A7A57 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		9E52009D1D6B7C94007A7A57 /* SoundSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundSelectionViewController.h; sourceTree = "<group>"; };
+		9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionViewController.m; sourceTree = "<group>"; };
+		9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundSelectionViewController.xib; sourceTree = "<group>"; };
+		9E5200A21D6B8650007A7A57 /* SoundSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundSelectionCell.h; sourceTree = "<group>"; };
+		9E5200A31D6B8650007A7A57 /* SoundSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionCell.m; sourceTree = "<group>"; };
+		9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundSelectionCell.xib; sourceTree = "<group>"; };
 		9E5E7CBE1D27CDF60001ACD4 /* TuneinProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneinProvider.h; sourceTree = "<group>"; };
 		9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneinProvider.m; sourceTree = "<group>"; };
 		9E5E7CC11D27CF1B0001ACD4 /* StationTuneinDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTuneinDetails.h; sourceTree = "<group>"; };
@@ -84,9 +97,9 @@
 		E8D978DC1D12E58100B9D459 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E8D978DD1D12E58100B9D459 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E8D978E01D12E58100B9D459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8D978E21D12E58100B9D459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8D978E21D12E58100B9D459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ClockRadio/Assets.xcassets; sourceTree = "<group>"; };
 		E8D978E51D12E58100B9D459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E8D978E71D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D978E71D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ClockRadio/Info.plist; sourceTree = "<group>"; };
 		E8D978EC1D12E58100B9D459 /* ClockRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D978F01D12E58100B9D459 /* ClockRadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockRadioTests.m; sourceTree = "<group>"; };
 		E8D978F21D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +143,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E5200981D6B6FDC007A7A57 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9E5200991D6B7020007A7A57 /* NSDate+Utility.h */,
+				9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9E52009C1D6B7C1E007A7A57 /* SoundSelection */ = {
+			isa = PBXGroup;
+			children = (
+				9E5200A21D6B8650007A7A57 /* SoundSelectionCell.h */,
+				9E5200A31D6B8650007A7A57 /* SoundSelectionCell.m */,
+				9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */,
+				9E52009D1D6B7C94007A7A57 /* SoundSelectionViewController.h */,
+				9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */,
+				9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */,
+			);
+			path = SoundSelection;
+			sourceTree = "<group>";
+		};
+		9E5200A71D6B9175007A7A57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E5200A81D6B99E1007A7A57 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E5200A81D6B99E1007A7A57 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		9E650B8B1D15B7CE002AD3F1 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +277,9 @@
 			isa = PBXGroup;
 			children = (
 				E8D978D51D12E58100B9D459 /* ClockRadio */,
+				E8D978E21D12E58100B9D459 /* Assets.xcassets */,
+				E8D978E71D12E58100B9D459 /* Info.plist */,
+				E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */,
 				E8D978EF1D12E58100B9D459 /* ClockRadioTests */,
 				E8D978FA1D12E58100B9D459 /* ClockRadioUITests */,
 				E8D978D41D12E58100B9D459 /* Products */,
@@ -253,11 +306,11 @@
 				9E7D81811D23F5600040BDB5 /* Main */,
 				9E7D81791D23EC4D0040BDB5 /* Model */,
 				9E7D817A1D23EC570040BDB5 /* Provider */,
+				9E5200A71D6B9175007A7A57 /* Resources */,
+				9E52009C1D6B7C1E007A7A57 /* SoundSelection */,
 				9E650B8F1D15BD2F002AD3F1 /* StationSelection */,
-				E8D978E21D12E58100B9D459 /* Assets.xcassets */,
-				E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */,
-				E8D978E71D12E58100B9D459 /* Info.plist */,
 				E8D978D61D12E58100B9D459 /* Supporting Files */,
+				9E5200981D6B6FDC007A7A57 /* Utility */,
 			);
 			path = ClockRadio;
 			sourceTree = "<group>";
@@ -404,7 +457,9 @@
 				9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */,
 				E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */,
 				E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */,
+				9E5200A11D6B7C94007A7A57 /* SoundSelectionViewController.xib in Resources */,
 				E8D978E11D12E58100B9D459 /* Main.storyboard in Resources */,
+				9E5200A61D6B8650007A7A57 /* SoundSelectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,13 +612,16 @@
 				9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */,
 				9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
+				9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
 				9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */,
 				9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */,
+				9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */,
 				9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
 				9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */,
+				9E5200A51D6B8650007A7A57 /* SoundSelectionCell.m in Sources */,
 				9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +672,7 @@
 				E8D978E51D12E58100B9D459 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ClockRadio;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
