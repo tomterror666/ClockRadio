@@ -8,13 +8,14 @@
 
 #import "SoundSelectionViewController.h"
 #import "SoundSelectionCell.h"
+#import "Sound.h"
 
 @interface SoundSelectionViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
-@property (nonatomic, strong) NSArray *soundFileNames;
-@property (nonatomic, strong) NSArray *programmSoundFileNames;
+@property (nonatomic, strong) NSMutableArray *soundFiles;
+@property (nonatomic, strong) NSMutableArray *programmSoundFiles;
 @end
 
 @implementation SoundSelectionViewController
@@ -34,10 +35,20 @@
 
 - (void)refreshView {
 	[self configureTableView];
+	[self loadProgrammSounds];
 }
 
 - (void)configureTableView {
 	[self.tableView registerNib:[UINib nibWithNibName:@"SoundSelectionCell" bundle:nil] forCellReuseIdentifier:SoundSelectionCellIdentifier];
+}
+
+- (void)loadProgrammSounds {
+	self.programmSoundFiles = [NSMutableArray new];
+	NSArray<NSURL *> *soundUrls = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"mp3" subdirectory:nil];
+	for (NSURL *soundURL in soundUrls) {
+		Sound *sound = [[Sound alloc] initWithURL:soundURL];
+		[self.programmSoundFiles addObject:sound];
+	}
 }
 
 #pragma mark -
@@ -52,14 +63,14 @@
 
 - (IBAction)doneButtonTouched:(id)sender {
 	NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
-	NSString *selectedSoundName = nil;
+	Sound *selectedSound = nil;
 	if (selectedIndexPath.section == 0) {
-		selectedSoundName = self.programmSoundFileNames[selectedIndexPath.row];
+		selectedSound = self.programmSoundFiles[selectedIndexPath.row];
 	} else {
-		selectedIndexPath = self.soundFileNames[selectedIndexPath.row];
+		selectedIndexPath = self.soundFiles[selectedIndexPath.row];
 	}
-	if ([self.delegate respondsToSelector:@selector(soundSelectionViewController:didFinishWithSoundName:)]) {
-		[self.delegate soundSelectionViewController:self didFinishWithSoundName:selectedSoundName];
+	if ([self.delegate respondsToSelector:@selector(soundSelectionViewController:didFinishWithSound:)]) {
+		[self.delegate soundSelectionViewController:self didFinishWithSound:selectedSound];
 	}
 }
 
@@ -68,11 +79,11 @@
 #pragma mark -
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	return [self.soundFileNames count] > 0 ? 2 : 1;
+	return [self.soundFiles count] > 0 ? 2 : 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return section == 0 ? [self.programmSoundFileNames count] : [self.soundFileNames count];
+	return section == 0 ? [self.programmSoundFiles count] : [self.soundFiles count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -84,10 +95,10 @@
 	SoundSelectionCell *soundSelectionCell = (SoundSelectionCell *)cell;
 	switch (indexPath.section) {
   		case 0:
-			[soundSelectionCell updateWithSoundName:self.programmSoundFileNames[indexPath.row]];
+			[soundSelectionCell updateWithSound:self.programmSoundFiles[indexPath.row]];
 			break;
 		case 1:
-			[soundSelectionCell updateWithSoundName:self.soundFileNames[indexPath.row]];
+			[soundSelectionCell updateWithSound:self.soundFiles[indexPath.row]];
 			break;
   		default:
 			break;

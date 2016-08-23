@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Sound;
+
 @interface SoundSelectionCell : UITableViewCell
 
-- (void)updateWithSoundName:(NSString *)soundName;
+- (void)updateWithSound:(Sound *)sound;
 
 @end

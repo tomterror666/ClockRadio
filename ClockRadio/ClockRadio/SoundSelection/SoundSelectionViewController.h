@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define SoundSelectionCellIdentifier @"com.tomterror.soundselection.tableviewcellkey"
+@class Sound;
 
 @class SoundSelectionViewController;
 
@@ -16,7 +17,7 @@
 
 - (void)soundSelectionViewControllerDidCancel:(SoundSelectionViewController *)controller;
 
-- (void)soundSelectionViewController:(SoundSelectionViewController *)controller didFinishWithSoundName:(NSString *)soundName;
+- (void)soundSelectionViewController:(SoundSelectionViewController *)controller didFinishWithSound:(Sound *)sound;
 
 @end
 
