@@ -6,6 +6,7 @@
 //  Copyright © 2016 Andre Hess. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "SoundSelectionViewController.h"
 #import "SoundSelectionCell.h"
 #import "Sound.h"
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *doneButton;
 @property (nonatomic, strong) NSMutableArray *soundFiles;
 @property (nonatomic, strong) NSMutableArray *programmSoundFiles;
+@property (nonatomic, strong) AVAudioPlayer *audioPlayer;
 @end
 
 @implementation SoundSelectionViewController
@@ -107,6 +109,25 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	return 50.;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	Sound *sound = indexPath.section == 0 ? self.programmSoundFiles[indexPath.row] : self.soundFiles[indexPath.row];
+	[self playSoundWithURL:sound.soundURL];
+}
+
+#pragma mark -
+#pragma mark Play selected sound
+#pragma mark -
+
+- (void)playSoundWithURL:(NSURL *)url {
+	if (self.audioPlayer.playing) {
+		[self.audioPlayer stop];
+		return;
+	}
+	self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: url error: nil];
+	[self.audioPlayer prepareToPlay];
+	[self.audioPlayer play];
 }
 
 @end

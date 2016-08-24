@@ -192,7 +192,7 @@
 	localNotif.alertBody = @"Aufwachen!";
 	localNotif.alertAction = @"Jetzt!";
 	localNotif.alertTitle = @"Wirklich!";
-	localNotif.soundName = currentSound != nil ? currentSound.soundName : UILocalNotificationDefaultSoundName;
+	localNotif.soundName = currentSound != nil ? currentSound.soundFullName : UILocalNotificationDefaultSoundName;
 	localNotif.applicationIconBadgeNumber = 1;
 	localNotif.userInfo = @{LocalNotificationInfoDateKey: date};
 	

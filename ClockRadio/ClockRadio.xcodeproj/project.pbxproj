@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E240FB61D6DEE6300A645D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */; };
+		9E240FB71D6DEE6300A645D6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E240FB51D6DEE6300A645D6 /* AVKit.framework */; };
 		9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */; };
 		9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */; };
 		9E5200A11D6B7C94007A7A57 /* SoundSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */; };
@@ -17,7 +19,6 @@
 		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
 		9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */; };
 		9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */; };
-		9E72D6CF1D3EB70B00D7B49C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E72D6CE1D3EB70B00D7B49C /* EventKit.framework */; };
 		9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D817C1D23ECCD0040BDB5 /* Station.m */; };
 		9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D817F1D23ECFB0040BDB5 /* StationProvider.m */; };
 		9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D81831D23F5C20040BDB5 /* ApiClient.m */; };
@@ -76,6 +77,8 @@
 /* Begin PBXFileReference section */
 		583E586C1114A54F1D1DCA7B /* Pods-ClockRadioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E240FB51D6DEE6300A645D6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		9E5200991D6B7020007A7A57 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
 		9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
 		9E52009D1D6B7C94007A7A57 /* SoundSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundSelectionViewController.h; sourceTree = "<group>"; };
@@ -156,7 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E72D6CF1D3EB70B00D7B49C /* EventKit.framework in Frameworks */,
+				9E240FB61D6DEE6300A645D6 /* AVFoundation.framework in Frameworks */,
+				9E240FB71D6DEE6300A645D6 /* AVKit.framework in Frameworks */,
 				EAC213EC49190E565884046D /* libPods-ClockRadio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +325,8 @@
 		B66429AACB7793CCF395ECD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */,
+				9E240FB51D6DEE6300A645D6 /* AVKit.framework */,
 				9E72D6CE1D3EB70B00D7B49C /* EventKit.framework */,
 				C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */,
 				B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */,

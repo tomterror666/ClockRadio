@@ -11,8 +11,10 @@
 @interface Sound : NSObject <NSCoding, NSCopying>
 
 @property (nonatomic, strong, readonly) NSString *soundName;
+@property (nonatomic, strong, readonly) NSString *soundExt;
 @property (nonatomic, strong, readonly) NSURL *soundURL;
 @property (nonatomic, strong, readonly) NSData *soundData;
+@property (nonatomic, strong, readonly) NSString *soundFullName;
 
 - (id)initWithURL:(NSURL *)url;
 

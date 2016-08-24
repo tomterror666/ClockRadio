@@ -11,10 +11,12 @@
 #define SoundNameKey @"SoundNameKey"
 #define SoundURLKey @"SoundURLKey"
 #define SoundDataKey @"SoundDataKey"
+#define SoundExtKey @"SoundExtKey"
 
 @interface Sound ()
 
 @property (nonatomic, strong) NSString *soundName;
+@property (nonatomic, strong) NSString *soundExt;
 @property (nonatomic, strong) NSURL *soundURL;
 @property (nonatomic, strong) NSData *soundData;
 
@@ -34,7 +36,9 @@
 
 - (void)configureSoundName {
 	NSString *soundPath = self.soundURL.path;
-	self.soundName = [soundPath.lastPathComponent stringByReplacingOccurrencesOfString:soundPath.pathExtension withString:@""];
+	soundPath = soundPath.lastPathComponent;
+	self.soundName = [soundPath stringByDeletingPathExtension];
+	self.soundExt = soundPath.pathExtension;
 }
 
 - (void)loadSoundData {
@@ -51,6 +55,7 @@
 		self.soundName = [aDecoder decodeObjectForKey:SoundNameKey];
 		self.soundURL = [aDecoder decodeObjectForKey:SoundURLKey];
 		self.soundData = [aDecoder decodeObjectForKey:SoundDataKey];
+		self.soundExt = [aDecoder decodeObjectForKey:SoundExtKey];
 	}
 	return self;
 }
@@ -59,6 +64,7 @@
 	[aCoder encodeObject:self.soundName forKey:SoundNameKey];
 	[aCoder encodeObject:self.soundURL forKey:SoundURLKey];
 	[aCoder encodeObject:self.soundData forKey:SoundDataKey];
+	[aCoder encodeObject:self.soundExt forKey:SoundExtKey];
 }
 
 #pragma mark -
@@ -71,8 +77,17 @@
 		newOne.soundName = [self.soundName copyWithZone:zone];
 		newOne.soundURL = [self.soundURL copyWithZone:zone];
 		newOne.soundData = [self.soundData copyWithZone:zone];
+		newOne.soundExt = [self.soundExt copyWithZone:zone];
 	}
 	return newOne;
+}
+
+#pragma mark -
+#pragma mark Property handling
+#pragma mark -
+
+- (NSString *)soundFullName {
+	return [self.soundName stringByAppendingPathExtension:self.soundExt];
 }
 
 @end
