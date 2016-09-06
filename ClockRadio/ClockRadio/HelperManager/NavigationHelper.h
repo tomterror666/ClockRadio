@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@class MainViewController;
 
 @interface NavigationHelper : NSObject
+
++ (id)sharedHelper;
++ (MainViewController *)mainController;
++ (UIViewController *)visiblePhoneViewController;
++ (void)popToMainViewControllerAnimated:(BOOL)animated;
++ (void)popToMainViewControllerAndPresentViewControllers:(NSArray *)viewControllers animated:(BOOL)animated;
++ (void)popToMainViewControllerAndPresentViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
 @end

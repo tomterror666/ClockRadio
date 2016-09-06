@@ -83,7 +83,7 @@ static NSString *playImmediatelyKey = @"com.tomterror.currentConfig.playImmediat
 }
 
 - (void)setPlayImmediately:(BOOL)playImmediately {
-	[self.userDefaults setBool:playImmediatelyKey forKey:playImmediatelyKey];
+	[self.userDefaults setBool:playImmediately forKey:playImmediatelyKey];
 }
 
 - (BOOL)shouldPlayImmediately {

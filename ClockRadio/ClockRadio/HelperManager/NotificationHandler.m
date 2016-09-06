@@ -8,6 +8,8 @@
 
 #import "NotificationHandler.h"
 #import "Configuration.h"
+#import "NavigationHelper.h"
+#import "MainViewController.h"
 
 @implementation NotificationHandler
 
@@ -15,6 +17,8 @@
 	localNotification.applicationIconBadgeNumber = 0;
 	[[UIApplication sharedApplication] cancelAllLocalNotifications];
 	[Configuration currentConfiguration].playImmediately = YES;
+	[NavigationHelper popToMainViewControllerAndPresentViewController:nil animated:YES];
+	[[NavigationHelper mainController] refreshView];
 }
 
 @end

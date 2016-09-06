@@ -18,9 +18,10 @@
 		9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D81831D23F5C20040BDB5 /* ApiClient.m */; };
 		9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8AD55E1D282B4E00B171EF /* AlarmSelectionViewController.m */; };
 		9E8AD5611D282B4E00B171EF /* AlarmSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8AD55F1D282B4E00B171EF /* AlarmSelectionViewController.xib */; };
-		9EAE5D491D60DDC5004DB968 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE5D481D60DDC5004DB968 /* NotificationHandler.m */; };
 		BFB979F3B6FA553779E8C37C /* libPods-ClockRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */; };
 		D49A05C8BB7C35FC93A16EF9 /* libPods-ClockRadioUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */; };
+		E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */; };
+		E8BAC1741D7F0AC400BD66F1 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */; };
 		E8D978D81D12E58100B9D459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978D71D12E58100B9D459 /* main.m */; };
 		E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DA1D12E58100B9D459 /* AppDelegate.m */; };
 		E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DD1D12E58100B9D459 /* MainViewController.m */; };
@@ -72,11 +73,13 @@
 		9E8AD55D1D282B4E00B171EF /* AlarmSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSelectionViewController.h; sourceTree = "<group>"; };
 		9E8AD55E1D282B4E00B171EF /* AlarmSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSelectionViewController.m; sourceTree = "<group>"; };
 		9E8AD55F1D282B4E00B171EF /* AlarmSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmSelectionViewController.xib; sourceTree = "<group>"; };
-		9EAE5D471D60DDC5004DB968 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
-		9EAE5D481D60DDC5004DB968 /* NotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandler.m; sourceTree = "<group>"; };
 		B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD163ED1A7E06F17BC00FEE /* Pods-ClockRadioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BAC16F1D7F0AC400BD66F1 /* NavigationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationHelper.h; sourceTree = "<group>"; };
+		E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
+		E8BAC1711D7F0AC400BD66F1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
+		E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandler.m; sourceTree = "<group>"; };
 		E8D978D31D12E58100B9D459 /* ClockRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D978D71D12E58100B9D459 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8D978D91D12E58100B9D459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -193,8 +196,6 @@
 				E8D9790A1D12F24000B9D459 /* AudioPlayerView.h */,
 				E8D9790B1D12F24000B9D459 /* AudioPlayerView.m */,
 				E8D978DF1D12E58100B9D459 /* Main.storyboard */,
-				9EAE5D471D60DDC5004DB968 /* NotificationHandler.h */,
-				9EAE5D481D60DDC5004DB968 /* NotificationHandler.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -223,6 +224,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E8BAC16E1D7F0A9100BD66F1 /* HelperManager */ = {
+			isa = PBXGroup;
+			children = (
+				E8BAC16F1D7F0AC400BD66F1 /* NavigationHelper.h */,
+				E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */,
+				E8BAC1711D7F0AC400BD66F1 /* NotificationHandler.h */,
+				E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */,
+			);
+			path = HelperManager;
+			sourceTree = "<group>";
+		};
 		E8D978CA1D12E58100B9D459 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +260,7 @@
 		E8D978D51D12E58100B9D459 /* ClockRadio */ = {
 			isa = PBXGroup;
 			children = (
+				E8BAC16E1D7F0A9100BD66F1 /* HelperManager */,
 				9E650B901D15BDA8002AD3F1 /* AlarmSelection */,
 				9E650B8B1D15B7CE002AD3F1 /* Configuration */,
 				9E7D81811D23F5600040BDB5 /* Main */,
@@ -552,9 +565,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EAE5D491D60DDC5004DB968 /* NotificationHandler.m in Sources */,
 				9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */,
+				E8BAC1741D7F0AC400BD66F1 /* NotificationHandler.m in Sources */,
 				9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */,
+				E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */,
 				9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
