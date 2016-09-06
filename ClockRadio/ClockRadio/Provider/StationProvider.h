@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define StationProviderBasePath  @"http://api.shoutcast.com/legacy/"
+
 @class Station;
 
 typedef void(^LoadingStationsCompletion)(id stations, NSError *error);

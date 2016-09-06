@@ -50,6 +50,8 @@
 		D49A05C8BB7C35FC93A16EF9 /* libPods-ClockRadioUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */; };
 		E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */; };
 		E8BAC1741D7F0AC400BD66F1 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */; };
+		E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1751D7F0D3E00BD66F1 /* StationProviderTest.m */; };
+		E8BAC1781D7F0E1800BD66F1 /* TuneinProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1771D7F0E1800BD66F1 /* TuneinProviderTest.m */; };
 		E8D978D81D12E58100B9D459 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978D71D12E58100B9D459 /* main.m */; };
 		E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DA1D12E58100B9D459 /* AppDelegate.m */; };
 		E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978DD1D12E58100B9D459 /* MainViewController.m */; };
@@ -140,6 +142,8 @@
 		E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
 		E8BAC1711D7F0AC400BD66F1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
 		E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandler.m; sourceTree = "<group>"; };
+		E8BAC1751D7F0D3E00BD66F1 /* StationProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationProviderTest.m; sourceTree = "<group>"; };
+		E8BAC1771D7F0E1800BD66F1 /* TuneinProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneinProviderTest.m; sourceTree = "<group>"; };
 		E8D978D31D12E58100B9D459 /* ClockRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D978D71D12E58100B9D459 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8D978D91D12E58100B9D459 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 		9E240FBA1D6DF90200A645D6 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				E8BAC1751D7F0D3E00BD66F1 /* StationProviderTest.m */,
+				E8BAC1771D7F0E1800BD66F1 /* TuneinProviderTest.m */,
 			);
 			name = Providers;
 			sourceTree = "<group>";
@@ -775,6 +781,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */,
+				E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */,
+				E8BAC1781D7F0E1800BD66F1 /* TuneinProviderTest.m in Sources */,
 				9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */,
 				9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */,
 			);

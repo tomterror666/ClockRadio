@@ -35,7 +35,7 @@
 - (id)init {
 	self = [super init];
 	if (self != nil) {
-		self.apiClient = [[ApiClient alloc] initWithBasePath:@"http://api.shoutcast.com/legacy/"];
+		self.apiClient = [[ApiClient alloc] initWithBasePath:StationProviderBasePath];
 	}
 	return self;
 }
@@ -46,7 +46,6 @@
 
 - (void)loadStationsWithCompletion:(LoadingStationsCompletion)completion {
 	__weak typeof(self) weakSelf = self;
-	self.stations = [NSMutableArray new];
 	[self.apiClient getDataForPath:@"Top500"
 					withParameters:nil
 					withCompletion:^(id responseObject, NSError *error) {
@@ -59,19 +58,24 @@
 							NSDictionary *dict = [XMLReader dictionaryForXMLData:responseObject
 																		 options:XMLReaderOptionsProcessNamespaces
 																		   error:&parseError];
-							weakSelf.tuneInBase = [dict valueForKeyPath:@"stationlist.tunein.base"];
-							weakSelf.tuneInBaseM3U = [dict valueForKeyPath:@"stationlist.tunein.base-m3u"];
-							weakSelf.tuneInBaseXSPF = [dict valueForKeyPath:@"stationlist.tunein.base-xspf"];
-							NSArray *stationList = [dict valueForKeyPath:@"stationlist.station"];
-							for (NSDictionary *stationDict in stationList) {
-								Station *station = [[Station alloc] initWithDict:stationDict];
-								[weakSelf.stations addObject:station];
-							}
-							if (completion != NULL) {
-								completion(self.stations, nil);
-							}
+							[weakSelf handelResponseDict:dict withCompletion:completion];
 						}
 					}];
+}
+
+- (void)handelResponseDict:(NSDictionary *)responseDict withCompletion:(LoadingStationsCompletion)completion {
+	self.stations = [NSMutableArray new];
+	self.tuneInBase = [responseDict valueForKeyPath:@"stationlist.tunein.base"];
+	self.tuneInBaseM3U = [responseDict valueForKeyPath:@"stationlist.tunein.base-m3u"];
+	self.tuneInBaseXSPF = [responseDict valueForKeyPath:@"stationlist.tunein.base-xspf"];
+	NSArray *stationList = [responseDict valueForKeyPath:@"stationlist.station"];
+	for (NSDictionary *stationDict in stationList) {
+		Station *station = [[Station alloc] initWithDict:stationDict];
+		[self.stations addObject:station];
+	}
+	if (completion != NULL) {
+		completion(self.stations, nil);
+	}
 }
 
 - (NSInteger)numberOfRadioStations {
