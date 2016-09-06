@@ -7,17 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */; };
+		9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E631D6E17C0002C50F8 /* SoundTest.m */; };
+		9E118E661D6E1B97002C50F8 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E118E651D6E1B97002C50F8 /* Rooster.mp3 */; };
+		9E240FB61D6DEE6300A645D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */; };
+		9E240FB71D6DEE6300A645D6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E240FB51D6DEE6300A645D6 /* AVKit.framework */; };
+		9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E240FBD1D6DFB3500A645D6 /* StationTest.m */; };
+		9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */; };
+		9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */; };
+		9E5200A11D6B7C94007A7A57 /* SoundSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */; };
+		9E5200A51D6B8650007A7A57 /* SoundSelectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5200A31D6B8650007A7A57 /* SoundSelectionCell.m */; };
+		9E5200A61D6B8650007A7A57 /* SoundSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */; };
 		9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */; };
 		9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */; };
 		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
 		9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B951D15BE8E002AD3F1 /* RadioStationSelectonViewController.m */; };
 		9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E650B961D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib */; };
-		9E72D6CF1D3EB70B00D7B49C /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E72D6CE1D3EB70B00D7B49C /* EventKit.framework */; };
 		9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D817C1D23ECCD0040BDB5 /* Station.m */; };
 		9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D817F1D23ECFB0040BDB5 /* StationProvider.m */; };
 		9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D81831D23F5C20040BDB5 /* ApiClient.m */; };
 		9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8AD55E1D282B4E00B171EF /* AlarmSelectionViewController.m */; };
 		9E8AD5611D282B4E00B171EF /* AlarmSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8AD55F1D282B4E00B171EF /* AlarmSelectionViewController.xib */; };
+		9EDA45C01D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45AF1D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 */; };
+		9EDA45C11D6CEE7F00C79D4D /* Police Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B01D6CEE7F00C79D4D /* Police Siren.mp3 */; };
+		9EDA45C21D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B11D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 */; };
+		9EDA45C31D6CEE7F00C79D4D /* Tornado Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B21D6CEE7F00C79D4D /* Tornado Siren.mp3 */; };
+		9EDA45C41D6CEE7F00C79D4D /* UFO Descending.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B31D6CEE7F00C79D4D /* UFO Descending.mp3 */; };
+		9EDA45C51D6CEE7F00C79D4D /* UFO Takeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B41D6CEE7F00C79D4D /* UFO Takeoff.mp3 */; };
+		9EDA45C61D6CEE7F00C79D4D /* Pour Glass Water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B51D6CEE7F00C79D4D /* Pour Glass Water.mp3 */; };
+		9EDA45C71D6CEE7F00C79D4D /* Gibbon Monkey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B61D6CEE7F00C79D4D /* Gibbon Monkey.mp3 */; };
+		9EDA45C81D6CEE7F00C79D4D /* Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B71D6CEE7F00C79D4D /* Siren.mp3 */; };
+		9EDA45C91D6CEE7F00C79D4D /* Ship Brass Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B81D6CEE7F00C79D4D /* Ship Brass Bell.mp3 */; };
+		9EDA45CA1D6CEE7F00C79D4D /* Plectron Tones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B91D6CEE7F00C79D4D /* Plectron Tones.mp3 */; };
+		9EDA45CB1D6CEE7F00C79D4D /* Sonar Ping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BA1D6CEE7F00C79D4D /* Sonar Ping.mp3 */; };
+		9EDA45CC1D6CEE7F00C79D4D /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BB1D6CEE7F00C79D4D /* Rooster.mp3 */; };
+		9EDA45CD1D6CEE7F00C79D4D /* Glass Ping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BC1D6CEE7F00C79D4D /* Glass Ping.mp3 */; };
+		9EDA45CE1D6CEE7F00C79D4D /* Zombie Brain Eater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BD1D6CEE7F00C79D4D /* Zombie Brain Eater.mp3 */; };
+		9EDA45CF1D6CEE7F00C79D4D /* Computer Magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BE1D6CEE7F00C79D4D /* Computer Magic.mp3 */; };
+		9EDA45D01D6CEE7F00C79D4D /* Rooster Crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */; };
+		9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA45D21D6CF06F00C79D4D /* Sound.m */; };
 		BFB979F3B6FA553779E8C37C /* libPods-ClockRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */; };
 		D49A05C8BB7C35FC93A16EF9 /* libPods-ClockRadioUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */; };
 		E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */; };
@@ -28,7 +56,6 @@
 		E8D978E11D12E58100B9D459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D978DF1D12E58100B9D459 /* Main.storyboard */; };
 		E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D978E21D12E58100B9D459 /* Assets.xcassets */; };
 		E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */; };
-		E8D978F11D12E58100B9D459 /* ClockRadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978F01D12E58100B9D459 /* ClockRadioTests.m */; };
 		E8D978FC1D12E58100B9D459 /* ClockRadioUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D978FB1D12E58100B9D459 /* ClockRadioUITests.m */; };
 		E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D9790B1D12F24000B9D459 /* AudioPlayerView.m */; };
 		EAC213EC49190E565884046D /* libPods-ClockRadio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */; };
@@ -54,6 +81,20 @@
 /* Begin PBXFileReference section */
 		583E586C1114A54F1D1DCA7B /* Pods-ClockRadioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTuneinDetailsTest.m; sourceTree = "<group>"; };
+		9E118E631D6E17C0002C50F8 /* SoundTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundTest.m; sourceTree = "<group>"; };
+		9E118E651D6E1B97002C50F8 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rooster.mp3; sourceTree = "<group>"; };
+		9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E240FB51D6DEE6300A645D6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		9E240FBD1D6DFB3500A645D6 /* StationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTest.m; sourceTree = "<group>"; };
+		9E5200991D6B7020007A7A57 /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		9E52009D1D6B7C94007A7A57 /* SoundSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundSelectionViewController.h; sourceTree = "<group>"; };
+		9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionViewController.m; sourceTree = "<group>"; };
+		9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundSelectionViewController.xib; sourceTree = "<group>"; };
+		9E5200A21D6B8650007A7A57 /* SoundSelectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundSelectionCell.h; sourceTree = "<group>"; };
+		9E5200A31D6B8650007A7A57 /* SoundSelectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionCell.m; sourceTree = "<group>"; };
+		9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SoundSelectionCell.xib; sourceTree = "<group>"; };
 		9E5E7CBE1D27CDF60001ACD4 /* TuneinProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuneinProvider.h; sourceTree = "<group>"; };
 		9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneinProvider.m; sourceTree = "<group>"; };
 		9E5E7CC11D27CF1B0001ACD4 /* StationTuneinDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTuneinDetails.h; sourceTree = "<group>"; };
@@ -73,6 +114,25 @@
 		9E8AD55D1D282B4E00B171EF /* AlarmSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSelectionViewController.h; sourceTree = "<group>"; };
 		9E8AD55E1D282B4E00B171EF /* AlarmSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSelectionViewController.m; sourceTree = "<group>"; };
 		9E8AD55F1D282B4E00B171EF /* AlarmSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmSelectionViewController.xib; sourceTree = "<group>"; };
+		9EDA45AF1D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "UFO Descending And Takeoff.mp3"; sourceTree = "<group>"; };
+		9EDA45B01D6CEE7F00C79D4D /* Police Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Police Siren.mp3"; sourceTree = "<group>"; };
+		9EDA45B11D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Railroad Crossing Bell.mp3"; sourceTree = "<group>"; };
+		9EDA45B21D6CEE7F00C79D4D /* Tornado Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tornado Siren.mp3"; sourceTree = "<group>"; };
+		9EDA45B31D6CEE7F00C79D4D /* UFO Descending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "UFO Descending.mp3"; sourceTree = "<group>"; };
+		9EDA45B41D6CEE7F00C79D4D /* UFO Takeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "UFO Takeoff.mp3"; sourceTree = "<group>"; };
+		9EDA45B51D6CEE7F00C79D4D /* Pour Glass Water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pour Glass Water.mp3"; sourceTree = "<group>"; };
+		9EDA45B61D6CEE7F00C79D4D /* Gibbon Monkey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Gibbon Monkey.mp3"; sourceTree = "<group>"; };
+		9EDA45B71D6CEE7F00C79D4D /* Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siren.mp3; sourceTree = "<group>"; };
+		9EDA45B81D6CEE7F00C79D4D /* Ship Brass Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ship Brass Bell.mp3"; sourceTree = "<group>"; };
+		9EDA45B91D6CEE7F00C79D4D /* Plectron Tones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Plectron Tones.mp3"; sourceTree = "<group>"; };
+		9EDA45BA1D6CEE7F00C79D4D /* Sonar Ping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sonar Ping.mp3"; sourceTree = "<group>"; };
+		9EDA45BB1D6CEE7F00C79D4D /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rooster.mp3; sourceTree = "<group>"; };
+		9EDA45BC1D6CEE7F00C79D4D /* Glass Ping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Glass Ping.mp3"; sourceTree = "<group>"; };
+		9EDA45BD1D6CEE7F00C79D4D /* Zombie Brain Eater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zombie Brain Eater.mp3"; sourceTree = "<group>"; };
+		9EDA45BE1D6CEE7F00C79D4D /* Computer Magic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Computer Magic.mp3"; sourceTree = "<group>"; };
+		9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rooster Crow.mp3"; sourceTree = "<group>"; };
+		9EDA45D11D6CF06F00C79D4D /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
+		9EDA45D21D6CF06F00C79D4D /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sound.m; sourceTree = "<group>"; };
 		B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD163ED1A7E06F17BC00FEE /* Pods-ClockRadioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,11 +147,10 @@
 		E8D978DC1D12E58100B9D459 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E8D978DD1D12E58100B9D459 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E8D978E01D12E58100B9D459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8D978E21D12E58100B9D459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8D978E21D12E58100B9D459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ClockRadio/Assets.xcassets; sourceTree = "<group>"; };
 		E8D978E51D12E58100B9D459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E8D978E71D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D978E71D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ClockRadio/Info.plist; sourceTree = "<group>"; };
 		E8D978EC1D12E58100B9D459 /* ClockRadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockRadioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8D978F01D12E58100B9D459 /* ClockRadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockRadioTests.m; sourceTree = "<group>"; };
 		E8D978F21D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8D978F71D12E58100B9D459 /* ClockRadioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockRadioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8D978FB1D12E58100B9D459 /* ClockRadioUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockRadioUITests.m; sourceTree = "<group>"; };
@@ -109,7 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E72D6CF1D3EB70B00D7B49C /* EventKit.framework in Frameworks */,
+				9E240FB61D6DEE6300A645D6 /* AVFoundation.framework in Frameworks */,
+				9E240FB71D6DEE6300A645D6 /* AVKit.framework in Frameworks */,
 				EAC213EC49190E565884046D /* libPods-ClockRadio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +193,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E240FB81D6DF8E000A645D6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E240FB91D6DF8FA00A645D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9E240FBA1D6DF90200A645D6 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		9E240FBB1D6DF91000A645D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E240FBD1D6DFB3500A645D6 /* StationTest.m */,
+				9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */,
+				9E118E631D6E17C0002C50F8 /* SoundTest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9E240FBC1D6DF92000A645D6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		9E5200981D6B6FDC007A7A57 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9E5200991D6B7020007A7A57 /* NSDate+Utility.h */,
+				9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9E52009C1D6B7C1E007A7A57 /* SoundSelection */ = {
+			isa = PBXGroup;
+			children = (
+				9E5200A21D6B8650007A7A57 /* SoundSelectionCell.h */,
+				9E5200A31D6B8650007A7A57 /* SoundSelectionCell.m */,
+				9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */,
+				9E52009D1D6B7C94007A7A57 /* SoundSelectionViewController.h */,
+				9E52009E1D6B7C94007A7A57 /* SoundSelectionViewController.m */,
+				9E52009F1D6B7C94007A7A57 /* SoundSelectionViewController.xib */,
+			);
+			path = SoundSelection;
+			sourceTree = "<group>";
+		};
+		9E5200A71D6B9175007A7A57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E5200A81D6B99E1007A7A57 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E5200A81D6B99E1007A7A57 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9EDA45AF1D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 */,
+				9EDA45B01D6CEE7F00C79D4D /* Police Siren.mp3 */,
+				9EDA45B11D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 */,
+				9EDA45B21D6CEE7F00C79D4D /* Tornado Siren.mp3 */,
+				9EDA45B31D6CEE7F00C79D4D /* UFO Descending.mp3 */,
+				9EDA45B41D6CEE7F00C79D4D /* UFO Takeoff.mp3 */,
+				9EDA45B51D6CEE7F00C79D4D /* Pour Glass Water.mp3 */,
+				9EDA45B61D6CEE7F00C79D4D /* Gibbon Monkey.mp3 */,
+				9EDA45B71D6CEE7F00C79D4D /* Siren.mp3 */,
+				9EDA45B81D6CEE7F00C79D4D /* Ship Brass Bell.mp3 */,
+				9EDA45B91D6CEE7F00C79D4D /* Plectron Tones.mp3 */,
+				9EDA45BA1D6CEE7F00C79D4D /* Sonar Ping.mp3 */,
+				9EDA45BB1D6CEE7F00C79D4D /* Rooster.mp3 */,
+				9EDA45BC1D6CEE7F00C79D4D /* Glass Ping.mp3 */,
+				9EDA45BD1D6CEE7F00C79D4D /* Zombie Brain Eater.mp3 */,
+				9EDA45BE1D6CEE7F00C79D4D /* Computer Magic.mp3 */,
+				9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		9E650B8B1D15B7CE002AD3F1 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +321,8 @@
 				9E7D817C1D23ECCD0040BDB5 /* Station.m */,
 				9E5E7CC11D27CF1B0001ACD4 /* StationTuneinDetails.h */,
 				9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */,
+				9EDA45D11D6CF06F00C79D4D /* Sound.h */,
+				9EDA45D21D6CF06F00C79D4D /* Sound.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -216,6 +370,8 @@
 		B66429AACB7793CCF395ECD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */,
+				9E240FB51D6DEE6300A645D6 /* AVKit.framework */,
 				9E72D6CE1D3EB70B00D7B49C /* EventKit.framework */,
 				C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */,
 				B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */,
@@ -239,6 +395,9 @@
 			isa = PBXGroup;
 			children = (
 				E8D978D51D12E58100B9D459 /* ClockRadio */,
+				E8D978E21D12E58100B9D459 /* Assets.xcassets */,
+				E8D978E71D12E58100B9D459 /* Info.plist */,
+				E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */,
 				E8D978EF1D12E58100B9D459 /* ClockRadioTests */,
 				E8D978FA1D12E58100B9D459 /* ClockRadioUITests */,
 				E8D978D41D12E58100B9D459 /* Products */,
@@ -266,11 +425,11 @@
 				9E7D81811D23F5600040BDB5 /* Main */,
 				9E7D81791D23EC4D0040BDB5 /* Model */,
 				9E7D817A1D23EC570040BDB5 /* Provider */,
+				9E5200A71D6B9175007A7A57 /* Resources */,
+				9E52009C1D6B7C1E007A7A57 /* SoundSelection */,
 				9E650B8F1D15BD2F002AD3F1 /* StationSelection */,
-				E8D978E21D12E58100B9D459 /* Assets.xcassets */,
-				E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */,
-				E8D978E71D12E58100B9D459 /* Info.plist */,
 				E8D978D61D12E58100B9D459 /* Supporting Files */,
+				9E5200981D6B6FDC007A7A57 /* Utility */,
 			);
 			path = ClockRadio;
 			sourceTree = "<group>";
@@ -286,8 +445,13 @@
 		E8D978EF1D12E58100B9D459 /* ClockRadioTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8D978F01D12E58100B9D459 /* ClockRadioTests.m */,
+				9E118E651D6E1B97002C50F8 /* Rooster.mp3 */,
 				E8D978F21D12E58100B9D459 /* Info.plist */,
+				9E240FBB1D6DF91000A645D6 /* Models */,
+				9E240FBA1D6DF90200A645D6 /* Providers */,
+				9E240FBC1D6DF92000A645D6 /* Utilities */,
+				9E240FB81D6DF8E000A645D6 /* ViewControllers */,
+				9E240FB91D6DF8FA00A645D6 /* Views */,
 			);
 			path = ClockRadioTests;
 			sourceTree = "<group>";
@@ -413,11 +577,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EDA45CB1D6CEE7F00C79D4D /* Sonar Ping.mp3 in Resources */,
+				9EDA45CA1D6CEE7F00C79D4D /* Plectron Tones.mp3 in Resources */,
 				9E8AD5611D282B4E00B171EF /* AlarmSelectionViewController.xib in Resources */,
+				9EDA45CC1D6CEE7F00C79D4D /* Rooster.mp3 in Resources */,
+				9EDA45C11D6CEE7F00C79D4D /* Police Siren.mp3 in Resources */,
+				9EDA45C41D6CEE7F00C79D4D /* UFO Descending.mp3 in Resources */,
+				9EDA45C31D6CEE7F00C79D4D /* Tornado Siren.mp3 in Resources */,
 				9E650B981D15BE8E002AD3F1 /* RadioStationSelectonViewController.xib in Resources */,
 				E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */,
 				E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */,
+				9EDA45C71D6CEE7F00C79D4D /* Gibbon Monkey.mp3 in Resources */,
+				9EDA45C81D6CEE7F00C79D4D /* Siren.mp3 in Resources */,
+				9EDA45C61D6CEE7F00C79D4D /* Pour Glass Water.mp3 in Resources */,
+				9E5200A11D6B7C94007A7A57 /* SoundSelectionViewController.xib in Resources */,
+				9EDA45C91D6CEE7F00C79D4D /* Ship Brass Bell.mp3 in Resources */,
+				9EDA45CE1D6CEE7F00C79D4D /* Zombie Brain Eater.mp3 in Resources */,
+				9EDA45CF1D6CEE7F00C79D4D /* Computer Magic.mp3 in Resources */,
+				9EDA45C51D6CEE7F00C79D4D /* UFO Takeoff.mp3 in Resources */,
+				9EDA45C01D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 in Resources */,
+				9EDA45C21D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 in Resources */,
+				9EDA45CD1D6CEE7F00C79D4D /* Glass Ping.mp3 in Resources */,
 				E8D978E11D12E58100B9D459 /* Main.storyboard in Resources */,
+				9E5200A61D6B8650007A7A57 /* SoundSelectionCell.xib in Resources */,
+				9EDA45D01D6CEE7F00C79D4D /* Rooster Crow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +608,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E118E661D6E1B97002C50F8 /* Rooster.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,13 +755,17 @@
 				E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */,
 				9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
+				9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
 				9E650B971D15BE8E002AD3F1 /* RadioStationSelectonViewController.m in Sources */,
 				9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */,
+				9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */,
+				9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */,
 				9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
 				9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */,
+				9E5200A51D6B8650007A7A57 /* SoundSelectionCell.m in Sources */,
 				9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,7 +774,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D978F11D12E58100B9D459 /* ClockRadioTests.m in Sources */,
+				9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */,
+				9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */,
+				9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +818,7 @@
 				E8D978E51D12E58100B9D459 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ClockRadio;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

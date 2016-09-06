@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#define StationNameKey				@"name"
+#define StationIdKey				@"id"
+#define StationBitRateKey			@"br"
+#define StationGenreKey				@"genre"
+#define StationMediaTypeKey			@"mt"
+#define StationsCurrentListnersKey 	@"lc"
+
 @interface Station : NSObject
 
 @property (nonatomic, copy, readonly) NSString *stationName;

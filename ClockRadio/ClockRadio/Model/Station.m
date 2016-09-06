@@ -25,12 +25,12 @@
 - (id)initWithDict:(NSDictionary *)dict {
 	self = [super init];
 	if (self != nil) {
-		self.stationName = [dict objectForKey:@"name"];
-		self.stationId = [dict objectForKey:@"id"];
-		self.stationBitRate = [[dict objectForKey:@"br"] integerValue];
-		self.stationGenre = [dict objectForKey:@"genre"];
-		self.stationMediaType = [dict objectForKey:@"mt"];
-		self.stationsCurrentListners = [[dict objectForKey:@"lc"] integerValue];
+		self.stationName = [dict objectForKey:StationNameKey];
+		self.stationId = [dict objectForKey:StationIdKey];
+		self.stationBitRate = [[dict objectForKey:StationBitRateKey] integerValue];
+		self.stationGenre = [dict objectForKey:StationGenreKey];
+		self.stationMediaType = [dict objectForKey:StationMediaTypeKey];
+		self.stationsCurrentListners = [[dict objectForKey:StationsCurrentListnersKey] integerValue];
 	}
 	return self;
 }

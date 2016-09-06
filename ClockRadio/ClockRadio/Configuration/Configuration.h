@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class Sound;
+
 @interface Configuration : NSObject
 
 @property (nonatomic, strong) NSURL *currentSelectedRadioStationURL;
@@ -16,6 +18,7 @@
 @property (nonatomic, strong) NSDate *currentAlarmDate;
 @property (nonatomic, assign, readonly) BOOL currentAlarmDateSelected;
 @property (nonatomic, assign, getter=shouldPlayImmediately) BOOL playImmediately;
+@property (nonatomic, strong) Sound *currentSelectedSound;
 
 + (Configuration *)currentConfiguration;
 

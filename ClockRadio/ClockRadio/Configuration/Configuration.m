@@ -7,11 +7,13 @@
 //
 
 #import "Configuration.h"
+#import "Sound.h"
 
 static NSString *currentSelectedRadioStationURLStringKey = @"com.tomterror.currentConfig.selectedRadioURLString";
 static NSString *currentSelectedRadioStationURLKey = @"com.tomterror.currentConfig.selectedRadioURL";
 static NSString *currentSelectedAlarmDateKey = @"com.tomterror.currentConfig.selectedAlarmDate";
 static NSString *playImmediatelyKey = @"com.tomterror.currentConfig.playImmediately";
+static NSString *currentSelectedSoundKey = @"com.tomterror.currentConfig.selectedSound";
 
 @interface Configuration ()
 @property (nonatomic, strong) NSUserDefaults *userDefaults;
@@ -88,6 +90,16 @@ static NSString *playImmediatelyKey = @"com.tomterror.currentConfig.playImmediat
 
 - (BOOL)shouldPlayImmediately {
 	return [self.userDefaults boolForKey:playImmediatelyKey];
+}
+
+- (Sound *)currentSelectedSound {
+	NSData *soundAsData = [self.userDefaults objectForKey:currentSelectedSoundKey];
+	return [NSKeyedUnarchiver unarchiveObjectWithData:soundAsData];
+}
+
+- (void)setCurrentSelectedSound:(Sound *)currentSelectedSound {
+	NSData *soundAsData = [NSKeyedArchiver archivedDataWithRootObject:currentSelectedSound];
+	[self.userDefaults setObject:soundAsData forKey:currentSelectedSoundKey];
 }
 
 @end

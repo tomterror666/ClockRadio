@@ -10,19 +10,11 @@ target 'ClockRadio' do
 end
 
 target 'ClockRadioTests' do
-	pod 'StreamingKit', '0.1.29'
-	pod 'AFNetworking'
-	pod 'XMLReader-Arc', '1.1'
-	pod 'OGIniFiler'
 	pod 'Expecta'
 	pod 'OCMock'
 end
 
 target 'ClockRadioUITests' do
-	pod 'StreamingKit', '0.1.29'
-	pod 'AFNetworking'
-	pod 'XMLReader-Arc', '1.1'
-	pod 'OGIniFiler'
 	pod 'Expecta'
 	pod 'OCMock'
 	pod 'KIF'

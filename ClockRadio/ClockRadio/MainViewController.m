@@ -11,21 +11,26 @@
 #import "AudioPlayerView.h"
 #import "RadioStationSelectonViewController.h"
 #import "AlarmSelectionViewController.h"
+#import "SoundSelectionViewController.h"
 #import "Configuration.h"
 #import "TuneinProvider.h"
 #import "StationProvider.h"
 #import "Station.h"
 #import "StationTuneinDetails.h"
+#import "Sound.h"
 
 #define LocalNotificationInfoDateKey @"LocalNotificationInfoDateKey"
 
-@interface MainViewController () <RadioStationSelectionDelegate, AlarmSelectionDelegate>
+@interface MainViewController () <RadioStationSelectionDelegate, AlarmSelectionDelegate, SoundSelectionDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionLabel;
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionValueLabel;
 @property (nonatomic, weak) IBOutlet UIButton *radioSelectionButton;
 @property (nonatomic, weak) IBOutlet UILabel *alarmSelectionLabel;
 @property (nonatomic, weak) IBOutlet UILabel *alarmSelectionValueLabel;
 @property (nonatomic, weak) IBOutlet UIButton *alarmSelectionButton;
+@property (weak, nonatomic) IBOutlet UILabel *soundSelectionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *soundSelectionValueLabel;
+@property (weak, nonatomic) IBOutlet UIButton *soundSelectionButton;
 @property (nonatomic, strong) STKAudioPlayer *audioPlayer;
 @property (nonatomic, strong) AudioPlayerView *audioPlayerView;
 @property (nonatomic, strong) TuneinProvider *tuneinProvider;
@@ -61,6 +66,7 @@
 	[self addPlayerView];
 	self.radioSelectionValueLabel.text = [Configuration currentConfiguration].currentSelectedRadioStationURLString;
 	self.alarmSelectionValueLabel.text = [[Configuration currentConfiguration].currentAlarmDate descriptionWithLocale:[NSLocale currentLocale]];
+	self.soundSelectionValueLabel.text = [Configuration currentConfiguration].currentSelectedSound.soundName;
 	if ([Configuration currentConfiguration].shouldPlayImmediately) {
 		[Configuration currentConfiguration].playImmediately = NO;
 		NSURL *url = [Configuration currentConfiguration].currentSelectedRadioStationURL;
@@ -104,6 +110,12 @@
 
 - (IBAction)alarmSelectionButtonTouched:(id)sender {
 	AlarmSelectionViewController *controller = [[AlarmSelectionViewController alloc] initWithNibName:@"AlarmSelectionViewController" bundle:nil];
+	controller.delegate = self;
+	[self presentViewController:controller animated:YES completion:NULL];
+}
+
+- (IBAction)soundSelectionButtonTouched:(id)sender {
+	SoundSelectionViewController *controller = [[SoundSelectionViewController alloc] initWithNibName:@"SoundSelectionViewController" bundle:nil];
 	controller.delegate = self;
 	[self presentViewController:controller animated:YES completion:NULL];
 }
@@ -173,16 +185,34 @@
 		return;
 	}
 	
+	Sound *currentSound = [Configuration currentConfiguration].currentSelectedSound;
+	
 	localNotif.fireDate = date;
 	localNotif.timeZone = [NSTimeZone defaultTimeZone];
 	localNotif.alertBody = @"Aufwachen!";
 	localNotif.alertAction = @"Jetzt!";
 	localNotif.alertTitle = @"Wirklich!";
-	localNotif.soundName = UILocalNotificationDefaultSoundName;
+	localNotif.soundName = currentSound != nil ? currentSound.soundFullName : UILocalNotificationDefaultSoundName;
 	localNotif.applicationIconBadgeNumber = 1;
 	localNotif.userInfo = @{LocalNotificationInfoDateKey: date};
 	
  	[[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
+}
+
+#pragma mark -
+#pragma mark SoundSelectionDelegate implementation
+#pragma mark -
+
+- (void)soundSelectionViewControllerDidCancel:(SoundSelectionViewController *)controller {
+	[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)soundSelectionViewController:(SoundSelectionViewController *)controller didFinishWithSound:(Sound *)sound {
+	[[Configuration currentConfiguration] setCurrentSelectedSound:sound];
+	__weak typeof(self) weakSelf = self;
+	[self dismissViewControllerAnimated:YES completion:^{
+		[weakSelf refreshView];
+	}];
 }
 
 @end

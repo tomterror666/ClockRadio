@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -77,22 +77,60 @@
                                     <action selector="alarmSelectionButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oti-7w-Dh0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Sound:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbo-II-rT1">
+                                <rect key="frame" x="20" y="154" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="E82-By-Eld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FB8-WN-W9h">
+                                <rect key="frame" x="191" y="154" width="389" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ek1-Ft-VAc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXi-nI-153">
+                                <rect key="frame" x="20" y="183" width="101" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Z4-yN-qwu"/>
+                                    <constraint firstAttribute="width" constant="101" id="Rh2-U5-yIS"/>
+                                </constraints>
+                                <state key="normal" title="Select another"/>
+                                <connections>
+                                    <action selector="soundSelectionButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HE5-Ad-3eN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Pbo-II-rT1" firstAttribute="top" secondItem="fTH-Of-cAy" secondAttribute="bottom" constant="8" id="2JU-yZ-9xl"/>
                             <constraint firstItem="PLj-Dg-tDD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="54v-UO-jyL"/>
+                            <constraint firstItem="FB8-WN-W9h" firstAttribute="top" secondItem="MFW-OJ-Vvk" secondAttribute="bottom" constant="46" id="EEU-Q1-XYc"/>
                             <constraint firstItem="Ozl-tQ-jyn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Isx-Co-bLQ"/>
+                            <constraint firstItem="WXi-nI-153" firstAttribute="top" secondItem="Pbo-II-rT1" secondAttribute="bottom" constant="8" id="KMt-u7-vwq"/>
                             <constraint firstItem="MFW-OJ-Vvk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="M7G-KE-XDG"/>
                             <constraint firstItem="PLj-Dg-tDD" firstAttribute="top" secondItem="Ozl-tQ-jyn" secondAttribute="bottom" constant="8" id="PmX-jU-GdL"/>
                             <constraint firstItem="MFW-OJ-Vvk" firstAttribute="top" secondItem="AGo-I3-cV3" secondAttribute="bottom" constant="46" id="QLY-cq-z70"/>
                             <constraint firstItem="AGo-I3-cV3" firstAttribute="leading" secondItem="yJ1-BE-5Hw" secondAttribute="trailing" constant="8" id="Qv6-4f-rSp"/>
+                            <constraint firstItem="FB8-WN-W9h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VQx-Ru-4aY"/>
+                            <constraint firstItem="FB8-WN-W9h" firstAttribute="leading" secondItem="Pbo-II-rT1" secondAttribute="trailing" constant="8" id="XKt-fW-lD4"/>
                             <constraint firstItem="yJ1-BE-5Hw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aJe-2V-mGm"/>
+                            <constraint firstItem="WXi-nI-153" firstAttribute="top" secondItem="Pbo-II-rT1" secondAttribute="bottom" constant="8" id="aSY-NZ-Oby"/>
                             <constraint firstItem="AGo-I3-cV3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dKQ-9o-XjK"/>
                             <constraint firstItem="Ozl-tQ-jyn" firstAttribute="top" secondItem="yJ1-BE-5Hw" secondAttribute="bottom" constant="8" id="hjj-fb-njd"/>
+                            <constraint firstItem="WXi-nI-153" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mcH-Sf-US7"/>
                             <constraint firstItem="MFW-OJ-Vvk" firstAttribute="leading" secondItem="PLj-Dg-tDD" secondAttribute="trailing" constant="8" id="p5d-Ud-C39"/>
                             <constraint firstItem="AGo-I3-cV3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="phe-rz-SVD"/>
                             <constraint firstItem="fTH-Of-cAy" firstAttribute="top" secondItem="PLj-Dg-tDD" secondAttribute="bottom" constant="8" id="pyS-N4-seV"/>
+                            <constraint firstItem="Pbo-II-rT1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rjJ-sc-kgY"/>
                             <constraint firstItem="fTH-Of-cAy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="t3f-qB-jA7"/>
+                            <constraint firstItem="FB8-WN-W9h" firstAttribute="leading" secondItem="Pbo-II-rT1" secondAttribute="trailing" constant="8" id="uUk-1C-QEl"/>
                             <constraint firstItem="yJ1-BE-5Hw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vlG-HS-wN3"/>
                         </constraints>
                     </view>
@@ -103,6 +141,9 @@
                         <outlet property="radioSelectionButton" destination="Ozl-tQ-jyn" id="Hpd-L3-XRE"/>
                         <outlet property="radioSelectionLabel" destination="yJ1-BE-5Hw" id="Sty-E0-YEg"/>
                         <outlet property="radioSelectionValueLabel" destination="AGo-I3-cV3" id="KsZ-2G-2EW"/>
+                        <outlet property="soundSelectionButton" destination="WXi-nI-153" id="sx8-Nn-Fl6"/>
+                        <outlet property="soundSelectionLabel" destination="Pbo-II-rT1" id="hPD-YS-qcP"/>
+                        <outlet property="soundSelectionValueLabel" destination="FB8-WN-W9h" id="p7M-QX-NdY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
