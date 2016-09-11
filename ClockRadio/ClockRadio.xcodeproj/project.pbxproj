@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0E09A51D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09A41D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m */; };
+		9E0E09A71D85A6910015D6A9 /* MainViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09A61D85A6910015D6A9 /* MainViewControllerTest.m */; };
+		9E0E09A91D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09A81D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m */; };
+		9E0E09AB1D85A6C50015D6A9 /* RadioStationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09AA1D85A6C50015D6A9 /* RadioStationSelectionViewController.m */; };
 		9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */; };
 		9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E631D6E17C0002C50F8 /* SoundTest.m */; };
 		9E118E661D6E1B97002C50F8 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E118E651D6E1B97002C50F8 /* Rooster.mp3 */; };
@@ -83,6 +87,10 @@
 /* Begin PBXFileReference section */
 		583E586C1114A54F1D1DCA7B /* Pods-ClockRadioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0E09A41D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSelectionViewControllerTest.m; sourceTree = "<group>"; };
+		9E0E09A61D85A6910015D6A9 /* MainViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerTest.m; sourceTree = "<group>"; };
+		9E0E09A81D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionViewControllerTest.m; sourceTree = "<group>"; };
+		9E0E09AA1D85A6C50015D6A9 /* RadioStationSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioStationSelectionViewController.m; sourceTree = "<group>"; };
 		9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTuneinDetailsTest.m; sourceTree = "<group>"; };
 		9E118E631D6E17C0002C50F8 /* SoundTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundTest.m; sourceTree = "<group>"; };
 		9E118E651D6E1B97002C50F8 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rooster.mp3; sourceTree = "<group>"; };
@@ -200,6 +208,10 @@
 		9E240FB81D6DF8E000A645D6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E0E09A41D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m */,
+				9E0E09A61D85A6910015D6A9 /* MainViewControllerTest.m */,
+				9E0E09AA1D85A6C50015D6A9 /* RadioStationSelectionViewController.m */,
+				9E0E09A81D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -783,8 +795,12 @@
 				9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */,
 				E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */,
 				E8BAC1781D7F0E1800BD66F1 /* TuneinProviderTest.m in Sources */,
+				9E0E09AB1D85A6C50015D6A9 /* RadioStationSelectionViewController.m in Sources */,
+				9E0E09A51D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m in Sources */,
 				9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */,
 				9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */,
+				9E0E09A71D85A6910015D6A9 /* MainViewControllerTest.m in Sources */,
+				9E0E09A91D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
