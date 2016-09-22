@@ -52,6 +52,9 @@
 		9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA45D21D6CF06F00C79D4D /* Sound.m */; };
 		BFB979F3B6FA553779E8C37C /* libPods-ClockRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */; };
 		D49A05C8BB7C35FC93A16EF9 /* libPods-ClockRadioUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */; };
+		E80E2D6C1D9425B600DE085F /* OCMConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */; };
+		E80E2D6D1D9425B600DE085F /* OCMKindOfClassConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */; };
+		E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */; };
 		E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */; };
 		E8BAC1741D7F0AC400BD66F1 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */; };
 		E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1751D7F0D3E00BD66F1 /* StationProviderTest.m */; };
@@ -146,6 +149,12 @@
 		B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD163ED1A7E06F17BC00FEE /* Pods-ClockRadioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80E2D661D9425B600DE085F /* OCMConstraint+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCMConstraint+Extensions.h"; sourceTree = "<group>"; };
+		E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCMConstraint+Extensions.m"; sourceTree = "<group>"; };
+		E80E2D681D9425B600DE085F /* OCMKindOfClassConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMKindOfClassConstraint.h; sourceTree = "<group>"; };
+		E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMKindOfClassConstraint.m; sourceTree = "<group>"; };
+		E80E2D6A1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMNavigationControllerWithRootViewControllerConstraint.h; sourceTree = "<group>"; };
+		E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMNavigationControllerWithRootViewControllerConstraint.m; sourceTree = "<group>"; };
 		E8BAC16F1D7F0AC400BD66F1 /* NavigationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationHelper.h; sourceTree = "<group>"; };
 		E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
 		E8BAC1711D7F0AC400BD66F1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
@@ -398,6 +407,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E80E2D651D94258E00DE085F /* OCMockExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E80E2D661D9425B600DE085F /* OCMConstraint+Extensions.h */,
+				E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */,
+				E80E2D681D9425B600DE085F /* OCMKindOfClassConstraint.h */,
+				E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */,
+				E80E2D6A1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.h */,
+				E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */,
+			);
+			path = OCMockExtension;
+			sourceTree = "<group>";
+		};
 		E8BAC16E1D7F0A9100BD66F1 /* HelperManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +485,7 @@
 		E8D978EF1D12E58100B9D459 /* ClockRadioTests */ = {
 			isa = PBXGroup;
 			children = (
+				E80E2D651D94258E00DE085F /* OCMockExtension */,
 				9E118E651D6E1B97002C50F8 /* Rooster.mp3 */,
 				E8D978F21D12E58100B9D459 /* Info.plist */,
 				9E240FBB1D6DF91000A645D6 /* Models */,
@@ -795,11 +818,14 @@
 				9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */,
 				E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */,
 				E8BAC1781D7F0E1800BD66F1 /* TuneinProviderTest.m in Sources */,
+				E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */,
 				9E0E09AB1D85A6C50015D6A9 /* RadioStationSelectionViewController.m in Sources */,
 				9E0E09A51D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m in Sources */,
 				9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */,
 				9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */,
 				9E0E09A71D85A6910015D6A9 /* MainViewControllerTest.m in Sources */,
+				E80E2D6C1D9425B600DE085F /* OCMConstraint+Extensions.m in Sources */,
+				E80E2D6D1D9425B600DE085F /* OCMKindOfClassConstraint.m in Sources */,
 				9E0E09A91D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 #import <XCTest/XCTest.h>
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
-#import <OCMConstraint.h>
+#import "OCMConstraint+Extensions.h"
 #import "MainViewController.h"
 #import "TuneinProvider.h"
 #import "StationProvider.h"
@@ -86,9 +86,9 @@
 }
 
 - (void)testPresentRadioStationVCOnRadioSelectionButtonTouched {
-//	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[UIViewController class]]
-//										  animated:YES
-//										completion:OCMOCK_ANY];
+	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[UIViewController class]]
+										  animated:YES
+										completion:OCMOCK_ANY];
 	[controller radioSelectionButtonTouched:nil];
 	[controllerMock verify];
 }
