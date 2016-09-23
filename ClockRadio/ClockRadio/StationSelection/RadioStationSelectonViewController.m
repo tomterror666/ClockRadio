@@ -10,8 +10,6 @@
 #import "StationProvider.h"
 #import "Station.h"
 
-static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radioselection.tableviewcellkey";
-
 @interface RadioStationSelectonViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;

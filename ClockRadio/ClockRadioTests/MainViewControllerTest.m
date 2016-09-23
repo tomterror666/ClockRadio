@@ -11,6 +11,7 @@
 #import "RadioStationSelectonViewController.h"
 #import "AlarmSelectionViewController.h"
 #import "SoundSelectionViewController.h"
+#import "Station.h"
 
 @interface MainViewControllerTest : XCTestCase {
 	MainViewController *controller;
@@ -19,6 +20,7 @@
 	id stationProviderMock;
 	id configurationMock;
 	id audioPlayerMock;
+	id stationMock;
 }
 
 @end
@@ -32,6 +34,14 @@
 - (void)radioSelectionButtonTouched:(id)sender;
 - (void)alarmSelectionButtonTouched:(id)sender;
 - (void)soundSelectionButtonTouched:(id)sender;
+- (void)radioStationSelectionVCDidCancelSelecting:(RadioStationSelectonViewController *)controller;
+- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStation:(Station *)station;
+- (void)alarmSelectonVCDidCancel:(AlarmSelectionViewController *)controller;
+- (void)alarmSelectionVC:(AlarmSelectionViewController *)controller didFinishWithAlarmDate:(NSDate *)date;
+- (void)registerForLocalNotifications;
+- (void)createLocalNotificationForDate:(NSDate *)date;
+- (void)soundSelectionViewControllerDidCancel:(SoundSelectionViewController *)controller;
+- (void)soundSelectionViewController:(SoundSelectionViewController *)controller didFinishWithSound:(Sound *)sound;
 @end
 
 @implementation MainViewControllerTest
@@ -45,9 +55,11 @@
 	configurationMock = [OCMockObject niceMockForClass:[Configuration class]];
 	[[[configurationMock stub] andReturn:configurationMock] currentConfiguration];
 	audioPlayerMock = [OCMockObject niceMockForClass:[STKAudioPlayer class]];
+	stationMock = [OCMockObject niceMockForClass:[Station class]];
 }
 
 - (void)tearDown {
+	[stationMock stopMocking];
 	[audioPlayerMock stopMocking];
 	[configurationMock stopMocking];
 	[stationProviderMock stopMocking];
@@ -86,7 +98,7 @@
 }
 
 - (void)testPresentRadioStationVCOnRadioSelectionButtonTouched {
-	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[UIViewController class]]
+	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[RadioStationSelectonViewController class]]
 										  animated:YES
 										completion:OCMOCK_ANY];
 	[controller radioSelectionButtonTouched:nil];
@@ -94,11 +106,65 @@
 }
 
 - (void)testPresentAlarmSelectionVCOnAlarmSelectionButtonTouched {
-	
+	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[AlarmSelectionViewController class]]
+										  animated:YES
+										completion:OCMOCK_ANY];
+	[controller alarmSelectionButtonTouched:nil];
+	[controllerMock verify];
 }
 
 - (void)testPresentSoundSelectionVCOnSoundSelectionButtonTouched {
-	
+	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[SoundSelectionViewController class]]
+										  animated:YES
+										completion:OCMOCK_ANY];
+	[controller soundSelectionButtonTouched:nil];
+	[controllerMock verify];
+}
+
+- (void)testDismissViewControllerOnRadioStationSelectionVCDidCancelSelecting {
+	[[controllerMock expect] dismissViewControllerAnimated:YES completion:NULL];
+	[controller radioStationSelectionVCDidCancelSelecting:OCMOCK_ANY];
+	[controllerMock verify];
+}
+
+- (void)testDismissViewControllerOnRadioStationSelectionVCDidFinishWithRadioStation {
+	[[controllerMock expect] dismissViewControllerAnimated:YES completion:OCMOCK_ANY];
+	[controller radioStationSelectionVC:OCMOCK_ANY didFinishWithRadioStation:OCMOCK_ANY];
+	[controllerMock verify];
+}
+
+- (void)testDismissViewControllerOnAlarmSelectionVCDidCancel {
+	[[controllerMock expect] dismissViewControllerAnimated:YES completion:NULL];
+	[controller alarmSelectonVCDidCancel:OCMOCK_ANY];
+	[controllerMock verify];
+}
+
+- (void)testDismissViewControllerOnAlarmSelectionVCDidFinishWithAlarmDate {
+	[[controllerMock expect] dismissViewControllerAnimated:YES completion:OCMOCK_ANY];
+	[controller alarmSelectionVC:OCMOCK_ANY didFinishWithAlarmDate:OCMOCK_ANY];
+	[controllerMock verify];
+}
+
+- (void)testRegisterForLocalNotificationsOnCreateLocalNotificationForDate {
+	[[controllerMock expect] registerForLocalNotifications];
+	id applicationMock = [OCMockObject niceMockForClass:[UIApplication class]];
+	[[[applicationMock stub] andReturn:applicationMock] sharedApplication];
+	[[applicationMock stub] scheduleLocalNotification:OCMOCK_ANY];
+	[controller createLocalNotificationForDate:[NSDate date]];
+	[controllerMock verify];
+	[applicationMock stopMocking];
+}
+
+- (void)testDismissViewControllerOnSoundSelectionVCDidCancel {
+	[[controllerMock expect] dismissViewControllerAnimated:YES completion:NULL];
+	[controller soundSelectionViewControllerDidCancel:OCMOCK_ANY];
+	[controllerMock verify];
+}
+
+- (void)testDismissViewControllerOnSoundSelectionVCDidFinishWithSound {
+	[[controllerMock expect] dismissViewControllerAnimated:YES completion:OCMOCK_ANY];
+	[controller soundSelectionViewController:OCMOCK_ANY didFinishWithSound:OCMOCK_ANY];
+	[controllerMock verify];
 }
 
 #pragma mark -

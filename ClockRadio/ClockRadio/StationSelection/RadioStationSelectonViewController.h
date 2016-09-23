@@ -11,6 +11,8 @@
 @class RadioStationSelectonViewController;
 @class Station;
 
+static NSString *radioStationSelectionTableViewCellKey = @"com.tomterror.radioselection.tableviewcellkey";
+
 @protocol RadioStationSelectionDelegate <NSObject>
 
 //- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStationURLString:(NSString *)radioStationURLString;
