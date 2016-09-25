@@ -4,6 +4,7 @@
 #import <OCMock/OCMock.h>
 #import "RadioStationSelectonViewController.h"
 #import "StationProvider.h"
+#import "Station.h"
 
 @interface RadioStationSelectonViewControllerTest : XCTestCase {
 	RadioStationSelectonViewController *controller;
@@ -12,6 +13,7 @@
 	id delegateMock;
 	id providerMock;
 	id cellMock;
+	id stationMock;
 }
 
 @end
@@ -42,9 +44,11 @@
 	[[[controllerMock stub] andReturn:delegateMock] delegate];
 	providerMock = [OCMockObject niceMockForClass:[StationProvider class]];
 	cellMock = [OCMockObject niceMockForClass:[UITableViewCell class]];
+	stationMock = [OCMockObject niceMockForClass:[Station class]];
 }
 
 - (void)tearDown {
+	[stationMock stopMocking];
 	[cellMock stopMocking];
 	[providerMock stopMocking];
 	[delegateMock stopMocking];
@@ -100,6 +104,36 @@
 	[[tableviewMock expect] dequeueReusableCellWithIdentifier:radioStationSelectionTableViewCellKey];
 	[controller tableView:tableviewMock cellForRowAtIndexPath:OCMOCK_ANY];
 	[tableviewMock verify];
+}
+
+- (void)testCorrectHeightOfRowAtIndexPath {
+	expect([controller tableView:tableviewMock heightForRowAtIndexPath:OCMOCK_ANY]).equal(60.0);
+}
+
+- (void)testUpdateCellCorrectlyOnWillDisplayCellAtIndexPath {
+	NSString *stationName = @"stationName";
+	NSString *stationGenere = @"stationGenere";
+	NSInteger listeners = 100;
+	NSString *expectedDetail = [NSString stringWithFormat:@"Genre: %@ - Listeners: %ld", stationGenere, (long)listeners];
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	[[[stationMock stub] andReturn:stationName] stationName];
+	[[[stationMock stub] andReturn:stationGenere] stationGenre];
+	[[[stationMock stub] andReturnValue:OCMOCK_VALUE(listeners)] stationsCurrentListners];
+	[[[providerMock stub] andReturn:stationMock] radioStationAtIndexPath:indexPath];
+	[[[controllerMock stub] andReturn:providerMock] stationProvider];
+	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+	[controller tableView:tableviewMock willDisplayCell:cell forRowAtIndexPath:indexPath];
+	expect([cell.textLabel.text isEqualToString:stationName]).beTruthy();
+	expect([cell.detailTextLabel.text isEqualToString:expectedDetail]).beTruthy();
+}
+
+- (void)testRadioStationSelectionVCDidFinishWithRadioStationOnDidSelectRowAtIndexPath {
+	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+	[[[providerMock stub] andReturn:stationMock] radioStationAtIndexPath:indexPath];
+	[[[controllerMock stub] andReturn:providerMock] stationProvider];
+	[[delegateMock expect] radioStationSelectionVC:controller didFinishWithRadioStation:stationMock];
+	[controller tableView:tableviewMock didSelectRowAtIndexPath:indexPath];
+	[delegateMock verify];
 }
 
 #pragma mark -

@@ -50,6 +50,7 @@
 		9EDA45CF1D6CEE7F00C79D4D /* Computer Magic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BE1D6CEE7F00C79D4D /* Computer Magic.mp3 */; };
 		9EDA45D01D6CEE7F00C79D4D /* Rooster Crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */; };
 		9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA45D21D6CF06F00C79D4D /* Sound.m */; };
+		9EEE32F71D9816660023ABF6 /* SoundSelectionCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE32F61D9816660023ABF6 /* SoundSelectionCellTest.m */; };
 		BFB979F3B6FA553779E8C37C /* libPods-ClockRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */; };
 		D49A05C8BB7C35FC93A16EF9 /* libPods-ClockRadioUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */; };
 		E80E2D6C1D9425B600DE085F /* OCMConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */; };
@@ -146,6 +147,7 @@
 		9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rooster Crow.mp3"; sourceTree = "<group>"; };
 		9EDA45D11D6CF06F00C79D4D /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
 		9EDA45D21D6CF06F00C79D4D /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sound.m; sourceTree = "<group>"; };
+		9EEE32F61D9816660023ABF6 /* SoundSelectionCellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionCellTest.m; sourceTree = "<group>"; };
 		B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD163ED1A7E06F17BC00FEE /* Pods-ClockRadioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -228,6 +230,7 @@
 		9E240FB91D6DF8FA00A645D6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EEE32F61D9816660023ABF6 /* SoundSelectionCellTest.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -817,6 +820,7 @@
 			files = (
 				9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */,
 				E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */,
+				9EEE32F71D9816660023ABF6 /* SoundSelectionCellTest.m in Sources */,
 				E8BAC1781D7F0E1800BD66F1 /* TuneinProviderTest.m in Sources */,
 				E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */,
 				9E0E09AB1D85A6C50015D6A9 /* RadioStationSelectionViewController.m in Sources */,

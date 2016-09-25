@@ -69,7 +69,7 @@
 	if (selectedIndexPath.section == 0) {
 		selectedSound = self.programmSoundFiles[selectedIndexPath.row];
 	} else {
-		selectedIndexPath = self.soundFiles[selectedIndexPath.row];
+		selectedSound = self.soundFiles[selectedIndexPath.row];
 	}
 	if ([self.delegate respondsToSelector:@selector(soundSelectionViewController:didFinishWithSound:)]) {
 		[self.delegate soundSelectionViewController:self didFinishWithSound:selectedSound];
