@@ -18,6 +18,7 @@
 #import "Station.h"
 #import "StationTuneinDetails.h"
 #import "Sound.h"
+#import "NSDate+Utility.h"
 
 #define LocalNotificationInfoDateKey @"LocalNotificationInfoDateKey"
 
@@ -51,6 +52,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	[self refreshView];
+	[self configureAccessibilityLabels];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,7 +67,7 @@
 - (void)refreshView {
 	[self addPlayerView];
 	self.radioSelectionValueLabel.text = [Configuration currentConfiguration].currentSelectedRadioStationURLString;
-	self.alarmSelectionValueLabel.text = [[Configuration currentConfiguration].currentAlarmDate descriptionWithLocale:[NSLocale currentLocale]];
+	self.alarmSelectionValueLabel.text = [[Configuration currentConfiguration].currentAlarmDate dateAndTimeString];
 	self.soundSelectionValueLabel.text = [Configuration currentConfiguration].currentSelectedSound.soundName;
 	if ([Configuration currentConfiguration].shouldPlayImmediately) {
 		[Configuration currentConfiguration].playImmediately = NO;
@@ -96,6 +98,20 @@
 
 - (void)viewDidLayoutSubviews {
 	self.audioPlayerView.frame = CGRectMake(8, self.view.bounds.size.height / 2, self.view.bounds.size.width - 16, (self.view.bounds.size.height - 16) / 2);
+}
+
+- (void)configureAccessibilityLabels {
+	self.view.accessibilityLabel = @"MainView";
+	self.audioPlayerView.accessibilityLabel = @"AudioPlayerView";
+	self.radioSelectionLabel.accessibilityLabel = @"RadioSelectionLabel";
+	self.radioSelectionValueLabel.accessibilityLabel = @"RadioSelectionValueLabel";
+	self.radioSelectionButton.accessibilityLabel = @"RadioSelectionButton";
+	self.alarmSelectionLabel.accessibilityLabel = @"AlarmSelectionLabel";
+	self.alarmSelectionValueLabel.accessibilityLabel = @"AlarmSelectionValueLabel";
+	self.alarmSelectionButton.accessibilityLabel = @"AlarmSelectionButton";
+	self.soundSelectionLabel.accessibilityLabel = @"SoundSelectionLabel";
+	self.soundSelectionValueLabel.accessibilityLabel = @"SoundSelectionValueLabel";
+	self.soundSelectionButton.accessibilityLabel = @"SoundSelectionButton";
 }
 
 #pragma mark -

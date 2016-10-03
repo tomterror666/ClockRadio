@@ -30,6 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self configureAccessibilityLabels];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -44,6 +45,12 @@
 #pragma mark -
 #pragma mark data handling and refreshing
 #pragma mark -
+
+- (void)configureAccessibilityLabels {
+	self.view.accessibilityLabel = @"RadioStationSelectionView";
+	self.tableView.accessibilityLabel = @"RadioStationSelectionTableView";
+	self.cancelButton.accessibilityLabel = @"CancelButton";
+}
 
 - (void)refreshView {
 	[self updateUI];

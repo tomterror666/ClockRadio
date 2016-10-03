@@ -16,4 +16,10 @@
 
 + (NSDate *)normalizeHoursOfDate:(NSDate *)date;
 
+- (NSString *)dateAndTimeString;
+
+- (NSString *)dateString;
+
+- (NSString *)timeString;
+
 @end

@@ -31,4 +31,22 @@
 	return [calendar dateFromComponents:components];
 }
 
+- (NSString *)dateAndTimeString {
+	NSDateFormatter *formatter = [NSDateFormatter new];
+	formatter.dateFormat = @"dd.MM.yyyy - HH:mm:ss";
+	return [formatter stringFromDate:self];
+}
+
+- (NSString *)dateString {
+	NSDateFormatter *formatter = [NSDateFormatter new];
+	formatter.dateFormat = @"dd.MM.yyyy";
+	return [formatter stringFromDate:self];
+}
+
+- (NSString *)timeString {
+	NSDateFormatter *formatter = [NSDateFormatter new];
+	formatter.dateFormat = @"HH:mm:ss";
+	return [formatter stringFromDate:self];
+}
+
 @end

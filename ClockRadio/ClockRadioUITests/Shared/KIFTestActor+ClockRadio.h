@@ -8,6 +8,12 @@
 
 #import <KIF/KIF.h>
 
-@interface KIFTestActor (ClockRadio)
+@interface KIFUITestActor (ClockRadio)
+
+- (UIButton *)waitForButtonWithAccessibilityLabel:(NSString *)label isTappable:(BOOL)isTappable;
+
+- (UIButton *)waitForButtonWithAccessibilityLabel:(NSString *)label withButtonText:(NSString *)text isTappable:(BOOL)isTappable;
+
+- (UILabel *)waitForLabelWithAccessibilityLabel:(NSString *)label withText:(NSString *)text;
 
 @end

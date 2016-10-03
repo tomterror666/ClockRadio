@@ -30,6 +30,7 @@
 		[self addVolumeSlider];
 		[self addMuteButton];
 		[self updateUI];
+		[self configureAccessibilityLabels];
 	}
 	return self;
 }
@@ -74,6 +75,13 @@
 	[self.muteButton setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
 	[self.muteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateDisabled];
 	[self addSubview:self.muteButton];
+}
+
+- (void)configureAccessibilityLabels {
+	self.playButton.accessibilityLabel = @"PlayButton";
+	self.stopButton.accessibilityLabel = @"StopButton";
+	self.volumeSlider.accessibilityLabel = @"VolumeSlider";
+	self.muteButton.accessibilityLabel = @"MuteButton";
 }
 
 #pragma mark -

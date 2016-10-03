@@ -15,9 +15,9 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - Expecta (1.0.5)
-  - KIF (3.4.2):
-    - KIF/Core (= 3.4.2)
-  - KIF/Core (3.4.2)
+  - KIF (3.5.1):
+    - KIF/Core (= 3.5.1)
+  - KIF/Core (3.5.1)
   - OCMock (3.3.1)
   - OGIniFiler (0.1.0)
   - StreamingKit (0.1.29)
@@ -35,12 +35,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  KIF: b518c9831453abea5afdbbde3908ec47832d6d56
+  KIF: 082eb65279e51c3092923802849eb796a04982ab
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
   OGIniFiler: 55e97526bf064368ecf11466b3ce2360fd793d56
   StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
   XMLReader-Arc: 7832c527346fc26511fd6c05ebcee18008c34d6d
 
-PODFILE CHECKSUM: e2c84baf21ce503bf56ae136802cd26ecc887004
+PODFILE CHECKSUM: d1a2833616f572eece5d39e05dafad27d93770bf
 
 COCOAPODS: 1.0.1

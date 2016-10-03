@@ -32,6 +32,7 @@
 		9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7D81831D23F5C20040BDB5 /* ApiClient.m */; };
 		9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8AD55E1D282B4E00B171EF /* AlarmSelectionViewController.m */; };
 		9E8AD5611D282B4E00B171EF /* AlarmSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E8AD55F1D282B4E00B171EF /* AlarmSelectionViewController.xib */; };
+		9EC44AFF1DA1416D0098A5D6 /* MockedConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC44AFE1DA1416D0098A5D6 /* MockedConfiguration.m */; };
 		9EDA45C01D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45AF1D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 */; };
 		9EDA45C11D6CEE7F00C79D4D /* Police Siren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B01D6CEE7F00C79D4D /* Police Siren.mp3 */; };
 		9EDA45C21D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45B11D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 */; };
@@ -51,6 +52,8 @@
 		9EDA45D01D6CEE7F00C79D4D /* Rooster Crow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */; };
 		9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA45D21D6CF06F00C79D4D /* Sound.m */; };
 		9EEE32F71D9816660023ABF6 /* SoundSelectionCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE32F61D9816660023ABF6 /* SoundSelectionCellTest.m */; };
+		9EEE32F91D983DFF0023ABF6 /* MainViewControllerUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE32F81D983DFF0023ABF6 /* MainViewControllerUITest.m */; };
+		9EEE32FE1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE32FD1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.m */; };
 		BFB979F3B6FA553779E8C37C /* libPods-ClockRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */; };
 		D49A05C8BB7C35FC93A16EF9 /* libPods-ClockRadioUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A3FC4E5B18F942138674E9C /* libPods-ClockRadioUITests.a */; };
 		E80E2D6C1D9425B600DE085F /* OCMConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */; };
@@ -128,6 +131,8 @@
 		9E8AD55D1D282B4E00B171EF /* AlarmSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmSelectionViewController.h; sourceTree = "<group>"; };
 		9E8AD55E1D282B4E00B171EF /* AlarmSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSelectionViewController.m; sourceTree = "<group>"; };
 		9E8AD55F1D282B4E00B171EF /* AlarmSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmSelectionViewController.xib; sourceTree = "<group>"; };
+		9EC44AFD1DA1416D0098A5D6 /* MockedConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockedConfiguration.h; sourceTree = "<group>"; };
+		9EC44AFE1DA1416D0098A5D6 /* MockedConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockedConfiguration.m; sourceTree = "<group>"; };
 		9EDA45AF1D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "UFO Descending And Takeoff.mp3"; sourceTree = "<group>"; };
 		9EDA45B01D6CEE7F00C79D4D /* Police Siren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Police Siren.mp3"; sourceTree = "<group>"; };
 		9EDA45B11D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Railroad Crossing Bell.mp3"; sourceTree = "<group>"; };
@@ -148,6 +153,9 @@
 		9EDA45D11D6CF06F00C79D4D /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
 		9EDA45D21D6CF06F00C79D4D /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sound.m; sourceTree = "<group>"; };
 		9EEE32F61D9816660023ABF6 /* SoundSelectionCellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundSelectionCellTest.m; sourceTree = "<group>"; };
+		9EEE32F81D983DFF0023ABF6 /* MainViewControllerUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerUITest.m; sourceTree = "<group>"; };
+		9EEE32FC1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestActor+ClockRadio.h"; sourceTree = "<group>"; };
+		9EEE32FD1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestActor+ClockRadio.m"; sourceTree = "<group>"; };
 		B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadioTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD163ED1A7E06F17BC00FEE /* Pods-ClockRadioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioUITests/Pods-ClockRadioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClockRadio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -384,6 +392,17 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		9EEE32FA1D9FD7150023ABF6 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9EEE32FC1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.h */,
+				9EEE32FD1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.m */,
+				9EC44AFD1DA1416D0098A5D6 /* MockedConfiguration.h */,
+				9EC44AFE1DA1416D0098A5D6 /* MockedConfiguration.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		B315C9F6D790214815EAD01D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,8 +522,10 @@
 		E8D978FA1D12E58100B9D459 /* ClockRadioUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9EEE32FA1D9FD7150023ABF6 /* Shared */,
 				E8D978FB1D12E58100B9D459 /* ClockRadioUITests.m */,
 				E8D978FD1D12E58100B9D459 /* Info.plist */,
+				9EEE32F81D983DFF0023ABF6 /* MainViewControllerUITest.m */,
 			);
 			path = ClockRadioUITests;
 			sourceTree = "<group>";
@@ -839,6 +860,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8D978FC1D12E58100B9D459 /* ClockRadioUITests.m in Sources */,
+				9EEE32F91D983DFF0023ABF6 /* MainViewControllerUITest.m in Sources */,
+				9EEE32FE1D9FD7930023ABF6 /* KIFTestActor+ClockRadio.m in Sources */,
+				9EC44AFF1DA1416D0098A5D6 /* MockedConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,11 +1044,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBD163ED1A7E06F17BC00FEE /* Pods-ClockRadioUITests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClockRadio.app/ClockRadio";
 				INFOPLIST_FILE = ClockRadioUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.tomterror.ClockRadioUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				TEST_TARGET_NAME = ClockRadio;
+				USES_XCTRUNNER = NO;
 			};
 			name = Debug;
 		};
@@ -1032,11 +1059,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 583E586C1114A54F1D1DCA7B /* Pods-ClockRadioUITests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClockRadio.app/ClockRadio";
 				INFOPLIST_FILE = ClockRadioUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.tomterror.ClockRadioUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				TEST_TARGET_NAME = ClockRadio;
+				USES_XCTRUNNER = NO;
 			};
 			name = Release;
 		};
