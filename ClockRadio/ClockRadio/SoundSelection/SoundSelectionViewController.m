@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self refreshView];
+	[self configureAccessibilityLabels];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +52,13 @@
 		Sound *sound = [[Sound alloc] initWithURL:soundURL];
 		[self.programmSoundFiles addObject:sound];
 	}
+}
+
+- (void)configureAccessibilityLabels {
+	self.view.accessibilityLabel = @"SoundSelectionView";
+	self.tableView.accessibilityLabel = @"SoundSelectionTableView";
+	self.cancelButton.accessibilityLabel = @"CancelButton";
+	self.doneButton.accessibilityLabel = @"DoneButton";
 }
 
 #pragma mark -

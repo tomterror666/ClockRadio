@@ -156,6 +156,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>02DFCE8362FEE1B70E3923328D4943C1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>036609452ECE3C0E169233741791DB66</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>0358B918CA8C9D3C214FD4D41CD69A90</key>
 		<dict>
 			<key>fileRef</key>
@@ -163,18 +176,12 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>03985669B5F7333E3E86AD578A6C9232</key>
+		<key>036609452ECE3C0E169233741791DB66</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>338366BBD342972A72E151B41B0BB32E</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-ClockRadioUITests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>03C8FA0B7331572A73E030044483792B</key>
 		<dict>
@@ -275,7 +282,7 @@
 		<key>05BA4E4A810C06503AA328B986A4311D</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>B0411C7A73D169444453DA52CADD6980</string>
+			<string>8C15BF22F85EBA43E767A33B104E251F</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -326,6 +333,21 @@
 			<string>StreamingKit/StreamingKit/STKCoreFoundationDataSource.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>05D3AA86631726446FFFAC75824FAECC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libXMLReader-Arc.a</string>
+			<key>path</key>
+			<string>libXMLReader-Arc.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>06E08F28F7832C7B902354A6F56879AC</key>
 		<dict>
@@ -412,6 +434,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>08FD6C2B2C238DFDF97FF4102D4607A8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ClockRadioKIFFUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>0934D3DAC27331C1569A357A677B2206</key>
 		<dict>
 			<key>fileRef</key>
@@ -438,6 +473,19 @@
 			<string>OCMFunctionsPrivate.h</string>
 			<key>path</key>
 			<string>Source/OCMock/OCMFunctionsPrivate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>09E04CC12FEC52F5E4106C8066E27417</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ClockRadioKIFFUITests-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -562,19 +610,6 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>0C142708A3D842D4460560A356A6CBB3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-ClockRadio-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>0C35E5FF175874A249D385DF1C3E4164</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -618,21 +653,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0D263134E9E57392ED3A2CA0200D9C62</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-ClockRadioTests.a</string>
-			<key>path</key>
-			<string>libPods-ClockRadioTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>0DD00355140D5EC1DA999989C1331F53</key>
 		<dict>
 			<key>fileRef</key>
@@ -665,6 +685,19 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-DOS_OBJECT_USE_OBJC=0</string>
 			</dict>
+		</dict>
+		<key>10280C229A551AAFE6A5C64E63A799AE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2F501FE84845EAD97B9087DAFCBBEE0E</string>
+			<key>remoteInfo</key>
+			<string>Expecta</string>
 		</dict>
 		<key>10454F2F48740BA25D8B684BD91F603E</key>
 		<dict>
@@ -768,6 +801,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>11CCCF2AD022B2AEEEF41F5399B05AAA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-ClockRadioTests.a</string>
+			<key>path</key>
+			<string>libPods-ClockRadioTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>11CF0C44A36897A963C15B74C2AEC415</key>
 		<dict>
 			<key>fileRef</key>
@@ -794,6 +842,21 @@
 			<string>Expecta/EXPFloatTuple.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13312C004583239C139E64585A65D23B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libOGIniFiler.a</string>
+			<key>path</key>
+			<string>libOGIniFiler.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>1396C7291D82EB70ABBD8E3EFF562062</key>
 		<dict>
@@ -1066,6 +1129,19 @@
 			<string>4A2CAA839F2722C796C6F1DFDC806B92</string>
 			<key>remoteInfo</key>
 			<string>OCMock</string>
+		</dict>
+		<key>172FDE657EA8395E7C33D65EE9857E10</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ClockRadioUITests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>173F3292578F463A36274787E411F5F8</key>
 		<dict>
@@ -1366,6 +1442,19 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>1D7AA8A57FC444B9B1D01D79FE795B8C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ClockRadioUITests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>1DD6A1FE87F52996D89DC19CD83FB345</key>
 		<dict>
 			<key>isa</key>
@@ -1594,32 +1683,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>257D7D2C31ABAD7A48899F34FA9E21BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ClockRadio-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2581CEB63599C9FF226F8F06B633235E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-ClockRadio-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>259273DDA763C7254DB5A33F6DE5FDE5</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1632,40 +1695,6 @@
 			<string>NSMethodSignature+OCMAdditions.h</string>
 			<key>path</key>
 			<string>Source/OCMock/NSMethodSignature+OCMAdditions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>26016C6A7D252C37EE94C81BF9CC6A31</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>262BF876676F53E635F23B9C401AE3A8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>78805B58444DC9BB01FA8C411182D2C6</string>
-				<string>03985669B5F7333E3E86AD578A6C9232</string>
-				<string>AFFEBF857EC21E1E8991E36E588E8415</string>
-				<string>C806BA3A21AF7DE134A13CEE8A43B190</string>
-				<string>7364B42EA0DCB91817902BDAC40F1B9A</string>
-				<string>57F9BC8A94EF40649C74A345D47030FA</string>
-				<string>3954BF5D61CC291CE19B4536CAA55437</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-ClockRadioUITests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-ClockRadioUITests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1740,6 +1769,27 @@
 			<string>EEE02414D1C8E477CEA436BB53DB6CA2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>28FD4065C5C308879711DDFD6E04DE0A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>45BC3F56E3F99E2E15E1C1A390CDB858</string>
+				<string>E8C68584EE2EB0D033D56D75A363D081</string>
+				<string>09E04CC12FEC52F5E4106C8066E27417</string>
+				<string>3B8F1E9727C803F6795A8FDF8368773D</string>
+				<string>F0FE8B0EB6FBFB7AE3AA70A636F56975</string>
+				<string>B04F0951EEF7F7CC11F6724DD9EF800F</string>
+				<string>08FD6C2B2C238DFDF97FF4102D4607A8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ClockRadioKIFFUITests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-ClockRadioKIFFUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2945FAA75C956DD6A541EB51E42E6899</key>
 		<dict>
@@ -1824,27 +1874,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2AE0ACEA0B97F8C479FDAA601341309F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2581CEB63599C9FF226F8F06B633235E</string>
-				<string>0C142708A3D842D4460560A356A6CBB3</string>
-				<string>AC88B10FEBC3E64932166B0530F672FC</string>
-				<string>3E076441B85F38AB25F8C773A9962009</string>
-				<string>257D7D2C31ABAD7A48899F34FA9E21BA</string>
-				<string>B0411C7A73D169444453DA52CADD6980</string>
-				<string>C4C18D99520CCFC70D6629E697A9A871</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-ClockRadio</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-ClockRadio</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2B33D1F7FD2798C072CF9D22DCF6103A</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -1921,6 +1950,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>2CD878DB6793226D6EEB096C6E5BE05F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libAFNetworking.a</string>
+			<key>path</key>
+			<string>libAFNetworking.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -1993,7 +2037,7 @@
 			<key>productName</key>
 			<string>Expecta</string>
 			<key>productReference</key>
-			<string>87EC65D56C15B353D6C57F0A65A7889B</string>
+			<string>C87BCA21C2ED1F44923A69780D1A46BB</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -2056,28 +2100,6 @@
 			<string>52C3D1F2E3025D888C0C0F0011223422</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>3149169BE0C8F186C7B16C3A8545BCF9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A88DC0AC79A2850D46C3F6535C7EA02F</string>
-				<string>87EC65D56C15B353D6C57F0A65A7889B</string>
-				<string>55E9E18D582DEC8931F97D622674C110</string>
-				<string>3B861367F7BA690D6A5F4E8934D75D61</string>
-				<string>826973308B76B320C84DCCDF73306691</string>
-				<string>BBA81F852669595A523FB26635C6E8D5</string>
-				<string>0D263134E9E57392ED3A2CA0200D9C62</string>
-				<string>938ABCAAC5427619E5242238357D11C1</string>
-				<string>F79C7610CE453A51FEE00445A5653EF2</string>
-				<string>76C7E6F182997496D8F8F923B141E67F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3152811CD17686AA726713BFE3612206</key>
 		<dict>
@@ -2327,9 +2349,24 @@
 		<key>34A2413116CF68829671B0CD39DA8C9F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>47C932A8128B28E752F5CDFBD07BF74B</string>
+			<string>D5110B1F5021F1D3AA1B1CE9B444B727</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>34BBFA02DEC0FC930F5E5136E62D73EA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libStreamingKit.a</string>
+			<key>path</key>
+			<string>libStreamingKit.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>35086D1D336EFD58138A1DDB33251E08</key>
 		<dict>
@@ -2470,19 +2507,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>3954BF5D61CC291CE19B4536CAA55437</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ClockRadioUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>3A013F13122CDB8EE962F8CB7C6FCC8E</key>
 		<dict>
 			<key>fileRef</key>
@@ -2582,20 +2606,18 @@
 			<key>remoteInfo</key>
 			<string>XMLReader-Arc</string>
 		</dict>
-		<key>3B861367F7BA690D6A5F4E8934D75D61</key>
+		<key>3B8F1E9727C803F6795A8FDF8368773D</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libOCMock.a</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
 			<key>path</key>
-			<string>libOCMock.a</string>
+			<string>Pods-ClockRadioKIFFUITests-frameworks.sh</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>3BD356A4A6F76BBDDEE51FF544F44B72</key>
 		<dict>
@@ -2633,7 +2655,7 @@
 			<key>productName</key>
 			<string>StreamingKit</string>
 			<key>productReference</key>
-			<string>F79C7610CE453A51FEE00445A5653EF2</string>
+			<string>34BBFA02DEC0FC930F5E5136E62D73EA</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -2696,19 +2718,6 @@
 			<string>STKDataSource.h</string>
 			<key>path</key>
 			<string>StreamingKit/StreamingKit/STKDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E076441B85F38AB25F8C773A9962009</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ClockRadio-frameworks.sh</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2968,7 +2977,7 @@
 			<key>productName</key>
 			<string>Pods-ClockRadio</string>
 			<key>productReference</key>
-			<string>BBA81F852669595A523FB26635C6E8D5</string>
+			<string>CA33781A0733C75FDE74F970BE745269</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3005,6 +3014,19 @@
 			<string>EXPMatchers+endWith.m</string>
 			<key>path</key>
 			<string>Expecta/Matchers/EXPMatchers+endWith.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>40D0F611DFB449165BDC43018AE63A11</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3127,7 +3149,7 @@
 			<key>productName</key>
 			<string>Pods-ClockRadioUITests</string>
 			<key>productReference</key>
-			<string>938ABCAAC5427619E5242238357D11C1</string>
+			<string>B3D990475960EE46C6285E604C84647A</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3210,6 +3232,27 @@
 				</array>
 			</dict>
 		</dict>
+		<key>436FD1DF8FEF6AC6FCD6AE06CF911FB9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>586A1D4699E88760F9C29ADC5F440DF1</string>
+				<string>C3DF962F040025D9EAC7AE11B6E9923F</string>
+				<string>D5110B1F5021F1D3AA1B1CE9B444B727</string>
+				<string>CCCA310E5BCB5D45E71EA64DB80312A1</string>
+				<string>7E61199D3B9B81ED1C471AFA4B4A9A4F</string>
+				<string>40D0F611DFB449165BDC43018AE63A11</string>
+				<string>AAF875D6D6F17A2107DE38DCA8295752</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ClockRadioTests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-ClockRadioTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>4383E0DB1B07B9EB3155EF5D5F27C7BA</key>
 		<dict>
 			<key>fileRef</key>
@@ -3281,6 +3324,19 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>OCMock-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45BC3F56E3F99E2E15E1C1A390CDB858</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ClockRadioKIFFUITests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -3390,19 +3446,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
-		</dict>
-		<key>47C932A8128B28E752F5CDFBD07BF74B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>47E63EBBBAFA0EE81C50BE08F8EFAF6C</key>
 		<dict>
@@ -3545,7 +3588,7 @@
 			<key>productName</key>
 			<string>OCMock</string>
 			<key>productReference</key>
-			<string>3B861367F7BA690D6A5F4E8934D75D61</string>
+			<string>D5B4D50B3E548740074139A0821DDC5B</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -3993,21 +4036,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>55E9E18D582DEC8931F97D622674C110</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libKIF.a</string>
-			<key>path</key>
-			<string>libKIF.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>55EA7FCA2F507BCC25959CE95D295A8C</key>
 		<dict>
 			<key>fileRef</key>
@@ -4132,7 +4160,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>57F9BC8A94EF40649C74A345D47030FA</key>
+		<key>57AA86C129AAC2635B293F2257D5BA91</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -4142,6 +4170,19 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-ClockRadioUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>586A1D4699E88760F9C29ADC5F440DF1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4265,21 +4306,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>5C2A26C762D028AD64165E1E75C85929</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2AE0ACEA0B97F8C479FDAA601341309F</string>
-				<string>A2434D307719144B2137715B36C31188</string>
-				<string>262BF876676F53E635F23B9C401AE3A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>5C36551166C9D57F015DF768A1757D5D</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -4396,7 +4422,7 @@
 		<key>5F55C9250F284DB17C6C653CDEAE8A18</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AFFEBF857EC21E1E8991E36E588E8415</string>
+			<string>1D7AA8A57FC444B9B1D01D79FE795B8C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -4588,6 +4614,46 @@
 				</array>
 			</dict>
 		</dict>
+		<key>6604BFF762572FDA3381CBE3BD6B24D5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>08FD6C2B2C238DFDF97FF4102D4607A8</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>66D7E6D24BC998C1FC162AB61341583C</key>
 		<dict>
 			<key>children</key>
@@ -4663,6 +4729,19 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Core</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>672D412D6BBA20FC326F1A65F27C0C32</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ClockRadio.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -4749,6 +4828,34 @@
 				</array>
 			</dict>
 		</dict>
+		<key>691DC2FCC37D36DE4CB441158FEDEFCF</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>A93B994747B24BBA24D58C128DEDB00D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F8DD85B833830FCCDA40A6BDC9BD4FF0</string>
+				<string>02DFCE8362FEE1B70E3923328D4943C1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6A61D466290A88C7B275DEDA59E88D2A</string>
+				<string>9F0B089CD11D61668E3C959FD8D43B7C</string>
+				<string>F8910D0F8AD3EE63FD80446E1F09E799</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ClockRadioKIFFUITests</string>
+			<key>productName</key>
+			<string>Pods-ClockRadioKIFFUITests</string>
+			<key>productReference</key>
+			<string>960BBA8C6E61C9C783308C091EB919D6</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
 		<key>6924E116731D7079958063A3EE0781ED</key>
 		<dict>
 			<key>fileRef</key>
@@ -4788,6 +4895,17 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>6A61D466290A88C7B275DEDA59E88D2A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Expecta</string>
+			<key>target</key>
+			<string>2F501FE84845EAD97B9087DAFCBBEE0E</string>
+			<key>targetProxy</key>
+			<string>10280C229A551AAFE6A5C64E63A799AE</string>
 		</dict>
 		<key>6B09E5565C1767D389689D51909DA170</key>
 		<dict>
@@ -4889,7 +5007,7 @@
 		<key>6F8CAC4273ED5144CA511EDFD55F1B82</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>9B77C6A3EE302C81C0EFE1C24ED11987</string>
+			<string>40D0F611DFB449165BDC43018AE63A11</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -5128,19 +5246,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7364B42EA0DCB91817902BDAC40F1B9A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ClockRadioUITests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>73FC4FE74554B8CF15F406152CA458E5</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5162,6 +5267,19 @@
 			<string>8FBFD8028CA1102101FD858887CADFD5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>7420CC9B221256814A3BD4096EEEC52B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadio-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7436C602BB1CA7C91560C28DE749357B</key>
 		<dict>
@@ -5301,21 +5419,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>76C7E6F182997496D8F8F923B141E67F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libXMLReader-Arc.a</string>
-			<key>path</key>
-			<string>libXMLReader-Arc.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>76D35E60B26D5B242BD5936CF3ECE1FE</key>
 		<dict>
 			<key>fileRef</key>
@@ -5366,22 +5469,9 @@
 			<key>productName</key>
 			<string>OGIniFiler</string>
 			<key>productReference</key>
-			<string>826973308B76B320C84DCCDF73306691</string>
+			<string>13312C004583239C139E64585A65D23B</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>779C08DADBBFF56FD67F17BBF77EE034</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>779CFE8771E1EF63F1313ABEBCECAA4A</key>
 		<dict>
@@ -5422,19 +5512,6 @@
 			<string>Release</string>
 			<key>isa</key>
 			<string>XCConfigurationList</string>
-		</dict>
-		<key>78805B58444DC9BB01FA8C411182D2C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-ClockRadioUITests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>78940A6980F359C4304C695EF6E67C5D</key>
 		<dict>
@@ -5552,8 +5629,8 @@
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>EB57DDB3388FBC701046A1E93218737F</string>
 				<string>22531820C5CAD50BC02CF3ADFC622567</string>
-				<string>3149169BE0C8F186C7B16C3A8545BCF9</string>
-				<string>5C2A26C762D028AD64165E1E75C85929</string>
+				<string>9E825666CC0ABC853B914A2CA7213BAD</string>
+				<string>A69E2451FA98F689FA8C30B0DFAFADDF</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -5603,6 +5680,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>7E61199D3B9B81ED1C471AFA4B4A9A4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>7E6BB06DB4A936016F79C27EB80B6DBE</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5629,6 +5719,19 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-fno-objc-arc</string>
 			</dict>
+		</dict>
+		<key>7EE463A67CC58D32273A60474EE53D2B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ClockRadioUITests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>7F0578A0258E02384F6229C678E60D31</key>
 		<dict>
@@ -5748,6 +5851,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>81B5786F0F9E93420152F4A5A4DD17E1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libKIF.a</string>
+			<key>path</key>
+			<string>libKIF.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>82048BEAB1A7313E2CE624909C79C5E6</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -5777,21 +5895,6 @@
 			<string>UIKit+AFNetworking/AFImageDownloader.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>826973308B76B320C84DCCDF73306691</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libOGIniFiler.a</string>
-			<key>path</key>
-			<string>libOGIniFiler.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>82ED432133EF7B72F9CB0CF001D821B2</key>
 		<dict>
@@ -6005,21 +6108,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>87EC65D56C15B353D6C57F0A65A7889B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libExpecta.a</string>
-			<key>path</key>
-			<string>libExpecta.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>8837ED5F58179D2EA713C6F65A226F02</key>
 		<dict>
 			<key>isa</key>
@@ -6074,6 +6162,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>8C15BF22F85EBA43E767A33B104E251F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ClockRadio.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>8CCB9E96E25234760AADF9C8E330E954</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6118,19 +6219,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>8D9C9CAA8EF2058837F0E6560D38AA84</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>8DF818A6F54DB9C5805B71A17C1EA801</key>
 		<dict>
 			<key>children</key>
@@ -6168,6 +6256,19 @@
 			<string>C82F206202E864201B5BDB175B44D2EC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>8EFCC5929355A422CDE82F695AB6BE8F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadioUITests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>8F674582EE71972EE60EFD96C1F173D5</key>
 		<dict>
@@ -6292,7 +6393,7 @@
 			<key>productName</key>
 			<string>AFNetworking</string>
 			<key>productReference</key>
-			<string>A88DC0AC79A2850D46C3F6535C7EA02F</string>
+			<string>2CD878DB6793226D6EEB096C6E5BE05F</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -6310,21 +6411,6 @@
 			<string>Additions/UITouch-KIFAdditions.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>938ABCAAC5427619E5242238357D11C1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-ClockRadioUITests.a</string>
-			<key>path</key>
-			<string>libPods-ClockRadioUITests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
 		<dict>
@@ -6399,6 +6485,21 @@
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>960BBA8C6E61C9C783308C091EB919D6</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-ClockRadioKIFFUITests.a</string>
+			<key>path</key>
+			<string>libPods-ClockRadioKIFFUITests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>9691C2B682A3620DC900E34AA08020C0</key>
 		<dict>
@@ -6552,19 +6653,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>9B77C6A3EE302C81C0EFE1C24ED11987</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>9BE97BC720F7BE562A6DBDCE4FCB6D31</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6607,6 +6695,29 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
+		<key>9E825666CC0ABC853B914A2CA7213BAD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2CD878DB6793226D6EEB096C6E5BE05F</string>
+				<string>C87BCA21C2ED1F44923A69780D1A46BB</string>
+				<string>81B5786F0F9E93420152F4A5A4DD17E1</string>
+				<string>D5B4D50B3E548740074139A0821DDC5B</string>
+				<string>13312C004583239C139E64585A65D23B</string>
+				<string>CA33781A0733C75FDE74F970BE745269</string>
+				<string>960BBA8C6E61C9C783308C091EB919D6</string>
+				<string>11CCCF2AD022B2AEEEF41F5399B05AAA</string>
+				<string>B3D990475960EE46C6285E604C84647A</string>
+				<string>34BBFA02DEC0FC930F5E5136E62D73EA</string>
+				<string>05D3AA86631726446FFFAC75824FAECC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>9ED6B48F0C000C83C89249483D3398A6</key>
 		<dict>
 			<key>fileRef</key>
@@ -6618,6 +6729,17 @@
 				<key>COMPILER_FLAGS</key>
 				<string>-fno-objc-arc</string>
 			</dict>
+		</dict>
+		<key>9F0B089CD11D61668E3C959FD8D43B7C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>KIF</string>
+			<key>target</key>
+			<string>F152B2C24C15B7EA2F1A79189489FDEF</string>
+			<key>targetProxy</key>
+			<string>EC524CB4C2E2DB110A24597BE09651BD</string>
 		</dict>
 		<key>9F8B5FC59C59EDF49A6E013DBA69A6CA</key>
 		<dict>
@@ -6659,27 +6781,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>KIF-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A2434D307719144B2137715B36C31188</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>779C08DADBBFF56FD67F17BBF77EE034</string>
-				<string>DD4CCE9C9EE47F3BF9FA7D8D3361C666</string>
-				<string>47C932A8128B28E752F5CDFBD07BF74B</string>
-				<string>26016C6A7D252C37EE94C81BF9CC6A31</string>
-				<string>D5FFAA2EE086D430D177FD76C8B61D93</string>
-				<string>9B77C6A3EE302C81C0EFE1C24ED11987</string>
-				<string>8D9C9CAA8EF2058837F0E6560D38AA84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-ClockRadioTests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-ClockRadioTests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -6837,6 +6938,22 @@
 				</array>
 			</dict>
 		</dict>
+		<key>A69E2451FA98F689FA8C30B0DFAFADDF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AE8F6944E02E93872F80A61E0C7FF394</string>
+				<string>28FD4065C5C308879711DDFD6E04DE0A</string>
+				<string>436FD1DF8FEF6AC6FCD6AE06CF911FB9</string>
+				<string>BDDC0B2E3888E11D599CA82336AC671E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>A6A3F6CD69A925385ED4B431D443A79E</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6934,27 +7051,26 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A88DC0AC79A2850D46C3F6535C7EA02F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libAFNetworking.a</string>
-			<key>path</key>
-			<string>libAFNetworking.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>A8FC6A53F6C1CB4DEFD972664E1AF3B1</key>
 		<dict>
 			<key>fileRef</key>
 			<string>E589517CCFE05EBD26A66A5511C0CA9E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>A93B994747B24BBA24D58C128DEDB00D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AAAFC24FD95069A208E2FEFE782A8810</string>
+				<string>6604BFF762572FDA3381CBE3BD6B24D5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>A99F47AD2C74CA0EC6EA2ACEBCA709E4</key>
 		<dict>
@@ -6999,6 +7115,46 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>AAAFC24FD95069A208E2FEFE782A8810</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B04F0951EEF7F7CC11F6724DD9EF800F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>AAE75938ED3DD46BC00352B82D7CA890</key>
 		<dict>
@@ -7085,6 +7241,19 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>AAF875D6D6F17A2107DE38DCA8295752</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>AB1D6408D48F6ECF3FCE553BE73961F5</key>
 		<dict>
 			<key>fileRef</key>
@@ -7098,6 +7267,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>AC085E2402473C7759B76C49886B6A74</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ClockRadio-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AC23EC83E6D6B858ECB301D1DBE62357</key>
 		<dict>
@@ -7129,19 +7311,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AC88B10FEBC3E64932166B0530F672FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-ClockRadio-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>AC89BE5B78F75D73FFCED55748821186</key>
 		<dict>
 			<key>containerPortal</key>
@@ -7165,7 +7334,7 @@
 		<key>ACBFCED2D7C653FD408666337AEED003</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>C4C18D99520CCFC70D6629E697A9A871</string>
+			<string>672D412D6BBA20FC326F1A65F27C0C32</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -7333,6 +7502,40 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>AE8F6944E02E93872F80A61E0C7FF394</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AC085E2402473C7759B76C49886B6A74</string>
+				<string>CE3C1B0F8B384865545F296163D820A6</string>
+				<string>D47839C61E99E5E946CE17D94698B442</string>
+				<string>AE9F98B3A5A4862F49EA66F85EEFCAE3</string>
+				<string>7420CC9B221256814A3BD4096EEEC52B</string>
+				<string>8C15BF22F85EBA43E767A33B104E251F</string>
+				<string>672D412D6BBA20FC326F1A65F27C0C32</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ClockRadio</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-ClockRadio</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE9F98B3A5A4862F49EA66F85EEFCAE3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadio-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>AEB4373E28A815DCDE1DC949763CE325</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -7378,19 +7581,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>AFFEBF857EC21E1E8991E36E588E8415</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-ClockRadioUITests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>B01F7E464E0151CD26FBBFE5F4CF9D54</key>
 		<dict>
 			<key>children</key>
@@ -7408,7 +7598,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B0411C7A73D169444453DA52CADD6980</key>
+		<key>B04F0951EEF7F7CC11F6724DD9EF800F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -7417,7 +7607,7 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>path</key>
-			<string>Pods-ClockRadio.debug.xcconfig</string>
+			<string>Pods-ClockRadioKIFFUITests.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -7538,6 +7728,21 @@
 			<string>452A478AE9BBAD26E7084114CBFF1CDF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>B3D990475960EE46C6285E604C84647A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-ClockRadioUITests.a</string>
+			<key>path</key>
+			<string>libPods-ClockRadioUITests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>B4D6973B3F74EB04E719BFCFCBF04C0B</key>
 		<dict>
@@ -7823,21 +8028,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BBA81F852669595A523FB26635C6E8D5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods-ClockRadio.a</string>
-			<key>path</key>
-			<string>libPods-ClockRadio.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>BBAD36221F9EF20A39B4E075A322D2F7</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -7906,6 +8096,27 @@
 			<string>OCMockObject.m</string>
 			<key>path</key>
 			<string>Source/OCMock/OCMockObject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BDDC0B2E3888E11D599CA82336AC671E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F26E0F23A3C663A965455C4574A1B68E</string>
+				<string>172FDE657EA8395E7C33D65EE9857E10</string>
+				<string>1D7AA8A57FC444B9B1D01D79FE795B8C</string>
+				<string>8EFCC5929355A422CDE82F695AB6BE8F</string>
+				<string>C9FBEACC3D8DCB6D200F0F437A7B368E</string>
+				<string>57AA86C129AAC2635B293F2257D5BA91</string>
+				<string>7EE463A67CC58D32273A60474EE53D2B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ClockRadioUITests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-ClockRadioUITests</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -8064,6 +8275,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>C1717A1422030F01D877D7E452F385AE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4A2CAA839F2722C796C6F1DFDC806B92</string>
+			<key>remoteInfo</key>
+			<string>OCMock</string>
+		</dict>
 		<key>C1B65C3D849FEE4FB5298A8135A765DA</key>
 		<dict>
 			<key>fileRef</key>
@@ -8117,6 +8341,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>C3DF962F040025D9EAC7AE11B6E9923F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C4235F3704F471BAF74CB4482A99D340</key>
 		<dict>
@@ -8186,19 +8423,6 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Release</string>
-		</dict>
-		<key>C4C18D99520CCFC70D6629E697A9A871</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ClockRadio.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>C4C9E7F04DE948171C1D9783CF7D117E</key>
 		<dict>
@@ -8464,19 +8688,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C806BA3A21AF7DE134A13CEE8A43B190</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ClockRadioUITests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C82F206202E864201B5BDB175B44D2EC</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -8507,10 +8718,25 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>C87BCA21C2ED1F44923A69780D1A46BB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libExpecta.a</string>
+			<key>path</key>
+			<string>libExpecta.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>C903C699DD57F548AB6498367E0FF81B</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>3954BF5D61CC291CE19B4536CAA55437</string>
+			<string>7EE463A67CC58D32273A60474EE53D2B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -8576,6 +8802,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>C9FBEACC3D8DCB6D200F0F437A7B368E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadioUITests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>CA081045B19CD96AB26C117E6A917CAD</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -8589,6 +8828,21 @@
 			<string>PBXSourcesBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>CA33781A0733C75FDE74F970BE745269</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-ClockRadio.a</string>
+			<key>path</key>
+			<string>libPods-ClockRadio.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>CA5CD277A3B290ECD9E6A4EEB839A117</key>
 		<dict>
@@ -8677,6 +8931,19 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
+		<key>CCCA310E5BCB5D45E71EA64DB80312A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>CDA4D87FDF1955785E6DD474A9DB8F7F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -8720,6 +8987,19 @@
 					<string>Project</string>
 				</array>
 			</dict>
+		</dict>
+		<key>CE3C1B0F8B384865545F296163D820A6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ClockRadio-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>CE7088DEB245EC2719A09D22130EBB6B</key>
 		<dict>
@@ -8783,14 +9063,14 @@
 			<key>productName</key>
 			<string>XMLReader-Arc</string>
 			<key>productReference</key>
-			<string>76C7E6F182997496D8F8F923B141E67F</string>
+			<string>05D3AA86631726446FFFAC75824FAECC</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>CF6E529B7FEACF49F15384CD3E304D7A</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>8D9C9CAA8EF2058837F0E6560D38AA84</string>
+			<string>AAF875D6D6F17A2107DE38DCA8295752</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -9078,7 +9358,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>3149169BE0C8F186C7B16C3A8545BCF9</string>
+			<string>9E825666CC0ABC853B914A2CA7213BAD</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -9093,6 +9373,7 @@
 				<string>4A2CAA839F2722C796C6F1DFDC806B92</string>
 				<string>771ED5D9EA5627A8AF40C358235E52D2</string>
 				<string>3F9C603448162A591C3574EA3C2FC4D8</string>
+				<string>691DC2FCC37D36DE4CB441158FEDEFCF</string>
 				<string>E954204D925B652A801D009A8AF8F827</string>
 				<string>4129AFC7E70FC44AE2042186F0F936B2</string>
 				<string>3BF091E2AE324209B14F4DED941701B1</string>
@@ -9142,6 +9423,19 @@
 				</array>
 			</dict>
 		</dict>
+		<key>D47839C61E99E5E946CE17D94698B442</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ClockRadio-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>D4E01E04870173DFC61F2A8435693D08</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -9168,6 +9462,34 @@
 			<key>targetProxy</key>
 			<string>3AEB1DD063BFC5DD65F7128331459508</string>
 		</dict>
+		<key>D5110B1F5021F1D3AA1B1CE9B444B727</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ClockRadioTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5B4D50B3E548740074139A0821DDC5B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libOCMock.a</string>
+			<key>path</key>
+			<string>libOCMock.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>D5B8C96A0FFBCAA4469E6EEA19F33E57</key>
 		<dict>
 			<key>isa</key>
@@ -9178,19 +9500,6 @@
 			<string>F152B2C24C15B7EA2F1A79189489FDEF</string>
 			<key>targetProxy</key>
 			<string>7240617652A6B30232CC1A7D50F358FA</string>
-		</dict>
-		<key>D5FFAA2EE086D430D177FD76C8B61D93</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D6389885D1EFC9D4E506CD5459C41487</key>
 		<dict>
@@ -9534,19 +9843,6 @@
 			<string>EXPMatchers+beLessThan.m</string>
 			<key>path</key>
 			<string>Expecta/Matchers/EXPMatchers+beLessThan.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DD4CCE9C9EE47F3BF9FA7D8D3361C666</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-ClockRadioTests-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -9937,7 +10233,7 @@
 		<key>E428313C032CB34EFF958385F30D886E</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>57F9BC8A94EF40649C74A345D47030FA</string>
+			<string>57AA86C129AAC2635B293F2257D5BA91</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -10112,6 +10408,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>E8C68584EE2EB0D033D56D75A363D081</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ClockRadioKIFFUITests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>E8CDCEDCDC0ADE51EBAFCC09F44EFF12</key>
 		<dict>
 			<key>fileRef</key>
@@ -10147,7 +10456,7 @@
 			<key>productName</key>
 			<string>Pods-ClockRadioTests</string>
 			<key>productReference</key>
-			<string>0D263134E9E57392ED3A2CA0200D9C62</string>
+			<string>11CCCF2AD022B2AEEEF41F5399B05AAA</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -10245,7 +10554,7 @@
 		<key>EB1ECB7C867983D30C86600EE96A1E69</key>
 		<dict>
 			<key>fileRef</key>
-			<string>AC88B10FEBC3E64932166B0530F672FC</string>
+			<string>D47839C61E99E5E946CE17D94698B442</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -10276,6 +10585,19 @@
 			<string>Source/OCMock/OCMExpectationRecorder.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC524CB4C2E2DB110A24597BE09651BD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F152B2C24C15B7EA2F1A79189489FDEF</string>
+			<key>remoteInfo</key>
+			<string>KIF</string>
 		</dict>
 		<key>ED0ED092B120962B2A7A20EBC0F987AE</key>
 		<dict>
@@ -10528,6 +10850,19 @@
 				<string>-fno-objc-arc</string>
 			</dict>
 		</dict>
+		<key>F0FE8B0EB6FBFB7AE3AA70A636F56975</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ClockRadioKIFFUITests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>F152B2C24C15B7EA2F1A79189489FDEF</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -10549,7 +10884,7 @@
 			<key>productName</key>
 			<string>KIF</string>
 			<key>productReference</key>
-			<string>55E9E18D582DEC8931F97D622674C110</string>
+			<string>81B5786F0F9E93420152F4A5A4DD17E1</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
@@ -10609,6 +10944,19 @@
 			<string>NSObject+Expecta.h</string>
 			<key>path</key>
 			<string>Expecta/NSObject+Expecta.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F26E0F23A3C663A965455C4574A1B68E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ClockRadioUITests-acknowledgements.markdown</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -10792,6 +11140,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>F6B98AE54ED1EDCA9493FCA2F46CA6D1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>09E04CC12FEC52F5E4106C8066E27417</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>F787AC1F28E89AD2DFF3BBB690728DD2</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -10821,21 +11176,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>F79C7610CE453A51FEE00445A5653EF2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libStreamingKit.a</string>
-			<key>path</key>
-			<string>libStreamingKit.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
 		<key>F82370F8F548AAA11D66A75FAE4A7B68</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -10848,6 +11188,30 @@
 			<string>XMLReader-Arc-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8910D0F8AD3EE63FD80446E1F09E799</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>OCMock</string>
+			<key>target</key>
+			<string>4A2CAA839F2722C796C6F1DFDC806B92</string>
+			<key>targetProxy</key>
+			<string>C1717A1422030F01D877D7E452F385AE</string>
+		</dict>
+		<key>F8DD85B833830FCCDA40A6BDC9BD4FF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F6B98AE54ED1EDCA9493FCA2F46CA6D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>FAEB35EB8685B7CC1A100D750376D513</key>
 		<dict>

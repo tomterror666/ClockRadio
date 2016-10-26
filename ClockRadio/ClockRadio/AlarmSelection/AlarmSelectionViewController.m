@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	[self configureAccessibilityLabels];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,6 +30,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -
+#pragma mark Configuration
+#pragma mark -
+
+- (void)configureAccessibilityLabels {
+	self.view.accessibilityLabel = @"AlarmSelectionView";
+	self.alarmSelector.accessibilityLabel = @"AlarmSelectionPicker";
+	self.doneButton.accessibilityLabel = @"DoneButton";
+	self.cancelButton.accessibilityLabel = @"CancelButton";
+}
 
 #pragma mark -
 #pragma mark button handling

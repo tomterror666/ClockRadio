@@ -32,6 +32,7 @@
 }
 
 - (void)beforeEach {
+	[tester waitForTimeInterval:1];
 	[super beforeEach];
 }
 
