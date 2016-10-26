@@ -14,13 +14,7 @@ target 'ClockRadioTests' do
 	pod 'OCMock'
 end
 
-target 'ClockRadioUITests' do
-	pod 'Expecta'
-	pod 'OCMock'
-	pod 'KIF'
-end
-
-target 'ClockRadioKIFFUITests' do
+target 'ClockRadioKIFUITests' do
 	pod 'Expecta'
 	pod 'OCMock'
 	pod 'KIF'
