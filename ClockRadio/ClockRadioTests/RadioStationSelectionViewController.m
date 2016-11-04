@@ -2,12 +2,12 @@
 #import <XCTest/XCTest.h>
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
-#import "RadioStationSelectonViewController.h"
+#import "RadioStationSelectionViewController.h"
 #import "StationProvider.h"
 #import "Station.h"
 
-@interface RadioStationSelectonViewControllerTest : XCTestCase {
-	RadioStationSelectonViewController *controller;
+@interface RadioStationSelectionViewControllerTest : XCTestCase {
+	RadioStationSelectionViewController *controller;
 	id controllerMock;
 	id tableviewMock;
 	id delegateMock;
@@ -18,7 +18,7 @@
 
 @end
 
-@interface RadioStationSelectonViewController (Testing)
+@interface RadioStationSelectionViewController (Testing)
 @property (nonatomic, strong) StationProvider *stationProvider;
 @property (nonatomic, strong) UITableView *tableView;
 - (void)refreshView;
@@ -32,11 +32,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation RadioStationSelectonViewControllerTest
+@implementation RadioStationSelectionViewControllerTest
 
 - (void)setUp {
 	[super setUp];
-	controller = [[RadioStationSelectonViewController alloc] initWithNibName:@"RadioStationViewController" bundle:nil];
+	controller = [[RadioStationSelectionViewController alloc] initWithNibName:@"RadioStationViewController" bundle:nil];
 	controllerMock = [OCMockObject partialMockForObject:controller];
 	tableviewMock = [OCMockObject niceMockForClass:[UITableView class]];
 	[[[controllerMock stub] andReturn:tableviewMock] tableView];

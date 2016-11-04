@@ -64,4 +64,44 @@
 	return waitedFor;
 }
 
+- (BOOL)waitForViewWithAccessiblityLabel:(NSString*)label containingNumberOfCells:(NSInteger)numberOfCells inSection:(NSInteger)section {
+	UIView* view = [self waitForViewWithAccessibilityLabel:label];
+	UITableView* tableView = [view isKindOfClass:[UITableView class]] ? (UITableView*)view : nil;
+	UICollectionView* collectionView = [view isKindOfClass:[UICollectionView class]] ? (UICollectionView*)view : nil;
+	if (tableView != nil) {
+		NSInteger numberOfSections = [tableView numberOfSections];
+		if (numberOfSections > section) {
+			NSInteger numberOfRowsInSection = [tableView numberOfRowsInSection:section];
+			BOOL isValid = (numberOfRowsInSection == numberOfCells);
+			if (!isValid) {
+				NSError *error = [NSError KIFErrorWithFormat:@"Found table view with accesibility label \"%@\", but expected number of cells %ld is not equal to number of rows %ld in section %ld.", label, (long)numberOfCells, (long)numberOfRowsInSection, (long)section];
+				[self failWithError:error stopTest:YES];
+			}
+			return isValid;
+		} else {
+			NSError *error = [NSError KIFErrorWithFormat:@"Found table view with accesibility label \"%@\", but expected number of found sections %ld is less than number of expected section %ld.", label, (long)numberOfSections, (long)section];
+			[self failWithError:error stopTest:YES];
+		}
+	}
+	else if (collectionView != nil) {
+		NSInteger numberOfSections = [collectionView numberOfSections];
+		if (numberOfSections > section) {
+			NSInteger numberOfItemsInSection = [collectionView numberOfItemsInSection:section];
+			BOOL isValid = (numberOfItemsInSection == numberOfCells);
+			if (!isValid) {
+				NSError *error = [NSError KIFErrorWithFormat:@"Found collection view with accesibility label \"%@\", but expected number of items %ld is not equal to number of items %ld in section %ld.", label, (long)numberOfCells, (long)numberOfItemsInSection, (long)section];
+				[self failWithError:error stopTest:YES];
+			}
+			return isValid;
+		} else {
+			NSError *error = [NSError KIFErrorWithFormat:@"Found collection view with accesibility label \"%@\", but expected number of found sections %ld is less than number of expected section %ld.", label, (long)numberOfSections, (long)section];
+			[self failWithError:error stopTest:YES];
+		}
+	}
+	NSError *error = [NSError KIFErrorWithFormat:@"View with accesibility label \"%@\", is neither a table view nor a collection view", label];
+	[self failWithError:error stopTest:YES];
+	return NO;
+}
+
+
 @end

@@ -32,8 +32,9 @@
 }
 
 - (void)beforeEach {
-	[tester waitForTimeInterval:1];
 	[super beforeEach];
+	[tester waitForTimeInterval:1];
+	[config mockEmptyConfiguration];
 }
 
 - (void)afterEach {

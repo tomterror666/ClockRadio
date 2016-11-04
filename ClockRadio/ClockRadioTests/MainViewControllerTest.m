@@ -8,7 +8,7 @@
 #import "StationProvider.h"
 #import "Configuration.h"
 #import "AudioPlayerView.h"
-#import "RadioStationSelectonViewController.h"
+#import "RadioStationSelectionViewController.h"
 #import "AlarmSelectionViewController.h"
 #import "SoundSelectionViewController.h"
 #import "Station.h"
@@ -34,8 +34,8 @@
 - (void)radioSelectionButtonTouched:(id)sender;
 - (void)alarmSelectionButtonTouched:(id)sender;
 - (void)soundSelectionButtonTouched:(id)sender;
-- (void)radioStationSelectionVCDidCancelSelecting:(RadioStationSelectonViewController *)controller;
-- (void)radioStationSelectionVC:(RadioStationSelectonViewController *)controller didFinishWithRadioStation:(Station *)station;
+- (void)radioStationSelectionVCDidCancelSelecting:(RadioStationSelectionViewController *)controller;
+- (void)radioStationSelectionVC:(RadioStationSelectionViewController *)controller didFinishWithRadioStation:(Station *)station;
 - (void)alarmSelectonVCDidCancel:(AlarmSelectionViewController *)controller;
 - (void)alarmSelectionVC:(AlarmSelectionViewController *)controller didFinishWithAlarmDate:(NSDate *)date;
 - (void)registerForLocalNotifications;
@@ -98,7 +98,7 @@
 }
 
 - (void)testPresentRadioStationVCOnRadioSelectionButtonTouched {
-	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[RadioStationSelectonViewController class]]
+	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[RadioStationSelectionViewController class]]
 										  animated:YES
 										completion:OCMOCK_ANY];
 	[controller radioSelectionButtonTouched:nil];

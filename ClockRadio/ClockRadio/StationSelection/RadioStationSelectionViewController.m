@@ -1,16 +1,16 @@
 //
-//  RadioStationSelectonViewController.m
+//  RadioStationSelectionViewController.m
 //  ClockRadio
 //
 //  Created by Andre Heß on 18/06/16.
 //  Copyright © 2016 Andre Hess. All rights reserved.
 //
 
-#import "RadioStationSelectonViewController.h"
+#import "RadioStationSelectionViewController.h"
 #import "StationProvider.h"
 #import "Station.h"
 
-@interface RadioStationSelectonViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface RadioStationSelectionViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UIButton *cancelButton;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation RadioStationSelectonViewController
+@implementation RadioStationSelectionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -100,8 +100,11 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	Station *station = [self.stationProvider radioStationAtIndexPath:indexPath];
+	cell.accessibilityLabel = [NSString stringWithFormat:@"RadioStationSelectionNameCell_%ld", (long)indexPath.row];
 	cell.textLabel.text = station.stationName;
+	cell.textLabel.accessibilityLabel = [NSString stringWithFormat:@"RadioStationSelectionNameLabel_%ld", (long)indexPath.row];
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"Genre: %@ - Listeners: %ld", station.stationGenre, (long)station.stationsCurrentListners];
+	cell.detailTextLabel.accessibilityLabel = [NSString stringWithFormat:@"RadioStationSelectionDetailsLabel_%ld", (long)indexPath.row]; 
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -16,4 +16,6 @@
 
 - (UILabel *)waitForLabelWithAccessibilityLabel:(NSString *)label withText:(NSString *)text;
 
+- (BOOL)waitForViewWithAccessiblityLabel:(NSString*)label containingNumberOfCells:(NSInteger)numberOfCells inSection:(NSInteger)section;
+
 @end
