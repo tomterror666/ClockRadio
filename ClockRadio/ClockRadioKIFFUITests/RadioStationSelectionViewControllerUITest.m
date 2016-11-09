@@ -82,4 +82,18 @@
 	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 }
 
+- (void)testScrollingInStationsTableView {
+	[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
+	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_0" withText:@"Alex Jones - Infowars.com Alternate/Relay"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_0" withText:@"Genre: News - Listeners: 26686"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_1" withText:@"Radio Sobsomoy"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_1" withText:@"Genre: Misc - Listeners: 17738"];
+	[tester scrollViewWithAccessibilityLabel:@"RadioStationSelectionTableView" byFractionOfSizeHorizontal:-0 vertical:-0.1];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_19" withText:@"JewishMusic Stream"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_19" withText:@"Genre: Hebrew - Listeners: 1929"];
+	[tester tapViewWithAccessibilityLabel:@"CancelButton"];
+	[tester waitForViewWithAccessibilityLabel:@"MainView"];
+}
+
 @end

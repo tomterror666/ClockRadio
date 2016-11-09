@@ -1,0 +1,30 @@
+GET
+Top500
+200
+Content-Type: text/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<stationlist>
+	<tunein base="/sbin/tunein-station.pls" base-m3u="/sbin/tunein-station.m3u" base-xspf="/sbin/tunein-station.xspf" />
+	<station name="Alex Jones - Infowars.com Alternate/Relay" mt="audio/mpeg" id="166835" br="32" genre="News" ct="Monday Show Live - Hr 4" lc="26686" />
+	<station name="Radio Sobsomoy" mt="audio/mpeg" id="832669" br="128" genre="Misc" ct="Artist Vs Poet - Unconscious Reality" lc="17738" />
+	<station name="ANTENA1 - 94 7 FM" mt="audio/aacp" id="830692" br="64" genre="Pop" ct="U2 - EVERY BREAKING WAVE" lc="8578" />
+	<station name="RTVRadio AllTheTop" mt="audio/mpeg" id="480623" br="128" genre="Pop" ct="Maroon 5 - Moves Like Jagger" lc="7046" />
+	<station name="MUKIL FM" mt="audio/aacp" id="1274690" br="32" genre="Tamil" ct="MUKIL FM - AKILAM 360 REPEAT" lc="6148" />
+	<station name="Hubu.FM | Radio Hunteburg | 128kb/s" mt="audio/mpeg" id="982273" br="128" genre="Public Radio" ct="(HUBU/EVENTSERVER LIVE)" lc="6130" />
+	<station name="RTVRadio 80s" mt="audio/mpeg" id="546486" br="128" genre="Pop" ct="Kim Carnes - Bette Davis Eyes" lc="5011" />
+	<station name="Dance Wave!" mt="audio/mpeg" id="893796" br="128" genre="Dance" lc="4258" />
+	<station name="Radio Free Manele1" mt="audio/mpeg" id="195363" br="128" genre="Dance" genre2="House" ct="Pentatonix - Hallelujah" lc="3774" />
+	<station name="BluePoint Radio - 103.2 FM" mt="audio/mpeg" id="193174" br="320" genre="Top 40" ct="Sunrise Avenue - You Can Never Be Ready" lc="3715" />
+	<station name="RADIOSCOOP HUNGARY | www.radioscoop.hu" mt="audio/mpeg" id="988599" br="128" genre="Top 40" lc="3702" />
+	<station name="Alex Jones - Infowars.com" mt="audio/aacp" id="144936" br="32" genre="News" ct="Monday Show Live - Hr 4" lc="3229" />
+	<station name="idobi Anthm" mt="audio/mpeg" id="44691" br="128" genre="Alternative" ct="BRAVES - Souls in Transit" lc="2949" />
+	<station name="idobi Howl" mt="audio/mpeg" id="1086260" br="128" genre="Metal" ct="Job For A Cowboy - Embedded" lc="2865" />
+	<station name="ANTENA1 - 94 7 FM" mt="audio/mpeg" id="862132" br="96" genre="Pop" ct="U2 - EVERY BREAKING WAVE" lc="2736" />
+	<station name="Venice Classic Radio Italia" mt="audio/mpeg" id="22146" br="128" genre="Classical" ct="Johannes Brahms - Quintetto per clarinetto e archi in si minore Op.115 - III. Andantino, Presto non assai, ma con sentimento (04:48) {+info: veniceclassicradio.eu}" lc="2342" />
+	<station name="Azul FM" mt="audio/aacp" id="301318" br="64" genre="Pop" ct="Azul FM" lc="2340" />
+	<station name="Peace 104.3FM" mt="audio/mpeg" id="1318533" br="64" genre="Misc" lc="2171" />
+	<station name="FM Vida" mt="audio/mpeg" id="739156" br="64" genre="News" lc="2135" />
+	<station name="JewishMusic Stream" mt="audio/mpeg" id="108197" br="128" genre="Hebrew" logo="http://i.radionomy.com/document/radios/9/963b/963b5f42-51bc-472a-ab91-dd4da474edbf.png" ct="Tzvi Silberstein - Hu Haytiv (featuring Shloime Gertner) (Kol Hakochavim)" lc="1929" />
+</stationlist>
+

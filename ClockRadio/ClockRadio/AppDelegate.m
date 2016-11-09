@@ -8,9 +8,12 @@
 
 #import "AppDelegate.h"
 #import "NotificationHandler.h"
+#import "Mocktail.h"
+#import "ApiClient.h"
+#import "ApiClientURLSessionConfiguration.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) Mocktail *mocktail;
 @end
 
 @implementation AppDelegate
@@ -21,6 +24,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	if ([[[NSProcessInfo processInfo].environment objectForKey:@"KIF_UI_TEST"] isEqualToString:@"1"]) {
+		[self initMocktails];
+	}
 	UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
 	if (localNotification != nil) {
 		[NotificationHandler handleLocalNotification:localNotification];
@@ -52,6 +58,14 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
 	[NotificationHandler handleLocalNotification:notification];
+}
+
+- (void)initMocktails {
+	NSBundle *mainBundle = [NSBundle mainBundle];
+	NSString *mocktailPath = [[mainBundle pathForResource:nil ofType:@"tail"] stringByDeletingLastPathComponent];
+	ApiClientURLSessionConfiguration *sessionConfig = [ApiClientURLSessionConfiguration sharedConfiguration];
+	self.mocktail = [Mocktail startWithContentsOfDirectoryAtURL:[NSURL fileURLWithPath:mocktailPath] configuration:sessionConfig];
+	[[ApiClient apiClients] makeObjectsPerformSelector:@selector(updateSessionManagerWithSessionConfiguration:) withObject:sessionConfig];
 }
 
 @end

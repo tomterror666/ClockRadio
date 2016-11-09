@@ -14,6 +14,12 @@
 		9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */; };
 		9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E631D6E17C0002C50F8 /* SoundTest.m */; };
 		9E118E661D6E1B97002C50F8 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E118E651D6E1B97002C50F8 /* Rooster.mp3 */; };
+		9E188DFE1DD3AD650037FA02 /* StationList_get.tail in Resources */ = {isa = PBXBuildFile; fileRef = 9E6204361DD1180200736628 /* StationList_get.tail */; };
+		9E188E011DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E188E001DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m */; };
+		9E188E021DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E188E001DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m */; };
+		9E188E031DD3BB4B0037FA02 /* MocktailURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6204301DD1167C00736628 /* MocktailURLProtocol.m */; };
+		9E188E041DD3BB500037FA02 /* MocktailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62042E1DD1167C00736628 /* MocktailResponse.m */; };
+		9E188E051DD3BB530037FA02 /* Mocktail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62042C1DD1167C00736628 /* Mocktail.m */; };
 		9E240FB61D6DEE6300A645D6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */; };
 		9E240FB71D6DEE6300A645D6 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E240FB51D6DEE6300A645D6 /* AVKit.framework */; };
 		9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E240FBD1D6DFB3500A645D6 /* StationTest.m */; };
@@ -24,6 +30,10 @@
 		9E5200A61D6B8650007A7A57 /* SoundSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E5200A41D6B8650007A7A57 /* SoundSelectionCell.xib */; };
 		9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */; };
 		9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */; };
+		9E6204311DD1167C00736628 /* Mocktail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62042C1DD1167C00736628 /* Mocktail.m */; };
+		9E6204321DD1167C00736628 /* MocktailResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E62042E1DD1167C00736628 /* MocktailResponse.m */; };
+		9E6204331DD1167C00736628 /* MocktailURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6204301DD1167C00736628 /* MocktailURLProtocol.m */; };
+		9E6204371DD1180200736628 /* StationList_get.tail in Resources */ = {isa = PBXBuildFile; fileRef = 9E6204361DD1180200736628 /* StationList_get.tail */; };
 		9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B8D1D15B800002AD3F1 /* Configuration.m */; };
 		9E650B971D15BE8E002AD3F1 /* RadioStationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E650B951D15BE8E002AD3F1 /* RadioStationSelectionViewController.m */; };
 		9E650B981D15BE8E002AD3F1 /* RadioStationSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E650B961D15BE8E002AD3F1 /* RadioStationSelectionViewController.xib */; };
@@ -52,7 +62,6 @@
 		9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EDA45D21D6CF06F00C79D4D /* Sound.m */; };
 		9EEE32F71D9816660023ABF6 /* SoundSelectionCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEE32F61D9816660023ABF6 /* SoundSelectionCellTest.m */; };
 		9FFE420273F3C67A00B80872 /* libPods-ClockRadioKIFUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7652FA37CAA276904843E6 /* libPods-ClockRadioKIFUITests.a */; };
-		A68ECB074890A860C5A48754 /* libPods-ClockRadioKIFFUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4FCE0DFD08C6FB4AA20EE1 /* libPods-ClockRadioKIFFUITests.a */; };
 		BFB979F3B6FA553779E8C37C /* libPods-ClockRadioTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DABE0BCC9FE15DC02D607B /* libPods-ClockRadioTests.a */; };
 		E80E2D6C1D9425B600DE085F /* OCMConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */; };
 		E80E2D6D1D9425B600DE085F /* OCMKindOfClassConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */; };
@@ -109,6 +118,8 @@
 		9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTuneinDetailsTest.m; sourceTree = "<group>"; };
 		9E118E631D6E17C0002C50F8 /* SoundTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundTest.m; sourceTree = "<group>"; };
 		9E118E651D6E1B97002C50F8 /* Rooster.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rooster.mp3; sourceTree = "<group>"; };
+		9E188DFF1DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiClientURLSessionConfiguration.h; sourceTree = "<group>"; };
+		9E188E001DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiClientURLSessionConfiguration.m; sourceTree = "<group>"; };
 		9E240FB41D6DEE6300A645D6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9E240FB51D6DEE6300A645D6 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		9E240FBD1D6DFB3500A645D6 /* StationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTest.m; sourceTree = "<group>"; };
@@ -124,6 +135,14 @@
 		9E5E7CBF1D27CDF60001ACD4 /* TuneinProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuneinProvider.m; sourceTree = "<group>"; };
 		9E5E7CC11D27CF1B0001ACD4 /* StationTuneinDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTuneinDetails.h; sourceTree = "<group>"; };
 		9E5E7CC21D27CF1B0001ACD4 /* StationTuneinDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTuneinDetails.m; sourceTree = "<group>"; };
+		9E62042A1DD1167C00736628 /* Mocktail_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mocktail_Private.h; sourceTree = "<group>"; };
+		9E62042B1DD1167C00736628 /* Mocktail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mocktail.h; sourceTree = "<group>"; };
+		9E62042C1DD1167C00736628 /* Mocktail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mocktail.m; sourceTree = "<group>"; };
+		9E62042D1DD1167C00736628 /* MocktailResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocktailResponse.h; sourceTree = "<group>"; };
+		9E62042E1DD1167C00736628 /* MocktailResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MocktailResponse.m; sourceTree = "<group>"; };
+		9E62042F1DD1167C00736628 /* MocktailURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MocktailURLProtocol.h; sourceTree = "<group>"; };
+		9E6204301DD1167C00736628 /* MocktailURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MocktailURLProtocol.m; sourceTree = "<group>"; };
+		9E6204361DD1180200736628 /* StationList_get.tail */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StationList_get.tail; sourceTree = "<group>"; };
 		9E650B8C1D15B800002AD3F1 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		9E650B8D1D15B800002AD3F1 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		9E650B941D15BE8E002AD3F1 /* RadioStationSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = RadioStationSelectionViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -218,7 +237,6 @@
 				E86C23F51DC0EC3600E012C0 /* QuartzCore.framework in Frameworks */,
 				E86C23F31DC0EC2D00E012C0 /* CoreGraphics.framework in Frameworks */,
 				E86C23F11DC0EC1900E012C0 /* libKIF.a in Frameworks */,
-				A68ECB074890A860C5A48754 /* libPods-ClockRadioKIFFUITests.a in Frameworks */,
 				9FFE420273F3C67A00B80872 /* libPods-ClockRadioKIFUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +310,7 @@
 		9E5200981D6B6FDC007A7A57 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9E6204291DD114A600736628 /* Mocktail */,
 				9E5200991D6B7020007A7A57 /* NSDate+Utility.h */,
 				9E52009A1D6B7020007A7A57 /* NSDate+Utility.m */,
 			);
@@ -341,6 +360,36 @@
 				9EDA45BF1D6CEE7F00C79D4D /* Rooster Crow.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9E6204291DD114A600736628 /* Mocktail */ = {
+			isa = PBXGroup;
+			children = (
+				9E62042A1DD1167C00736628 /* Mocktail_Private.h */,
+				9E62042B1DD1167C00736628 /* Mocktail.h */,
+				9E62042C1DD1167C00736628 /* Mocktail.m */,
+				9E62042D1DD1167C00736628 /* MocktailResponse.h */,
+				9E62042E1DD1167C00736628 /* MocktailResponse.m */,
+				9E62042F1DD1167C00736628 /* MocktailURLProtocol.h */,
+				9E6204301DD1167C00736628 /* MocktailURLProtocol.m */,
+			);
+			path = Mocktail;
+			sourceTree = "<group>";
+		};
+		9E6204341DD1177300736628 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E6204351DD1179900736628 /* Mocktails */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E6204351DD1179900736628 /* Mocktails */ = {
+			isa = PBXGroup;
+			children = (
+				9E6204361DD1180200736628 /* StationList_get.tail */,
+			);
+			path = Mocktails;
 			sourceTree = "<group>";
 		};
 		9E650B8B1D15B7CE002AD3F1 /* Configuration */ = {
@@ -401,6 +450,8 @@
 			children = (
 				9E7D81821D23F5C20040BDB5 /* ApiClient.h */,
 				9E7D81831D23F5C20040BDB5 /* ApiClient.m */,
+				9E188DFF1DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.h */,
+				9E188E001DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m */,
 				E8D978D91D12E58100B9D459 /* AppDelegate.h */,
 				E8D978DA1D12E58100B9D459 /* AppDelegate.m */,
 				E8D978DC1D12E58100B9D459 /* MainViewController.h */,
@@ -464,6 +515,7 @@
 		E86C23E71DC0EBD500E012C0 /* ClockRadioKIFUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9E6204341DD1177300736628 /* Resources */,
 				E86C23F61DC0ED7200E012C0 /* Shared */,
 				E86C23FD1DC0EDA200E012C0 /* MainViewControllerUITest.m */,
 				E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */,
@@ -675,6 +727,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E188DFE1DD3AD650037FA02 /* StationList_get.tail in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +752,7 @@
 				9EDA45C91D6CEE7F00C79D4D /* Ship Brass Bell.mp3 in Resources */,
 				9EDA45CE1D6CEE7F00C79D4D /* Zombie Brain Eater.mp3 in Resources */,
 				9EDA45CF1D6CEE7F00C79D4D /* Computer Magic.mp3 in Resources */,
+				9E6204371DD1180200736628 /* StationList_get.tail in Resources */,
 				9EDA45C51D6CEE7F00C79D4D /* UFO Takeoff.mp3 in Resources */,
 				9EDA45C01D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 in Resources */,
 				9EDA45C21D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 in Resources */,
@@ -862,10 +916,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E188E041DD3BB500037FA02 /* MocktailResponse.m in Sources */,
+				9E188E051DD3BB530037FA02 /* Mocktail.m in Sources */,
 				E86C23FE1DC0EDA200E012C0 /* MainViewControllerUITest.m in Sources */,
 				E86C23FB1DC0ED9800E012C0 /* KIFTestActor+ClockRadio.m in Sources */,
 				E8341A941DC244F7009EA84B /* RadioStationSelectionViewControllerUITest.m in Sources */,
+				9E188E031DD3BB4B0037FA02 /* MocktailURLProtocol.m in Sources */,
 				E86C23FC1DC0ED9800E012C0 /* MockedConfiguration.m in Sources */,
+				9E188E021DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,18 +934,22 @@
 				9E7D81841D23F5C20040BDB5 /* ApiClient.m in Sources */,
 				E8BAC1741D7F0AC400BD66F1 /* NotificationHandler.m in Sources */,
 				9E650B8E1D15B800002AD3F1 /* Configuration.m in Sources */,
+				9E188E011DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m in Sources */,
 				E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */,
 				9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */,
+				9E6204311DD1167C00736628 /* Mocktail.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
 				9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
 				9E650B971D15BE8E002AD3F1 /* RadioStationSelectionViewController.m in Sources */,
 				9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */,
+				9E6204331DD1167C00736628 /* MocktailURLProtocol.m in Sources */,
 				9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */,
 				9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */,
 				9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
+				9E6204321DD1167C00736628 /* MocktailResponse.m in Sources */,
 				9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */,
 				9E5200A51D6B8650007A7A57 /* SoundSelectionCell.m in Sources */,
 				9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */,
