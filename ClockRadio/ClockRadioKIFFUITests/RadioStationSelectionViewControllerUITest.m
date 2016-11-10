@@ -9,7 +9,6 @@
 #import "Station.h"
 
 @interface RadioStationSelectionViewControllerUITest : KIFTestCase {
-	MockedConfiguration *config;
 	id stationProviderMock;
 	id stationMock;
 }
@@ -24,7 +23,6 @@
 
 - (void)setUp {
 	[super setUp];
-	config = [MockedConfiguration new];
 	stationProviderMock = [OCMockObject partialMockForObject:[StationProvider sharedProvider]];
 	stationMock = [OCMockObject niceMockForClass:[Station class]];
 }
@@ -38,7 +36,6 @@
 - (void)beforeEach {
 	[super beforeEach];
 	[tester waitForTimeInterval:1];
-	[config mockEmptyConfiguration];
 }
 
 - (void)afterEach {
@@ -89,11 +86,21 @@
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_0" withText:@"Genre: News - Listeners: 26686"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_1" withText:@"Radio Sobsomoy"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_1" withText:@"Genre: Misc - Listeners: 17738"];
-	[tester scrollViewWithAccessibilityLabel:@"RadioStationSelectionTableView" byFractionOfSizeHorizontal:-0 vertical:-0.1];
+	[tester scrollViewWithAccessibilityIdentifier:@"RadioStationSelectionTableView" byFractionOfSizeHorizontal:-0 vertical:-0.2];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_19" withText:@"JewishMusic Stream"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_19" withText:@"Genre: Hebrew - Listeners: 1929"];
 	[tester tapViewWithAccessibilityLabel:@"CancelButton"];
 	[tester waitForViewWithAccessibilityLabel:@"MainView"];
+}
+
+- (void)testSelectingRadioStation {
+	[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
+	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_0" withText:@"Alex Jones - Infowars.com Alternate/Relay"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_0" withText:@"Genre: News - Listeners: 26686"];
+	[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];
+	[tester waitForViewWithAccessibilityLabel:@"MainView"];
+	[tester waitForLabelWithAccessibilityLabel:@"RadioSelectionValueLabel" withText:@"http://50.7.130.106:80"];
 }
 
 @end

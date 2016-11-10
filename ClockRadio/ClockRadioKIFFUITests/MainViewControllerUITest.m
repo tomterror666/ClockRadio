@@ -117,6 +117,31 @@
 	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 }
 
+- (void)testPlayingStoppingAndMutingRadio {
+	[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
+	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
+	[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];
+	[tester waitForViewWithAccessibilityLabel:@"MainView"];
+	[tester waitForButtonWithAccessibilityLabel:@"PlayButton" isTappable:YES];
+	[tester waitForButtonWithAccessibilityLabel:@"StopButton" isTappable:NO];
+	[tester waitForButtonWithAccessibilityLabel:@"MuteButton" withButtonText:@"Mute" isTappable:YES];
+	[tester tapViewWithAccessibilityLabel:@"PlayButton"];
+	[tester waitForButtonWithAccessibilityLabel:@"PlayButton" isTappable:NO];
+	[tester waitForButtonWithAccessibilityLabel:@"StopButton" isTappable:YES];
+	[tester tapViewWithAccessibilityLabel:@"StopButton"];
+	[tester waitForButtonWithAccessibilityLabel:@"PlayButton" isTappable:YES];
+	[tester waitForButtonWithAccessibilityLabel:@"StopButton" isTappable:NO];
+	[tester tapViewWithAccessibilityLabel:@"PlayButton"];
+	[tester tapViewWithAccessibilityLabel:@"MuteButton"];
+	[tester waitForButtonWithAccessibilityLabel:@"MuteButton" withButtonText:@"Unmute" isTappable:YES];
+	[tester tapViewWithAccessibilityLabel:@"MuteButton"];
+	[tester waitForButtonWithAccessibilityLabel:@"MuteButton" withButtonText:@"Mute" isTappable:YES];
+	[tester tapViewWithAccessibilityLabel:@"StopButton"];
+	[tester waitForButtonWithAccessibilityLabel:@"PlayButton" isTappable:YES];
+	[tester waitForButtonWithAccessibilityLabel:@"StopButton" isTappable:NO];
+}
+
+
 #pragma mark -
 #pragma mark helper methods
 #pragma mark -

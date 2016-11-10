@@ -66,6 +66,7 @@
 		E80E2D6C1D9425B600DE085F /* OCMConstraint+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D671D9425B600DE085F /* OCMConstraint+Extensions.m */; };
 		E80E2D6D1D9425B600DE085F /* OCMKindOfClassConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */; };
 		E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */; };
+		E814325F1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */; };
 		E8341A941DC244F7009EA84B /* RadioStationSelectionViewControllerUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */; };
 		E86C23F11DC0EC1900E012C0 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86C23F01DC0EC1900E012C0 /* libKIF.a */; };
 		E86C23F31DC0EC2D00E012C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86C23F21DC0EC2D00E012C0 /* CoreGraphics.framework */; };
@@ -74,6 +75,9 @@
 		E86C23FC1DC0ED9800E012C0 /* MockedConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E86C23FA1DC0ED9800E012C0 /* MockedConfiguration.m */; };
 		E86C23FE1DC0EDA200E012C0 /* MainViewControllerUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = E86C23FD1DC0EDA200E012C0 /* MainViewControllerUITest.m */; };
 		E86C24001DC0EF5000E012C0 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86C23FF1DC0EF5000E012C0 /* libOCMock.a */; };
+		E86E9C7B1DD4A1C100963FB1 /* TuneinId_166835_get.tail in Resources */ = {isa = PBXBuildFile; fileRef = E86E9C7A1DD4A1C100963FB1 /* TuneinId_166835_get.tail */; };
+		E86E9C7C1DD4A28A00963FB1 /* TuneinId_166835_get.tail in Resources */ = {isa = PBXBuildFile; fileRef = E86E9C7A1DD4A1C100963FB1 /* TuneinId_166835_get.tail */; };
+		E86E9C7F1DD4A9D200963FB1 /* AlarmSelectionViewControllerUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = E86E9C7D1DD4A9D200963FB1 /* AlarmSelectionViewControllerUITest.m */; };
 		E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */; };
 		E8BAC1741D7F0AC400BD66F1 /* NotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1721D7F0AC400BD66F1 /* NotificationHandler.m */; };
 		E8BAC1761D7F0D3E00BD66F1 /* StationProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BAC1751D7F0D3E00BD66F1 /* StationProviderTest.m */; };
@@ -189,6 +193,8 @@
 		E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMKindOfClassConstraint.m; sourceTree = "<group>"; };
 		E80E2D6A1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMNavigationControllerWithRootViewControllerConstraint.h; sourceTree = "<group>"; };
 		E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMNavigationControllerWithRootViewControllerConstraint.m; sourceTree = "<group>"; };
+		E814325D1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AccessibilityLabelExtension.h"; sourceTree = "<group>"; };
+		E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AccessibilityLabelExtension.m"; sourceTree = "<group>"; };
 		E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioStationSelectionViewControllerUITest.m; sourceTree = "<group>"; };
 		E86C23E61DC0EBD500E012C0 /* ClockRadioKIFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockRadioKIFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86C23EA1DC0EBD500E012C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,6 +207,8 @@
 		E86C23FA1DC0ED9800E012C0 /* MockedConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockedConfiguration.m; sourceTree = "<group>"; };
 		E86C23FD1DC0EDA200E012C0 /* MainViewControllerUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewControllerUITest.m; sourceTree = "<group>"; };
 		E86C23FF1DC0EF5000E012C0 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "../../../Library/Developer/Xcode/DerivedData/ClockRadio-cxprjcvnhuzbzjgdxqnvyjqbcncq/Build/Products/Debug-iphonesimulator/OCMock/libOCMock.a"; sourceTree = "<group>"; };
+		E86E9C7A1DD4A1C100963FB1 /* TuneinId_166835_get.tail */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TuneinId_166835_get.tail; sourceTree = "<group>"; };
+		E86E9C7D1DD4A9D200963FB1 /* AlarmSelectionViewControllerUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmSelectionViewControllerUITest.m; sourceTree = "<group>"; };
 		E8BAC16F1D7F0AC400BD66F1 /* NavigationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationHelper.h; sourceTree = "<group>"; };
 		E8BAC1701D7F0AC400BD66F1 /* NavigationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationHelper.m; sourceTree = "<group>"; };
 		E8BAC1711D7F0AC400BD66F1 /* NotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandler.h; sourceTree = "<group>"; };
@@ -388,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				9E6204361DD1180200736628 /* StationList_get.tail */,
+				E86E9C7A1DD4A1C100963FB1 /* TuneinId_166835_get.tail */,
 			);
 			path = Mocktails;
 			sourceTree = "<group>";
@@ -517,6 +526,7 @@
 			children = (
 				9E6204341DD1177300736628 /* Resources */,
 				E86C23F61DC0ED7200E012C0 /* Shared */,
+				E86E9C7D1DD4A9D200963FB1 /* AlarmSelectionViewControllerUITest.m */,
 				E86C23FD1DC0EDA200E012C0 /* MainViewControllerUITest.m */,
 				E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */,
 				E86C23EA1DC0EBD500E012C0 /* Info.plist */,
@@ -528,6 +538,8 @@
 		E86C23F61DC0ED7200E012C0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E814325D1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.h */,
+				E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */,
 				E86C23F71DC0ED9800E012C0 /* KIFTestActor+ClockRadio.h */,
 				E86C23F81DC0ED9800E012C0 /* KIFTestActor+ClockRadio.m */,
 				E86C23F91DC0ED9800E012C0 /* MockedConfiguration.h */,
@@ -728,6 +740,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E188DFE1DD3AD650037FA02 /* StationList_get.tail in Resources */,
+				E86E9C7C1DD4A28A00963FB1 /* TuneinId_166835_get.tail in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +755,7 @@
 				9EDA45C11D6CEE7F00C79D4D /* Police Siren.mp3 in Resources */,
 				9EDA45C41D6CEE7F00C79D4D /* UFO Descending.mp3 in Resources */,
 				9EDA45C31D6CEE7F00C79D4D /* Tornado Siren.mp3 in Resources */,
+				E86E9C7B1DD4A1C100963FB1 /* TuneinId_166835_get.tail in Resources */,
 				9E650B981D15BE8E002AD3F1 /* RadioStationSelectionViewController.xib in Resources */,
 				E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */,
 				E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */,
@@ -916,6 +930,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E86E9C7F1DD4A9D200963FB1 /* AlarmSelectionViewControllerUITest.m in Sources */,
 				9E188E041DD3BB500037FA02 /* MocktailResponse.m in Sources */,
 				9E188E051DD3BB530037FA02 /* Mocktail.m in Sources */,
 				E86C23FE1DC0EDA200E012C0 /* MainViewControllerUITest.m in Sources */,
@@ -938,6 +953,7 @@
 				E8BAC1731D7F0AC400BD66F1 /* NavigationHelper.m in Sources */,
 				9E7D81801D23ECFB0040BDB5 /* StationProvider.m in Sources */,
 				9E6204311DD1167C00736628 /* Mocktail.m in Sources */,
+				E814325F1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
 				9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,

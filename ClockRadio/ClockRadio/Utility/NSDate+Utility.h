@@ -10,6 +10,14 @@
 
 @interface NSDate (Utility)
 
+@property (nonatomic, assign, readonly) NSInteger hours;
+@property (nonatomic, assign, readonly) NSInteger minutes;
+@property (nonatomic, assign, readonly) NSInteger seconds;
+@property (nonatomic, assign, readonly) NSInteger year;
+@property (nonatomic, assign, readonly) NSInteger month;
+@property (nonatomic, assign, readonly) NSInteger day;
+
+
 + (NSDate *)normalizeSecondsOfDate:(NSDate *)date;
 
 + (NSDate *)normalizeMinutesOfDate:(NSDate *)date;
