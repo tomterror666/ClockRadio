@@ -89,6 +89,7 @@
 		E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D978E21D12E58100B9D459 /* Assets.xcassets */; };
 		E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */; };
 		E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8D9790B1D12F24000B9D459 /* AudioPlayerView.m */; };
+		E8FDDD041DD61A8C001495B1 /* Configuration+UITest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FDDD031DD61A8C001495B1 /* Configuration+UITest.m */; };
 		EAC213EC49190E565884046D /* libPods-ClockRadio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3E39C6BDE9C970F548C689A /* libPods-ClockRadio.a */; };
 /* End PBXBuildFile section */
 
@@ -229,6 +230,9 @@
 		E8D978F21D12E58100B9D459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8D9790A1D12F24000B9D459 /* AudioPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayerView.h; sourceTree = "<group>"; };
 		E8D9790B1D12F24000B9D459 /* AudioPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerView.m; sourceTree = "<group>"; };
+		E8FDDD011DD5CFA1001495B1 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; name = Makefile; path = ../Makefile; sourceTree = "<group>"; };
+		E8FDDD021DD61A8C001495B1 /* Configuration+UITest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Configuration+UITest.h"; sourceTree = "<group>"; };
+		E8FDDD031DD61A8C001495B1 /* Configuration+UITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Configuration+UITest.m"; sourceTree = "<group>"; };
 		EDA963E421F0FBFA0D7BA327 /* Pods-ClockRadioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioTests/Pods-ClockRadioTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F07D9C16FB774682437A31D6 /* Pods-ClockRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadio.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadio/Pods-ClockRadio.release.xcconfig"; sourceTree = "<group>"; };
 		F43B45B00E48EE764C5E3601 /* Pods-ClockRadioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClockRadioTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClockRadioTests/Pods-ClockRadioTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -542,6 +546,8 @@
 				E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */,
 				E86C23F71DC0ED9800E012C0 /* KIFTestActor+ClockRadio.h */,
 				E86C23F81DC0ED9800E012C0 /* KIFTestActor+ClockRadio.m */,
+				E8FDDD021DD61A8C001495B1 /* Configuration+UITest.h */,
+				E8FDDD031DD61A8C001495B1 /* Configuration+UITest.m */,
 				E86C23F91DC0ED9800E012C0 /* MockedConfiguration.h */,
 				E86C23FA1DC0ED9800E012C0 /* MockedConfiguration.m */,
 			);
@@ -566,6 +572,7 @@
 				E8D978E21D12E58100B9D459 /* Assets.xcassets */,
 				E8D978E71D12E58100B9D459 /* Info.plist */,
 				E8D978E41D12E58100B9D459 /* LaunchScreen.storyboard */,
+				E8FDDD011DD5CFA1001495B1 /* Makefile */,
 				E8D978EF1D12E58100B9D459 /* ClockRadioTests */,
 				E86C23E71DC0EBD500E012C0 /* ClockRadioKIFUITests */,
 				E8D978D41D12E58100B9D459 /* Products */,
@@ -701,7 +708,7 @@
 				TargetAttributes = {
 					E86C23E51DC0EBD500E012C0 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						TestTargetID = E8D978D21D12E58100B9D459;
 					};
 					E8D978D21D12E58100B9D459 = {
@@ -934,6 +941,7 @@
 				9E188E041DD3BB500037FA02 /* MocktailResponse.m in Sources */,
 				9E188E051DD3BB530037FA02 /* Mocktail.m in Sources */,
 				E86C23FE1DC0EDA200E012C0 /* MainViewControllerUITest.m in Sources */,
+				E8FDDD041DD61A8C001495B1 /* Configuration+UITest.m in Sources */,
 				E86C23FB1DC0ED9800E012C0 /* KIFTestActor+ClockRadio.m in Sources */,
 				E8341A941DC244F7009EA84B /* RadioStationSelectionViewControllerUITest.m in Sources */,
 				9E188E031DD3BB4B0037FA02 /* MocktailURLProtocol.m in Sources */,
@@ -1036,6 +1044,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ClockRadioKIFFUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1059,6 +1068,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ClockRadioKIFFUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

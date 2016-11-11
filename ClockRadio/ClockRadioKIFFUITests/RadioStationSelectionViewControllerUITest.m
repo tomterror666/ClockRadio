@@ -94,6 +94,8 @@
 }
 
 - (void)testSelectingRadioStation {
+	[stationMock stopMocking];
+	[stationProviderMock stopMocking];
 	[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
 	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_0" withText:@"Alex Jones - Infowars.com Alternate/Relay"];

@@ -10,6 +10,7 @@
 #import <OCMock/OCMock.h>
 
 #import "Configuration.h"
+#import "Configuration+UITest.h"
 #import "Sound.h"
 
 @interface MockedConfiguration ()
@@ -45,6 +46,11 @@
 	[self mockCurrentAlarmDateSelected:NO];
 	[self mockPlayImmediately:NO];
 	[self mockCurrentSelectedSound:nil];
+}
+
+- (void)stopMocking {
+	[self.mockedConfig stopMocking];
+	[self.config finish];
 }
 
 - (void)mockCurrentSelectedRadioStationURL:(NSURL *)currentSelectedRadioStationURL {

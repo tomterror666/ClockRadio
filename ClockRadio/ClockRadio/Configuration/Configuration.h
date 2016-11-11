@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class Configuration;
+
+static Configuration *sharedConfiguration = nil;
+static dispatch_once_t onceToken;
+
 @class Sound;
 
 @interface Configuration : NSObject

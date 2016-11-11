@@ -33,8 +33,8 @@
 
 - (void)beforeEach {
 	[super beforeEach];
-	[tester waitForTimeInterval:1];
 	[config mockEmptyConfiguration];
+	[tester waitForTimeInterval:1];
 }
 
 - (void)afterEach {
@@ -118,6 +118,7 @@
 }
 
 - (void)testPlayingStoppingAndMutingRadio {
+	[config stopMocking];
 	[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
 	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
 	[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];

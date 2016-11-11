@@ -27,6 +27,15 @@
 	[super tearDown];
 }
 
+- (void)beforeEach {
+	[super beforeEach];
+	[tester waitForTimeInterval:1];
+}
+
+- (void)afterEach {
+	[super afterEach];
+}
+
 #pragma mark -
 #pragma mark real test methods
 #pragma mark -
@@ -37,6 +46,8 @@
 	UIDatePicker *alarmPicker = (UIDatePicker *)[tester waitForViewWithAccessibilityLabel:@"AlarmSelectionPicker"];
 	NSDate *now = [NSDate date];
 	NSAssert([[NSDate normalizeSecondsOfDate:now] compare:[NSDate normalizeHoursOfDate:alarmPicker.date]] != NSOrderedSame, @"wrong time found! %@ != %@", now, alarmPicker.date);
+	[tester tapViewWithAccessibilityLabel:@"CancelButton"];
+	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 }
 
 - (void)testSelectingAndDisplayingAlarmDateCorrectly {
@@ -46,6 +57,8 @@
 	[tester selectDatePickerValue:@[@"Heute", [@(now.hours + 2) stringValue], [@(now.minutes + 2) stringValue]]];
 	UIDatePicker *alarmPicker = (UIDatePicker *)[tester waitForViewWithAccessibilityLabel:@"AlarmSelectionPicker"];
 	NSAssert([[NSDate normalizeSecondsOfDate:[now dateByAddingTimeInterval:2 * 60 * 60 + 2 * 60]] compare:[NSDate normalizeHoursOfDate:alarmPicker.date]] != NSOrderedSame, @"wrong time found! %@ != %@", now, alarmPicker.date);
+	[tester tapViewWithAccessibilityLabel:@"CancelButton"];
+	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 }
 
 - (void)testUsingAlarmDateCorrectly {

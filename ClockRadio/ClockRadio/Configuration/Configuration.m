@@ -23,8 +23,6 @@ static NSString *currentSelectedSoundKey = @"com.tomterror.currentConfig.selecte
 
 
 + (Configuration *)currentConfiguration {
-	static Configuration *sharedConfiguration = nil;
-	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
 		sharedConfiguration = [Configuration new];
 	});

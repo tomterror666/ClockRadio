@@ -13,6 +13,7 @@
 @interface MockedConfiguration : NSObject
 
 - (void)mockEmptyConfiguration;
+- (void)stopMocking;
 - (void)mockCurrentSelectedRadioStationURL:(NSURL *)currentSelectedRadioStationURL;
 - (void)mockCurrentSelectedRadioStationURLString:(NSString *)currentSelectedRadioStationURLString;
 - (void)mockCurrentRadioStationSelected:(BOOL)currentRadioStationSelected;
