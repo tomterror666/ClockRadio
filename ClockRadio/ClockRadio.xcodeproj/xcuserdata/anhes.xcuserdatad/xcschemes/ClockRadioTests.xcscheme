@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -19,16 +19,6 @@
                BlueprintIdentifier = "E8D978EB1D12E58100B9D459"
                BuildableName = "ClockRadioTests.xctest"
                BlueprintName = "ClockRadioTests"
-               ReferencedContainer = "container:ClockRadio.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E86C23E51DC0EBD500E012C0"
-               BuildableName = "ClockRadioKIFUITests.xctest"
-               BlueprintName = "ClockRadioKIFUITests"
                ReferencedContainer = "container:ClockRadio.xcodeproj">
             </BuildableReference>
          </TestableReference>
