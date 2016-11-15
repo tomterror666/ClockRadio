@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - DateTools (1.7.0)
   - Expecta (1.0.5)
   - KIF (3.5.1):
     - KIF/Core (= 3.5.1)
@@ -25,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - DateTools
   - Expecta
   - KIF
   - OCMock
@@ -34,6 +36,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   KIF: 082eb65279e51c3092923802849eb796a04982ab
   OCMock: f3f61e6eaa16038c30caa5798c5e49d3307b6f22
@@ -41,6 +44,6 @@ SPEC CHECKSUMS:
   StreamingKit: c329785aaef3ac142d4ae388345bfe1ed23cfd45
   XMLReader-Arc: 7832c527346fc26511fd6c05ebcee18008c34d6d
 
-PODFILE CHECKSUM: c54b1f4d76307d3362e38f3cb94abce2adf6f2a3
+PODFILE CHECKSUM: ac08ad366cfba45cb3ed761b2ca3c874dda93a9a
 
 COCOAPODS: 1.0.1

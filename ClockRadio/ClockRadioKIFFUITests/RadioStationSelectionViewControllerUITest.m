@@ -100,6 +100,8 @@
 	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionNameLabel_0" withText:@"Alex Jones - Infowars.com Alternate/Relay"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioStationSelectionDetailsLabel_0" withText:@"Genre: News - Listeners: 26686"];
+	MockedConfiguration *config = [MockedConfiguration new];
+	[config mockCurrentSelectedRadioStationURLString:@"http://50.7.130.106:80"];
 	[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];
 	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioSelectionValueLabel" withText:@"http://50.7.130.106:80"];

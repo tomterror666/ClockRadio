@@ -27,6 +27,7 @@
 - (NSString *)dateAndTimeString;
 
 - (NSString *)dateString;
+- (NSString *)dateStringInDatePickerFormat;
 
 - (NSString *)timeString;
 

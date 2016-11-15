@@ -6,6 +6,8 @@
 #import "AlarmSelectionViewController.h"
 #import "NSDate+Utility.h"
 #import "NavigationHelper.h"
+#import "MainViewController.h"
+//#import <DateTools/DateTools.h>
 
 @interface AlarmSelectionViewControllerUITest : KIFTestCase {
 	
@@ -68,12 +70,34 @@
 	[tester tapViewWithAccessibilityLabel:@"AlarmSelectionButton"];
 	[tester waitForViewWithAccessibilityLabel:@"AlarmSelectionView"];
 	NSDate *now = [NSDate date];
-	[tester selectDatePickerValue:@[@"Heute", [@(now.hours + 2) stringValue], [@(now.minutes + 2) stringValue]]];
+	if ([self isDateIncreasableWithoutDayChange:now]) {
+		[tester selectDatePickerValue:@[@"Heute", [@(now.hours + 2) stringValue], [@(now.minutes + 2) stringValue]]];
+	} else {
+		NSDate *increasedDate = [now dateByAddingTimeInterval:2 * 60 * 60 + 2 * 60];
+//		NSDateFormatter *formatter = [NSDateFormatter new];
+//		formatter.dateStyle = NSDateFormatterLongStyle;
+//		formatter.timeStyle = NSDateFormatterNoStyle;
+		NSString *selectedDate = [increasedDate dateStringInDatePickerFormat];
+		NSString *selectedHour = [@(now.hours + 2 - 24) stringValue];
+		NSString *selectedMinute = [@(now.minutes + 2) stringValue];
+		[tester selectDatePickerValue:@[@"12. Nov.", selectedHour, selectedMinute]];
+	}
 	[tester tapViewWithAccessibilityLabel:@"DoneButton"];
 	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 	NSString *expectedDateString = [[NSDate normalizeSecondsOfDate:[now dateByAddingTimeInterval:2 * 60 * 60 + 2 * 60]] dateAndTimeString];
 	[tester waitForLabelWithAccessibilityLabel:@"AlarmSelectionValueLabel" withText:expectedDateString];
 	[mainVCMock stopMocking];
+}
+
+#pragma mark -
+#pragma mark Helper methods
+#pragma mark -
+
+- (BOOL)isDateIncreasableWithoutDayChange:(NSDate *)date {
+	NSInteger hours = date.hours;
+	date = [date dateByAddingTimeInterval:2 * 60 * 60+ 2 * 60];
+	NSInteger increasedHours = date.hours;
+	return hours < increasedHours;
 }
 
 @end

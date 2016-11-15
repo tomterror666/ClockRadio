@@ -7,6 +7,7 @@ target 'ClockRadio' do
 	pod 'AFNetworking'
 	pod 'XMLReader-Arc', '1.1'
 	pod 'OGIniFiler'
+	pod 'DateTools'
 end
 
 target 'ClockRadioTests' do
@@ -18,4 +19,5 @@ target 'ClockRadioKIFUITests' do
 	pod 'Expecta'
 	pod 'OCMock'
 	pod 'KIF'
+	pod 'DateTools'
 end

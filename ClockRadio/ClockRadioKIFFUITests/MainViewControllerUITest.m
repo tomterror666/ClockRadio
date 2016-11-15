@@ -118,11 +118,13 @@
 }
 
 - (void)testPlayingStoppingAndMutingRadio {
-	[config stopMocking];
-	[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
-	[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
-	[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];
-	[tester waitForViewWithAccessibilityLabel:@"MainView"];
+	//[config stopMocking];
+	[config mockCurrentSelectedRadioStationURLString:@"http://50.7.130.106:80"];
+	//[tester tapViewWithAccessibilityLabel:@"RadioSelectionButton"];
+	//[tester waitForViewWithAccessibilityLabel:@"RadioStationSelectionView"];
+	//[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];
+	//[tester waitForViewWithAccessibilityLabel:@"MainView"];
+	[(MainViewController *)[NavigationHelper visiblePhoneViewController] refreshView];
 	[tester waitForButtonWithAccessibilityLabel:@"PlayButton" isTappable:YES];
 	[tester waitForButtonWithAccessibilityLabel:@"StopButton" isTappable:NO];
 	[tester waitForButtonWithAccessibilityLabel:@"MuteButton" withButtonText:@"Mute" isTappable:YES];

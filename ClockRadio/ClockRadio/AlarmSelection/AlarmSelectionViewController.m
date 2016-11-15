@@ -8,6 +8,7 @@
 
 #import "AlarmSelectionViewController.h"
 #import "NSDate+Utility.h"
+#import <DateTools/DateTools.h>
 
 @interface AlarmSelectionViewController ()
 
@@ -23,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self configureAccessibilityLabels];
+	[self configureAlarmSelector];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +35,11 @@
 #pragma mark -
 #pragma mark Configuration
 #pragma mark -
+
+- (void)configureAlarmSelector {
+	self.alarmSelector.minimumDate = [NSDate date];
+	self.alarmSelector.maximumDate = [[NSDate date] dateByAddingYears:1];
+}
 
 - (void)configureAccessibilityLabels {
 	self.view.accessibilityLabel = @"AlarmSelectionView";

@@ -37,6 +37,12 @@
 	return [formatter stringFromDate:self];
 }
 
+- (NSString *)dateStringInDatePickerFormat {
+	NSDateFormatter *formatter = [NSDateFormatter new];
+	formatter.dateFormat = @"EEdd. MMM";
+	return [formatter stringFromDate:self];
+}
+
 - (NSString *)dateString {
 	NSDateFormatter *formatter = [NSDateFormatter new];
 	formatter.dateFormat = @"dd.MM.yyyy";
