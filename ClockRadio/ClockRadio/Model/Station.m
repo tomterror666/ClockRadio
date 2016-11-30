@@ -35,4 +35,12 @@
 	return self;
 }
 
+- (BOOL)isEqual:(id)object {
+	if (![object isKindOfClass:[Station class]]) {
+		return NO;
+	}
+	Station *other = (Station *)object;
+	return [other.stationId isEqualToString:self.stationId];
+}
+
 @end

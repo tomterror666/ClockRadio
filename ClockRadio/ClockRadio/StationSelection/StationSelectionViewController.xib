@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StationSelectionViewController">
+            <connections>
+                <outlet property="backButton" destination="6eN-Pm-w5y" id="1FD-pT-q5q"/>
+                <outlet property="backgroundImageView" destination="EqP-Ou-xF2" id="BDx-aS-YtV"/>
+                <outlet property="stationSelectionButton" destination="H7H-SY-3kg" id="D38-ce-7ht"/>
+                <outlet property="stationSelectionCollectionView" destination="O4L-5G-eSz" id="VLE-OO-wNd"/>
+                <outlet property="stationSelectionMarkerView" destination="31g-TF-LQF" id="ZGn-sU-a2O"/>
+                <outlet property="useButton" destination="6r3-Gj-fcG" id="h3g-Ye-RBG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EqP-Ou-xF2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="O4L-5G-eSz">
+                    <rect key="frame" x="16" y="28" width="343" height="509"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewLayout key="collectionViewLayout" id="Mbt-SR-ByM" customClass="StationSelectionLayout"/>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AUc-fV-KFy"/>
+                        <outlet property="delegate" destination="-1" id="EOq-Z9-nwv"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31g-TF-LQF" customClass="StationMarkerView">
+                    <rect key="frame" x="186" y="30" width="3" height="505"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="3" id="opt-mc-1QI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7H-SY-3kg" customClass="SelectionButton">
+                    <rect key="frame" x="269" y="557" width="90" height="90"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="2Fa-p7-h06"/>
+                        <constraint firstAttribute="height" constant="90" id="8Lc-be-e6n"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-Pm-w5y">
+                    <rect key="frame" x="16" y="617" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="N73-H8-06O"/>
+                        <constraint firstAttribute="height" constant="30" id="x6N-Jo-ism"/>
+                    </constraints>
+                    <state key="normal" title="Abbrechen"/>
+                    <connections>
+                        <action selector="backButtonTouched:" destination="-1" eventType="touchUpInside" id="whM-RL-6JO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r3-Gj-fcG">
+                    <rect key="frame" x="104" y="617" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="QdV-mx-EK1"/>
+                        <constraint firstAttribute="width" constant="80" id="uIY-Sy-SbN"/>
+                    </constraints>
+                    <state key="normal" title="Fertig"/>
+                    <connections>
+                        <action selector="useButtonTouched:" destination="-1" eventType="touchUpInside" id="G0q-1L-8n3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O4L-5G-eSz" secondAttribute="bottom" constant="130" id="0sf-XK-sBd"/>
+                <constraint firstAttribute="bottom" secondItem="6eN-Pm-w5y" secondAttribute="bottom" constant="20" id="15q-69-UsO"/>
+                <constraint firstItem="O4L-5G-eSz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="28" id="8ZC-fI-MB4"/>
+                <constraint firstAttribute="trailing" secondItem="O4L-5G-eSz" secondAttribute="trailing" constant="16" id="Anf-np-iEF"/>
+                <constraint firstItem="EqP-Ou-xF2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BSD-oD-uQN"/>
+                <constraint firstItem="31g-TF-LQF" firstAttribute="height" secondItem="O4L-5G-eSz" secondAttribute="height" constant="-4" id="Bea-Ba-Mdj"/>
+                <constraint firstAttribute="bottom" secondItem="EqP-Ou-xF2" secondAttribute="bottom" id="Chc-nI-VPy"/>
+                <constraint firstItem="31g-TF-LQF" firstAttribute="top" secondItem="O4L-5G-eSz" secondAttribute="top" constant="2" id="KcB-uu-rew"/>
+                <constraint firstItem="31g-TF-LQF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LSt-hk-fw1"/>
+                <constraint firstItem="H7H-SY-3kg" firstAttribute="trailing" secondItem="O4L-5G-eSz" secondAttribute="trailing" id="TNn-Q0-g5h"/>
+                <constraint firstItem="6r3-Gj-fcG" firstAttribute="leading" secondItem="6eN-Pm-w5y" secondAttribute="trailing" constant="8" id="Vdq-jN-jwc"/>
+                <constraint firstAttribute="bottom" secondItem="6r3-Gj-fcG" secondAttribute="bottom" constant="20" id="XkQ-Yp-caO"/>
+                <constraint firstItem="H7H-SY-3kg" firstAttribute="top" secondItem="O4L-5G-eSz" secondAttribute="bottom" constant="20" id="dAf-vU-ncy"/>
+                <constraint firstItem="O4L-5G-eSz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="rVp-p2-ShD"/>
+                <constraint firstItem="6eN-Pm-w5y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="rWi-7d-JcS"/>
+                <constraint firstItem="EqP-Ou-xF2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sex-SG-Sjm"/>
+                <constraint firstAttribute="trailing" secondItem="EqP-Ou-xF2" secondAttribute="trailing" id="wzP-vy-zGO"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

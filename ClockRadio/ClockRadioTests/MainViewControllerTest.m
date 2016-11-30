@@ -9,6 +9,7 @@
 #import "Configuration.h"
 #import "AudioPlayerView.h"
 #import "RadioStationSelectionViewController.h"
+#import "StationSelectionViewController.h"
 #import "AlarmSelectionViewController.h"
 #import "SoundSelectionViewController.h"
 #import "Station.h"
@@ -98,7 +99,7 @@
 }
 
 - (void)testPresentRadioStationVCOnRadioSelectionButtonTouched {
-	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[RadioStationSelectionViewController class]]
+	[[controllerMock expect] presentViewController:[OCMConstraint isKindOfClass:[StationSelectionViewController class]]
 										  animated:YES
 										completion:OCMOCK_ANY];
 	[controller radioSelectionButtonTouched:nil];

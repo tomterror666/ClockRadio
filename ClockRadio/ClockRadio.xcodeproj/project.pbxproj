@@ -68,6 +68,18 @@
 		E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */; };
 		E814325F1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */; };
 		E8341A941DC244F7009EA84B /* RadioStationSelectionViewControllerUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */; };
+		E84D37211DEF2A29009B56D3 /* StationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D37101DEF2A29009B56D3 /* StationSelectionViewController.m */; };
+		E84D37221DEF2A29009B56D3 /* StationSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E84D37111DEF2A29009B56D3 /* StationSelectionViewController.xib */; };
+		E84D37231DEF2A29009B56D3 /* SelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D37121DEF2A29009B56D3 /* SelectionButton.m */; };
+		E84D37241DEF2A29009B56D3 /* StationMarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D37141DEF2A29009B56D3 /* StationMarkerView.m */; };
+		E84D37251DEF2A29009B56D3 /* StationSelectionButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E84D37161DEF2A29009B56D3 /* StationSelectionButton@3x.png */; };
+		E84D37261DEF2A29009B56D3 /* StationSelectionButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E84D37171DEF2A29009B56D3 /* StationSelectionButton.png */; };
+		E84D37271DEF2A29009B56D3 /* StationSelectionButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E84D37181DEF2A29009B56D3 /* StationSelectionButton@2x.png */; };
+		E84D37281DEF2A29009B56D3 /* holz-textur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E84D37191DEF2A29009B56D3 /* holz-textur.jpg */; };
+		E84D37291DEF2A29009B56D3 /* StationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D371A1DEF2A29009B56D3 /* StationCell.m */; };
+		E84D372A1DEF2A29009B56D3 /* StationSelectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D371C1DEF2A29009B56D3 /* StationSelectionLayout.m */; };
+		E84D372B1DEF2A29009B56D3 /* StationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E84D371D1DEF2A29009B56D3 /* StationCell.xib */; };
+		E84D372C1DEF2A29009B56D3 /* TwistRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D371F1DEF2A29009B56D3 /* TwistRecognizer.m */; };
 		E86C23F11DC0EC1900E012C0 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86C23F01DC0EC1900E012C0 /* libKIF.a */; };
 		E86C23F31DC0EC2D00E012C0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86C23F21DC0EC2D00E012C0 /* CoreGraphics.framework */; };
 		E86C23F51DC0EC3600E012C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86C23F41DC0EC3600E012C0 /* QuartzCore.framework */; };
@@ -197,6 +209,24 @@
 		E814325D1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AccessibilityLabelExtension.h"; sourceTree = "<group>"; };
 		E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AccessibilityLabelExtension.m"; sourceTree = "<group>"; };
 		E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioStationSelectionViewControllerUITest.m; sourceTree = "<group>"; };
+		E84D370F1DEF2A29009B56D3 /* StationSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationSelectionViewController.h; sourceTree = "<group>"; };
+		E84D37101DEF2A29009B56D3 /* StationSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationSelectionViewController.m; sourceTree = "<group>"; };
+		E84D37111DEF2A29009B56D3 /* StationSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationSelectionViewController.xib; sourceTree = "<group>"; };
+		E84D37121DEF2A29009B56D3 /* SelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionButton.m; sourceTree = "<group>"; };
+		E84D37131DEF2A29009B56D3 /* SelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionButton.h; sourceTree = "<group>"; };
+		E84D37141DEF2A29009B56D3 /* StationMarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationMarkerView.m; sourceTree = "<group>"; };
+		E84D37151DEF2A29009B56D3 /* StationMarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationMarkerView.h; sourceTree = "<group>"; };
+		E84D37161DEF2A29009B56D3 /* StationSelectionButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StationSelectionButton@3x.png"; sourceTree = "<group>"; };
+		E84D37171DEF2A29009B56D3 /* StationSelectionButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StationSelectionButton.png; sourceTree = "<group>"; };
+		E84D37181DEF2A29009B56D3 /* StationSelectionButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StationSelectionButton@2x.png"; sourceTree = "<group>"; };
+		E84D37191DEF2A29009B56D3 /* holz-textur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "holz-textur.jpg"; sourceTree = "<group>"; };
+		E84D371A1DEF2A29009B56D3 /* StationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationCell.m; sourceTree = "<group>"; };
+		E84D371B1DEF2A29009B56D3 /* StationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationCell.h; sourceTree = "<group>"; };
+		E84D371C1DEF2A29009B56D3 /* StationSelectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationSelectionLayout.m; sourceTree = "<group>"; };
+		E84D371D1DEF2A29009B56D3 /* StationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationCell.xib; sourceTree = "<group>"; };
+		E84D371E1DEF2A29009B56D3 /* StationSelectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationSelectionLayout.h; sourceTree = "<group>"; };
+		E84D371F1DEF2A29009B56D3 /* TwistRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwistRecognizer.m; sourceTree = "<group>"; };
+		E84D37201DEF2A29009B56D3 /* TwistRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwistRecognizer.h; sourceTree = "<group>"; };
 		E86C23E61DC0EBD500E012C0 /* ClockRadioKIFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockRadioKIFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86C23EA1DC0EBD500E012C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86C23F01DC0EC1900E012C0 /* libKIF.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKIF.a; path = "../../../Library/Developer/Xcode/DerivedData/ClockRadio-cxprjcvnhuzbzjgdxqnvyjqbcncq/Build/Products/Debug-iphonesimulator/KIF/libKIF.a"; sourceTree = "<group>"; };
@@ -417,6 +447,24 @@
 		9E650B8F1D15BD2F002AD3F1 /* StationSelection */ = {
 			isa = PBXGroup;
 			children = (
+				E84D370F1DEF2A29009B56D3 /* StationSelectionViewController.h */,
+				E84D37101DEF2A29009B56D3 /* StationSelectionViewController.m */,
+				E84D37111DEF2A29009B56D3 /* StationSelectionViewController.xib */,
+				E84D37121DEF2A29009B56D3 /* SelectionButton.m */,
+				E84D37131DEF2A29009B56D3 /* SelectionButton.h */,
+				E84D37141DEF2A29009B56D3 /* StationMarkerView.m */,
+				E84D37151DEF2A29009B56D3 /* StationMarkerView.h */,
+				E84D37161DEF2A29009B56D3 /* StationSelectionButton@3x.png */,
+				E84D37171DEF2A29009B56D3 /* StationSelectionButton.png */,
+				E84D37181DEF2A29009B56D3 /* StationSelectionButton@2x.png */,
+				E84D37191DEF2A29009B56D3 /* holz-textur.jpg */,
+				E84D371A1DEF2A29009B56D3 /* StationCell.m */,
+				E84D371B1DEF2A29009B56D3 /* StationCell.h */,
+				E84D371C1DEF2A29009B56D3 /* StationSelectionLayout.m */,
+				E84D371D1DEF2A29009B56D3 /* StationCell.xib */,
+				E84D371E1DEF2A29009B56D3 /* StationSelectionLayout.h */,
+				E84D371F1DEF2A29009B56D3 /* TwistRecognizer.m */,
+				E84D37201DEF2A29009B56D3 /* TwistRecognizer.h */,
 				9E650B941D15BE8E002AD3F1 /* RadioStationSelectionViewController.h */,
 				9E650B951D15BE8E002AD3F1 /* RadioStationSelectionViewController.m */,
 				9E650B961D15BE8E002AD3F1 /* RadioStationSelectionViewController.xib */,
@@ -758,6 +806,8 @@
 			files = (
 				9EDA45CB1D6CEE7F00C79D4D /* Sonar Ping.mp3 in Resources */,
 				9EDA45CA1D6CEE7F00C79D4D /* Plectron Tones.mp3 in Resources */,
+				E84D372B1DEF2A29009B56D3 /* StationCell.xib in Resources */,
+				E84D37281DEF2A29009B56D3 /* holz-textur.jpg in Resources */,
 				9E8AD5611D282B4E00B171EF /* AlarmSelectionViewController.xib in Resources */,
 				9EDA45CC1D6CEE7F00C79D4D /* Rooster.mp3 in Resources */,
 				9EDA45C11D6CEE7F00C79D4D /* Police Siren.mp3 in Resources */,
@@ -768,6 +818,7 @@
 				E8D978E61D12E58100B9D459 /* LaunchScreen.storyboard in Resources */,
 				E8D978E31D12E58100B9D459 /* Assets.xcassets in Resources */,
 				9EDA45C71D6CEE7F00C79D4D /* Gibbon Monkey.mp3 in Resources */,
+				E84D37261DEF2A29009B56D3 /* StationSelectionButton.png in Resources */,
 				9EDA45C81D6CEE7F00C79D4D /* Siren.mp3 in Resources */,
 				9EDA45C61D6CEE7F00C79D4D /* Pour Glass Water.mp3 in Resources */,
 				9E5200A11D6B7C94007A7A57 /* SoundSelectionViewController.xib in Resources */,
@@ -779,8 +830,11 @@
 				9EDA45C01D6CEE7F00C79D4D /* UFO Descending And Takeoff.mp3 in Resources */,
 				9EDA45C21D6CEE7F00C79D4D /* Railroad Crossing Bell.mp3 in Resources */,
 				9EDA45CD1D6CEE7F00C79D4D /* Glass Ping.mp3 in Resources */,
+				E84D37251DEF2A29009B56D3 /* StationSelectionButton@3x.png in Resources */,
 				E8D978E11D12E58100B9D459 /* Main.storyboard in Resources */,
+				E84D37271DEF2A29009B56D3 /* StationSelectionButton@2x.png in Resources */,
 				9E5200A61D6B8650007A7A57 /* SoundSelectionCell.xib in Resources */,
+				E84D37221DEF2A29009B56D3 /* StationSelectionViewController.xib in Resources */,
 				9EDA45D01D6CEE7F00C79D4D /* Rooster Crow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -965,16 +1019,22 @@
 				E814325F1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m in Sources */,
 				E8D978DE1D12E58100B9D459 /* MainViewController.m in Sources */,
 				9E52009B1D6B7020007A7A57 /* NSDate+Utility.m in Sources */,
+				E84D37231DEF2A29009B56D3 /* SelectionButton.m in Sources */,
 				E8D978DB1D12E58100B9D459 /* AppDelegate.m in Sources */,
 				E8D9790C1D12F24000B9D459 /* AudioPlayerView.m in Sources */,
+				E84D37291DEF2A29009B56D3 /* StationCell.m in Sources */,
 				9E650B971D15BE8E002AD3F1 /* RadioStationSelectionViewController.m in Sources */,
 				9E7D817D1D23ECCD0040BDB5 /* Station.m in Sources */,
 				9E6204331DD1167C00736628 /* MocktailURLProtocol.m in Sources */,
 				9EDA45D31D6CF06F00C79D4D /* Sound.m in Sources */,
+				E84D37241DEF2A29009B56D3 /* StationMarkerView.m in Sources */,
 				9E5200A01D6B7C94007A7A57 /* SoundSelectionViewController.m in Sources */,
 				9E5E7CC31D27CF1B0001ACD4 /* StationTuneinDetails.m in Sources */,
+				E84D372A1DEF2A29009B56D3 /* StationSelectionLayout.m in Sources */,
+				E84D372C1DEF2A29009B56D3 /* TwistRecognizer.m in Sources */,
 				E8D978D81D12E58100B9D459 /* main.m in Sources */,
 				9E6204321DD1167C00736628 /* MocktailResponse.m in Sources */,
+				E84D37211DEF2A29009B56D3 /* StationSelectionViewController.m in Sources */,
 				9E5E7CC01D27CDF60001ACD4 /* TuneinProvider.m in Sources */,
 				9E5200A51D6B8650007A7A57 /* SoundSelectionCell.m in Sources */,
 				9E8AD5601D282B4E00B171EF /* AlarmSelectionViewController.m in Sources */,

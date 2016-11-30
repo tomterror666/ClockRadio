@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "AudioPlayerView.h"
 #import "RadioStationSelectionViewController.h"
+#import "StationSelectionViewController.h"
 #import "AlarmSelectionViewController.h"
 #import "SoundSelectionViewController.h"
 #import "Configuration.h"
@@ -22,7 +23,7 @@
 
 #define LocalNotificationInfoDateKey @"LocalNotificationInfoDateKey"
 
-@interface MainViewController () <RadioStationSelectionDelegate, AlarmSelectionDelegate, SoundSelectionDelegate>
+@interface MainViewController () <RadioStationSelectionDelegate, StationSelectionDelegate, AlarmSelectionDelegate, SoundSelectionDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionLabel;
 @property (nonatomic, weak) IBOutlet UILabel *radioSelectionValueLabel;
 @property (nonatomic, weak) IBOutlet UIButton *radioSelectionButton;
@@ -119,8 +120,12 @@
 #pragma mark -
 
 - (IBAction)radioSelectionButtonTouched:(id)sender {
-	RadioStationSelectionViewController *controller = [[RadioStationSelectionViewController alloc] initWithNibName:@"RadioStationSelectionViewController" bundle:nil];
+//	RadioStationSelectionViewController *controller = [[RadioStationSelectionViewController alloc] initWithNibName:@"RadioStationSelectionViewController" bundle:nil];
+//	controller.delegate = self;
+//	[self presentViewController:controller animated:YES completion:NULL];
+	StationSelectionViewController *controller = [[StationSelectionViewController alloc] initWithNibName:@"StationSelectionViewController" bundle:nil];
 	controller.delegate = self;
+	controller.audioPlayer = self.audioPlayer;
 	[self presentViewController:controller animated:YES completion:NULL];
 }
 
@@ -157,6 +162,26 @@
 //}
 
 - (void)radioStationSelectionVC:(RadioStationSelectionViewController *)controller didFinishWithRadioStation:(Station *)station {
+	__weak typeof(self) weakSelf = self;
+	[self dismissViewControllerAnimated:YES completion:^{
+		[weakSelf.tuneinProvider loadTuneinDataWithStationId:station.stationId
+											   forTuneinBase:self.stationProvider.tuneinBase
+											  withCompletion:^(id tuneinData, NSError *error) {
+												  [Configuration currentConfiguration].currentSelectedRadioStationURLString = weakSelf.tuneinProvider.tuneinDetails.fileURLStrings[0];
+												  [weakSelf refreshView];
+											  }];
+	}];
+}
+
+#pragma mark -
+#pragma mark StationSelectionDelegate
+#pragma mark -
+
+- (void)stationSelectionViewControllerDidCancel:(StationSelectionViewController *)controller {
+	[self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)stationSelectionViewController:(StationSelectionViewController *)controller didFinsishWithStation:(Station *)station {
 	__weak typeof(self) weakSelf = self;
 	[self dismissViewControllerAnimated:YES completion:^{
 		[weakSelf.tuneinProvider loadTuneinDataWithStationId:station.stationId

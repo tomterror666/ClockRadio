@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StationCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4L-fy-adA">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKE-DA-tJs">
+                                <rect key="frame" x="26" y="-2" width="266" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="509-DP-Nzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mry-i5-r6l">
+                                <rect key="frame" x="26" y="11" width="177" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="K1P-sE-xwd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laQ-35-fhy">
+                                <rect key="frame" x="211" y="11" width="81" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aQJ-kG-2Fd"/>
+                                    <constraint firstAttribute="width" constant="81" id="piO-uo-Ui0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rL1-j0-XiJ">
+                                <rect key="frame" x="8" y="12.5" width="10" height="5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="LEB-up-SzT"/>
+                                    <constraint firstAttribute="width" constant="10" id="XRa-v5-9H9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rL1-j0-XiJ" firstAttribute="centerY" secondItem="E4L-fy-adA" secondAttribute="centerY" id="3gH-fe-uEP"/>
+                            <constraint firstAttribute="bottom" secondItem="Mry-i5-r6l" secondAttribute="bottom" constant="-2" id="81D-HI-h13"/>
+                            <constraint firstAttribute="bottom" secondItem="laQ-35-fhy" secondAttribute="bottom" constant="-2" id="Ivo-oK-DCk"/>
+                            <constraint firstItem="lKE-DA-tJs" firstAttribute="leading" secondItem="E4L-fy-adA" secondAttribute="leading" constant="26" id="N2s-Tx-Huv"/>
+                            <constraint firstItem="Mry-i5-r6l" firstAttribute="leading" secondItem="E4L-fy-adA" secondAttribute="leading" constant="26" id="Rq2-On-u84"/>
+                            <constraint firstAttribute="trailing" secondItem="laQ-35-fhy" secondAttribute="trailing" constant="8" id="UWh-Rx-h4d"/>
+                            <constraint firstAttribute="trailing" secondItem="lKE-DA-tJs" secondAttribute="trailing" constant="8" id="YnQ-xM-DdJ"/>
+                            <constraint firstItem="rL1-j0-XiJ" firstAttribute="leading" secondItem="E4L-fy-adA" secondAttribute="leading" constant="8" id="Zd4-3l-rDK"/>
+                            <constraint firstItem="laQ-35-fhy" firstAttribute="leading" secondItem="Mry-i5-r6l" secondAttribute="trailing" constant="8" id="hl4-u5-tDr"/>
+                            <constraint firstItem="lKE-DA-tJs" firstAttribute="top" secondItem="E4L-fy-adA" secondAttribute="top" constant="-2" id="qTD-kM-VPN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="E4L-fy-adA" secondAttribute="trailing" id="IgM-OV-Nlg"/>
+                <constraint firstItem="E4L-fy-adA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OyP-rs-S25"/>
+                <constraint firstItem="E4L-fy-adA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cK5-N1-3if"/>
+                <constraint firstAttribute="bottom" secondItem="E4L-fy-adA" secondAttribute="bottom" id="jx4-LE-uPe"/>
+            </constraints>
+            <size key="customSize" width="50" height="369"/>
+            <connections>
+                <outlet property="contentViewLeadingConstraint" destination="cK5-N1-3if" id="piE-6F-QpZ"/>
+                <outlet property="stationContentView" destination="E4L-fy-adA" id="BQu-58-TBK"/>
+                <outlet property="stationGenereLabel" destination="Mry-i5-r6l" id="a5s-Cu-HiZ"/>
+                <outlet property="stationLED" destination="rL1-j0-XiJ" id="i2Y-bC-IQp"/>
+                <outlet property="stationListenersLabel" destination="laQ-35-fhy" id="OAr-pq-XsB"/>
+                <outlet property="stationNameLabel" destination="lKE-DA-tJs" id="y3h-ws-Uzj"/>
+            </connections>
+            <point key="canvasLocation" x="66" y="-303"/>
+        </collectionViewCell>
+    </objects>
+</document>
