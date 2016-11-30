@@ -177,6 +177,8 @@
 	self.view.accessibilityLabel = @"RadioStationSelectionView";
 	self.stationSelectionCollectionView.accessibilityLabel = @"StationSelectionCollectionView";
 	self.backButton.accessibilityLabel = @"CancelButton";
+	self.useButton.accessibilityLabel = @"UseButton";
+	self.stationSelectionButton.accessibilityLabel = @"SelectionButton";
 }
 
 #pragma mark -

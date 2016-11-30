@@ -18,4 +18,6 @@
 
 - (BOOL)waitForViewWithAccessiblityLabel:(NSString*)label containingNumberOfCells:(NSInteger)numberOfCells inSection:(NSInteger)section;
 
+- (void)swipeViewWithAccessibilityLabel:(NSString *)label inDirection:(KIFSwipeDirection)direction withStartPoint:(CGPoint)startPoint swipeDistance:(CGFloat)distance;
+
 @end

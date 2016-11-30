@@ -104,8 +104,8 @@
 	[tester waitForLabelWithAccessibilityLabel:@"StationSelectionNumberOfListenersLabel_0" withText:@"Listeners: 26686"];
 	MockedConfiguration *config = [MockedConfiguration new];
 	[config mockCurrentSelectedRadioStationURLString:@"http://50.7.130.106:80"];
-//	[tester tapViewWithAccessibilityLabel:@"RadioStationSelectionNameCell_0"];
-	[tester tapViewWithAccessibilityLabel:@"CancelButton"];
+	[tester swipeViewWithAccessibilityLabel:@"SelectionButton" inDirection:KIFSwipeDirectionLeft withStartPoint:CGPointMake(45., 22.) swipeDistance:50];
+	[tester tapViewWithAccessibilityLabel:@"UseButton"];
 	[tester waitForViewWithAccessibilityLabel:@"MainView"];
 	[tester waitForTimeInterval:1];
 	[tester waitForLabelWithAccessibilityLabel:@"RadioSelectionValueLabel" withText:@"http://50.7.130.106:80"];

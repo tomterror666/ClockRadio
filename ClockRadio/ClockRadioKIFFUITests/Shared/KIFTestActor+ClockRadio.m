@@ -8,6 +8,9 @@
 
 #import "KIFTestActor+ClockRadio.h"
 #import <NSError-KIFAdditions.h>
+#import "CGGeometry-KIFAdditions.h"
+
+#define kSwipeDisplacement 5
 
 @implementation KIFUITestActor (ClockRadio)
 
@@ -101,6 +104,65 @@
 	NSError *error = [NSError KIFErrorWithFormat:@"View with accesibility label \"%@\", is neither a table view nor a collection view", label];
 	[self failWithError:error stopTest:YES];
 	return NO;
+}
+
+- (void)swipeViewWithAccessibilityLabel:(NSString *)label inDirection:(KIFSwipeDirection)direction withStartPoint:(CGPoint)startPoint swipeDistance:(CGFloat)distance
+{
+	[self swipeViewWithAccessibilityLabel:label value:nil traits:UIAccessibilityTraitNone inDirection:direction withStartPoint:startPoint swipeDistance:distance];
+}
+
+- (void)swipeViewWithAccessibilityLabel:(NSString *)label value:(NSString *)value traits:(UIAccessibilityTraits)traits inDirection:(KIFSwipeDirection)direction withStartPoint:(CGPoint)startPoint swipeDistance:(CGFloat)distance
+{
+	UIView *viewToSwipe = nil;
+	UIAccessibilityElement *element = nil;
+	
+	[self waitForAccessibilityElement:&element view:&viewToSwipe withLabel:label value:value traits:traits tappable:YES];
+	
+	[self swipeAccessibilityElement:element inView:viewToSwipe inDirection:direction withStartPoint:startPoint swipeDistance:distance];
+}
+
+- (void)swipeAccessibilityElement:(UIAccessibilityElement *)element inView:(UIView *)viewToSwipe inDirection:(KIFSwipeDirection)direction withStartPoint:(CGPoint)startPoint swipeDistance:(CGFloat)distance
+{
+	// The original version of this came from http://groups.google.com/group/kif-framework/browse_thread/thread/df3f47eff9f5ac8c
+	
+	const NSUInteger kNumberOfPointsInSwipePath = 20;
+	
+	// Within this method, all geometry is done in the coordinate system of the view to swipe.
+	CGRect elementFrame = [self elementFrameForElement:element andView:viewToSwipe];
+	
+	KIFDisplacement swipeDisplacement = [self displacementForSwipingInDirection:direction withDistance:distance];
+	
+	[viewToSwipe dragFromPoint:startPoint displacement:swipeDisplacement steps:kNumberOfPointsInSwipePath];
+}
+
+- (KIFDisplacement)displacementForSwipingInDirection:(KIFSwipeDirection)direction withDistance:(CGFloat)distance {
+	switch (direction) {
+			// As discovered on the Frank mailing lists, it won't register as a
+			// swipe if you move purely horizontally or vertically, so need a
+			// slight orthogonal offset too.
+		case KIFSwipeDirectionRight:
+			return CGPointMake(distance, kSwipeDisplacement);
+		case KIFSwipeDirectionLeft:
+			return CGPointMake(-distance, kSwipeDisplacement);
+		case KIFSwipeDirectionUp:
+			return CGPointMake(kSwipeDisplacement, -distance);
+		case KIFSwipeDirectionDown:
+			return CGPointMake(kSwipeDisplacement, distance);
+	}
+}
+
+- (CGRect) elementFrameForElement:(UIAccessibilityElement *)element andView:(UIView *)view
+{
+	CGRect elementFrame;
+	
+	// If the accessibilityFrame is not set, fallback to the view frame.
+	if (CGRectEqualToRect(CGRectZero, element.accessibilityFrame)) {
+		elementFrame.origin = CGPointZero;
+		elementFrame.size = view.frame.size;
+	} else {
+		elementFrame = [view.windowOrIdentityWindow convertRect:element.accessibilityFrame toView:view];
+	}
+	return elementFrame;
 }
 
 
