@@ -317,6 +317,7 @@
 }
 
 - (IBAction)useButtonTouched:(id)sender {
+	[self.audioPlayer stop];
 	if ([self.delegate respondsToSelector:@selector(stationSelectionViewController:didFinsishWithStation:)]) {
 		[self.delegate stationSelectionViewController:self didFinsishWithStation:self.currentSelectedStation];
 	}
