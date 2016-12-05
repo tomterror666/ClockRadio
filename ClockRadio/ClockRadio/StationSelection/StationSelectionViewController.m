@@ -157,7 +157,7 @@
 
 - (void)configureBackground {
 	self.backgroundImageView.contentMode = UIViewContentModeScaleToFill;
-	self.backgroundImageView.image = [UIImage imageNamed:@"holz-textur.jpg"];
+	self.backgroundImageView.image = [UIImage imageNamed:@"holz-textur"];
 }
 
 - (void)configureButtons {
