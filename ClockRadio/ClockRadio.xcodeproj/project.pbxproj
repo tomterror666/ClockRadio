@@ -10,7 +10,6 @@
 		9E0E09A51D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09A41D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m */; };
 		9E0E09A71D85A6910015D6A9 /* MainViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09A61D85A6910015D6A9 /* MainViewControllerTest.m */; };
 		9E0E09A91D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09A81D85A6AA0015D6A9 /* SoundSelectionViewControllerTest.m */; };
-		9E0E09AB1D85A6C50015D6A9 /* RadioStationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0E09AA1D85A6C50015D6A9 /* RadioStationSelectionViewController.m */; };
 		9E118E621D6E0DEB002C50F8 /* StationTuneinDetailsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E611D6E0DEB002C50F8 /* StationTuneinDetailsTest.m */; };
 		9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E118E631D6E17C0002C50F8 /* SoundTest.m */; };
 		9E118E661D6E1B97002C50F8 /* Rooster.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E118E651D6E1B97002C50F8 /* Rooster.mp3 */; };
@@ -65,7 +64,6 @@
 		E80E2D6D1D9425B600DE085F /* OCMKindOfClassConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D691D9425B600DE085F /* OCMKindOfClassConstraint.m */; };
 		E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E80E2D6B1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m */; };
 		E814325F1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E814325E1DD477B8001DAC20 /* UIScrollView+AccessibilityLabelExtension.m */; };
-		E8341A941DC244F7009EA84B /* RadioStationSelectionViewControllerUITest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8341A911DC24200009EA84B /* RadioStationSelectionViewControllerUITest.m */; };
 		E84D37211DEF2A29009B56D3 /* StationSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D37101DEF2A29009B56D3 /* StationSelectionViewController.m */; };
 		E84D37221DEF2A29009B56D3 /* StationSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E84D37111DEF2A29009B56D3 /* StationSelectionViewController.xib */; };
 		E84D37231DEF2A29009B56D3 /* SelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E84D37121DEF2A29009B56D3 /* SelectionButton.m */; };
@@ -973,7 +971,6 @@
 				E86C23FE1DC0EDA200E012C0 /* MainViewControllerUITest.m in Sources */,
 				E8FDDD041DD61A8C001495B1 /* Configuration+UITest.m in Sources */,
 				E86C23FB1DC0ED9800E012C0 /* KIFTestActor+ClockRadio.m in Sources */,
-				E8341A941DC244F7009EA84B /* RadioStationSelectionViewControllerUITest.m in Sources */,
 				9E188E031DD3BB4B0037FA02 /* MocktailURLProtocol.m in Sources */,
 				E86C23FC1DC0ED9800E012C0 /* MockedConfiguration.m in Sources */,
 				9E188E021DD3B36C0037FA02 /* ApiClientURLSessionConfiguration.m in Sources */,
@@ -1024,7 +1021,6 @@
 				9EEE32F71D9816660023ABF6 /* SoundSelectionCellTest.m in Sources */,
 				E8BAC1781D7F0E1800BD66F1 /* TuneinProviderTest.m in Sources */,
 				E80E2D6E1D9425B600DE085F /* OCMNavigationControllerWithRootViewControllerConstraint.m in Sources */,
-				9E0E09AB1D85A6C50015D6A9 /* RadioStationSelectionViewController.m in Sources */,
 				9E0E09A51D85A6740015D6A9 /* AlarmSelectionViewControllerTest.m in Sources */,
 				9E118E641D6E17C0002C50F8 /* SoundTest.m in Sources */,
 				9E240FBE1D6DFB3500A645D6 /* StationTest.m in Sources */,

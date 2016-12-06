@@ -8,7 +8,6 @@
 #import "StationProvider.h"
 #import "Configuration.h"
 #import "AudioPlayerView.h"
-#import "RadioStationSelectionViewController.h"
 #import "StationSelectionViewController.h"
 #import "AlarmSelectionViewController.h"
 #import "SoundSelectionViewController.h"
@@ -35,8 +34,8 @@
 - (void)radioSelectionButtonTouched:(id)sender;
 - (void)alarmSelectionButtonTouched:(id)sender;
 - (void)soundSelectionButtonTouched:(id)sender;
-- (void)radioStationSelectionVCDidCancelSelecting:(RadioStationSelectionViewController *)controller;
-- (void)radioStationSelectionVC:(RadioStationSelectionViewController *)controller didFinishWithRadioStation:(Station *)station;
+//- (void)radioStationSelectionVCDidCancelSelecting:(RadioStationSelectionViewController *)controller;
+//- (void)radioStationSelectionVC:(RadioStationSelectionViewController *)controller didFinishWithRadioStation:(Station *)station;
 - (void)alarmSelectonVCDidCancel:(AlarmSelectionViewController *)controller;
 - (void)alarmSelectionVC:(AlarmSelectionViewController *)controller didFinishWithAlarmDate:(NSDate *)date;
 - (void)registerForLocalNotifications;
@@ -122,17 +121,17 @@
 	[controllerMock verify];
 }
 
-- (void)testDismissViewControllerOnRadioStationSelectionVCDidCancelSelecting {
-	[[controllerMock expect] dismissViewControllerAnimated:YES completion:NULL];
-	[controller radioStationSelectionVCDidCancelSelecting:OCMOCK_ANY];
-	[controllerMock verify];
-}
-
-- (void)testDismissViewControllerOnRadioStationSelectionVCDidFinishWithRadioStation {
-	[[controllerMock expect] dismissViewControllerAnimated:YES completion:OCMOCK_ANY];
-	[controller radioStationSelectionVC:OCMOCK_ANY didFinishWithRadioStation:OCMOCK_ANY];
-	[controllerMock verify];
-}
+//- (void)testDismissViewControllerOnRadioStationSelectionVCDidCancelSelecting {
+//	[[controllerMock expect] dismissViewControllerAnimated:YES completion:NULL];
+//	[controller radioStationSelectionVCDidCancelSelecting:OCMOCK_ANY];
+//	[controllerMock verify];
+//}
+//
+//- (void)testDismissViewControllerOnRadioStationSelectionVCDidFinishWithRadioStation {
+//	[[controllerMock expect] dismissViewControllerAnimated:YES completion:OCMOCK_ANY];
+//	[controller radioStationSelectionVC:OCMOCK_ANY didFinishWithRadioStation:OCMOCK_ANY];
+//	[controllerMock verify];
+//}
 
 - (void)testDismissViewControllerOnAlarmSelectionVCDidCancel {
 	[[controllerMock expect] dismissViewControllerAnimated:YES completion:NULL];

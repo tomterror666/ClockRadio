@@ -311,6 +311,7 @@
 #pragma mark -
 
 - (IBAction)backButtonTouched:(id)sender {
+	[self.audioPlayer stop];
 	if ([self.delegate respondsToSelector:@selector(stationSelectionViewControllerDidCancel:)]) {
 		[self.delegate stationSelectionViewControllerDidCancel:self];
 	}
