@@ -6,56 +6,78 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-		<key>DateTools.xcscheme</key>
-		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>DateTools.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>Expecta.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
 		<key>KIF.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
 		<key>OCMock.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
 		<key>OGIniFiler.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
 		<key>Pods-ClockRadio.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
 		<key>Pods-ClockRadioKIFUITests.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
 		<key>Pods-ClockRadioTests.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
 		<key>StreamingKit.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
 		<key>XMLReader-Arc.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
@@ -68,6 +90,16 @@
 			<true/>
 		</dict>
 		<key>31FF44B5E2FF8CF00090950A8B67AFF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BF091E2AE324209B14F4DED941701B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F9C603448162A591C3574EA3C2FC4D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,12 +124,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AEC7B19EEAF691AC4EE8D0599FBF7041</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B6EB6F9260A7966FBD8ECE28C164B20A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CABE5D8021AFD7BC9C10BF5459AFB135</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF4FB86FE7F1BEDE879991C59EABD426</key>
 		<dict>
 			<key>primary</key>
 			<true/>
