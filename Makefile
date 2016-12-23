@@ -1,10 +1,10 @@
 default: test uitest
 
 test:
-	xcodebuild -verbose -workspace ClockRadio.xcworkspace -scheme ClockRadioTests -sdk iphonesimulator10.1 ARCHS=i386 ONLY_ACTIVE_ARCH=NO -destination "platform=iOS Simulator,name=iPhone 5,OS=10.1" test
+	xcodebuild -verbose -workspace ClockRadio.xcworkspace -scheme ClockRadioTests -sdk iphonesimulator10.2 ARCHS=i386 ONLY_ACTIVE_ARCH=NO -destination "platform=iOS Simulator,name=iPhone 5,OS=10.2" test
 
 uitest:
-	xcodebuild -verbose -workspace ClockRadio.xcworkspace -scheme ClockRadioKIFUITests -sdk iphonesimulator10.1 ARCHS=i386 ONLY_ACTIVE_ARCH=NO -destination "platform=iOS Simulator,name=iPhone 5,OS=10.1" test GCC_PREPROCESSOR_DEFINITIONS='$$GCC_PREPROCESSOR_DEFINITIONS UITEST_SIMULATOR=1'
+	xcodebuild -verbose -workspace ClockRadio.xcworkspace -scheme ClockRadioKIFUITests -sdk iphonesimulator10.2 ARCHS=i386 ONLY_ACTIVE_ARCH=NO -destination "platform=iOS Simulator,name=iPhone 5,OS=10.2" test GCC_PREPROCESSOR_DEFINITIONS='$$GCC_PREPROCESSOR_DEFINITIONS UITEST_SIMULATOR=1'
 
 cleanAll:
 	xcodebuild -version
